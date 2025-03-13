@@ -33,15 +33,64 @@
     font-weight: bold;
     font-size: 1.5rem;
   }
-  
-  /* Hero Section / Tela Inicial */
-  .hero-section {
-    background: url('https://via.placeholder.com/1920x1080.png?text=F%C3%A9+e+Tradi%C3%A7%C3%A3o') no-repeat center center;
-    background-size: cover;
-    padding: 120px 0;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+
+  /* HERO SECTION: ocupa a tela inteira e centraliza o conteúdo */
+.hero-section {
+  position: relative;
+  min-height: 100vh; /* preenche a altura total da tela */
+  display: flex;
+  align-items: center;     /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  overflow: hidden;
+  background: #000; /* fallback simples (opcional) */
+}
+
+/* CONTEÚDO DO TEXTO (em cima do vídeo) */
+.hero-content {
+  position: relative;
+  z-index: 2;        /* fica acima do vídeo */
+  text-align: center;  
+  color: #fff;       /* texto branco para melhor contraste */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  /* Se estiver usando .container do Bootstrap, 
+     ela já tem margens laterais automáticas. */
+}
+
+/* VÍDEO DE FUNDO (posição absoluta) */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden; /* esconde o que extrapolar */
+}
+
+/* ESCALA O IFRAME ALÉM DE 100% PARA NÃO MOSTRAR BORDAS PRETAS */
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  /* Aumente para 130%, 150%, etc. caso ainda veja barras pretas 
+     em telas com proporção muito diferente de 16:9. */
+}
+
+/* OPCIONAL: em telas pequenas, aumentar ainda mais para evitar faixas pretas */
+@media (max-width: 576px) {
+  .video-container iframe {
+    width: 200%;  /* ou 220%, 250%... */
+    height: 200%;
   }
+}
+
+
+
+
+
   
   /* Cartões com bordas arredondadas e sombra */
   .card {
