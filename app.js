@@ -18,10 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     temaOracao.addEventListener('change', updateOracao);
     updateOracao();
-  
-    favoritarOracaoBtn.addEventListener('click', () => {
-      alert("Oração adicionada aos favoritos!");
-    });
+
   
     // ----- Contador de Terço ----- //
     let count = 0;
