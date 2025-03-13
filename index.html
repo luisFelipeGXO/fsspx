@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FSSPX Santa Tradição</title>
+  <!-- Google Font: Merriweather para um toque clássico -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Cabeçalho e Navbar -->
+  <header class="mb-4">
+    <nav class="navbar navbar-expand-lg shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">FSSPX Santa Tradição</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#oracao">Oração do Dia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#liturgia">Liturgia Diária</a></li>
+            <li class="nav-item"><a class="nav-link" href="#agenda">Agenda Litúrgica</a></li>
+            <li class="nav-item"><a class="nav-link" href="#santo">Santo do Dia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#igrejas">Igrejas da Tradição</a></li>
+            <li class="nav-item"><a class="nav-link" href="#terco">Contador de Terço</a></li>
+            <li class="nav-item"><a class="nav-link" href="catequese.html">Catequese</a></li>
+            <li class="nav-item"><a class="nav-link" href="#meditacoes">Meditações</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contemplacoes">Contemplações</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Tela Inicial / Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 style="color: #4a2c2a" class="display-4">Bem-vindo à FSSPX Santa Tradição</h1>
+      <p style="color: #4a2c2a" class="lead">Preservando a fé e a tradição católica</p>
+      <p style="color: #4a2c2a" >Descubra orações, liturgias, agenda, meditações e muito mais para enriquecer sua vida espiritual.</p>
+      <a href="#oracao" class="btn btn-primary mt-3">Explore as Funcionalidades</a>
+    </div>
+  </section>
+
+ 
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    <!-- Seção: Oração do Dia -->
+    <section id="oracao" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-praying-hands"></i> Oração do Dia</h3>
+          <p class="card-text">Selecione um tema para receber uma oração tradicional:</p>
+          <div class="mb-3">
+            <select id="temaOracao" class="form-select w-50">
+              <option value="familia">Oração pela Família</option>
+              <option value="trabalho">Oração pelo Trabalho</option>
+              <option value="cura">Oração pela Cura</option>
+            </select>
+          </div>
+          <div class="alert alert-primary" role="alert" id="textoOracao">
+            Aqui serão exibidas as orações do dia.
+          </div>
+          <button id="favoritarOracao" class="btn btn-outline-primary">
+            <i class="fas fa-heart"></i> Favoritar Oração
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Liturgia Diária -->
+    <section id="liturgia" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-book"></i> Liturgia Diária</h3>
+          <p class="card-text">Confira as leituras e o evangelho do dia segundo a tradição antiga.</p>
+          <div id="liturgiaContent">
+            <p><strong>Leitura do dia:</strong> Salmo 23</p>
+            <p><strong>Evangelho:</strong> João 3:16</p>
+          </div>
+          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#liturgiaModal">
+            Ver Detalhes
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal: Detalhes da Liturgia Diária -->
+    <div class="modal fade" id="liturgiaModal" tabindex="-1" aria-labelledby="liturgiaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="liturgiaModalLabel">Detalhes da Liturgia Diária</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Leituras:</h6>
+            <p>O Senhor é meu pastor, nada me faltará. Em verdes pastagens me faz repousar, e para águas tranquilas me conduz. Restaura minha alma; guia-me pelas veredas da justiça, por amor do Seu nome. Mesmo quando eu andar pelo vale da sombra da morte, não temerei mal algum, porque Tu estás comigo; a Tua vara e o Teu cajado me consolam. Preparas uma mesa perante mim, na presença dos meus inimigos; unges a minha cabeça com óleo; o meu cálice transborda. Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida, e habitarei na casa do Senhor por longos dias. </p>
+            <h6>Evangelho:</h6>
+            <p>Porque Deus amou tanto o mundo, que deu o Seu Filho unigênito, para que todo aquele que n'Ele crê não pereça, mas tenha a vida eterna. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção: Agenda Litúrgica -->
+    <section id="agenda" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Agenda Litúrgica</h3>
+          <p class="card-text">Fique por dentro das principais festas e solenidades da Santa Tradição:</p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <strong>01/01</strong> - Solenidade de Santa Maria, Mãe de Deus
+            </li>
+            <li class="list-group-item">
+              <strong>19/03</strong> - São José, Patrono da Igreja Tradicional
+            </li>
+            <li class="list-group-item">
+              <strong>15/08</strong> - Assunção de Nossa Senhora
+            </li>
+            <li class="list-group-item">
+              <strong>08/12</strong> - Imaculada Conceição
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Santo do Dia -->
+    <section id="santo" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-user"></i> Santo do Dia</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="saopiox.jpg" alt="Santo do Dia" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+              <h5>São Pio X</h5>
+              <p>São Pio X nasceu em 2 de junho de 1835, na pequena vila de Riese, na região de Vêneto, Itália. Seu nome de batismo era Giuseppe Melchiorre Sarto. Filho de uma família humilde, desde cedo demonstrou grande piedade e desejo de servir a Deus. Apesar das dificuldades financeiras, conseguiu estudar no seminário de Pádua e foi ordenado sacerdote em 1858.</p>
+              <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#santoModal">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal: Detalhes do Santo do Dia -->
+    <div class="modal fade" id="santoModal" tabindex="-1" aria-labelledby="santoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="santoModalLabel">Detalhes sobre São Pio X</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Como padre, exerceu seu ministério com dedicação exemplar, sendo nomeado bispo de Mântua em 1884 e depois patriarca de Veneza em 1893. Sua reputação de santidade e zelo pastoral chamou a atenção do Vaticano, e em 1903 foi eleito Papa, adotando o nome Pio X.
+
+                São Pio X ficou conhecido por sua firme defesa da doutrina católica e pelo combate ao modernismo, que ele chamou de "síntese de todas as heresias". Entre suas principais realizações como Papa, destacam-se:
+                
+                Incentivo à comunhão frequente e à comunhão das crianças: Antes de seu pontificado, era comum que os fiéis comungassem poucas vezes ao ano. Pio X reformou essa prática, incentivando a comunhão frequente e permitindo que as crianças recebessem a Eucaristia a partir da idade da razão (cerca de 7 anos).
+                
+                Reforma litúrgica e da música sacra: Defendeu o canto gregoriano como modelo para a música litúrgica e promoveu a participação ativa dos fiéis na liturgia.
+                </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção: Igrejas da Tradição -->
+    <section id="igrejas" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-map-marker-alt"></i> Igrejas da Tradição</h3>
+          <p class="card-text">Encontre paróquias e igrejas que preservam a Santa Tradição em sua região:</p>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Capela Santa Maria das Vitórias</h5>
+                  <p class="card-text">Rua Espírito Santo, SN Qd E, Lt 26 e 27 - Vila Santa RITA, Anápolis - GO</p>
+                  <a href="https://g.co/kgs/W1SvqgY">
+                    <button class="btn btn-outline-success">Ver no Mapa</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Capela São Pio X - FSSPX</h5>
+                  <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
+                  <a href="https://g.co/kgs/NQkwr5o">
+                    <button class="btn btn-outline-success">Ver no Mapa</button>
+                  </a>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Contador de Terço -->
+    <section id="terco" class="mb-5">
+      <div class="card shadow-sm text-center">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-beads"></i> Contador de Terço</h3>
+          <div id="contador" class="counter-circle my-4">0</div>
+          <div class="mt-3">
+            <button id="btnContador" class="btn btn-primary me-2">
+              <i class="fas fa-plus"></i> Adicionar Contagem
+            </button>
+            <button id="btnReset" class="btn btn-secondary">
+              <i class="fas fa-redo"></i> Resetar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Catequese -->
+    <section id="catequese" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-video"></i> Catequese</h3>
+          <p class="card-text">Aprofunde seu conhecimento com artigos e vídeos sobre a doutrina tradicional. Clique abaixo para acessar a página de Catequese.</p>
+          <a href="catequese.html" class="btn btn-outline-primary">Ir para Catequese</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Meditações -->
+    <section id="meditacoes" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-heartbeat"></i> Meditações</h3>
+          <p class="card-text">Encontre reflexões para meditar e aprofundar sua fé:</p>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card h-100">
+                <img src="https://via.placeholder.com/400x250.png?text=Medita%C3%A7%C3%A3o+1" class="card-img-top" alt="Meditação 1">
+                <div class="card-body">
+                  <h5 class="card-title">Meditação 1</h5>
+                  <p class="card-text">A beleza da tradição se revela na simplicidade da oração.</p>
+                  <a href="meditacao.html" class="btn btn-outline-info">Leia Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card h-100">
+                <img src="https://via.placeholder.com/400x250.png?text=Medita%C3%A7%C3%A3o+2" class="card-img-top" alt="Meditação 2">
+                <div class="card-body">
+                  <h5 class="card-title">Meditação 2</h5>
+                  <p class="card-text">Reflexões sobre o sacrifício e a redenção em cada momento.</p>
+                  <a href="meditacao.html" class="btn btn-outline-info">Leia Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card h-100">
+                <img src="https://via.placeholder.com/400x250.png?text=Medita%C3%A7%C3%A3o+3" class="card-img-top" alt="Meditação 3">
+                <div class="card-body">
+                  <h5 class="card-title">Meditação 3</h5>
+                  <p class="card-text">Um convite à contemplação e à comunhão com o divino.</p>
+                  <a href="meditacao.html" class="btn btn-outline-info">Leia Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Contemplações -->
+    <section id="contemplacoes" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-eye"></i> Contemplações</h3>
+          <p class="card-text">Experimente momentos de profunda contemplação por meio de imagens e reflexões que elevam o espírito:</p>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <img src="https://via.placeholder.com/500x300.png?text=Contempla%C3%A7%C3%A3o+1" class="card-img-top" alt="Contemplação 1">
+                <div class="card-body">
+                  <h5 class="card-title">Contemplação 1</h5>
+                  <p class="card-text">A serenidade que vem do encontro com o sagrado.</p>
+                  <a href="contemplacao.html" class="btn btn-outline-info">Leia Mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <img src="https://via.placeholder.com/500x300.png?text=Contempla%C3%A7%C3%A3o+2" class="card-img-top" alt="Contemplação 2">
+                <div class="card-body">
+                  <h5 class="card-title">Contemplação 2</h5>
+                  <p class="card-text">Uma jornada visual rumo à introspecção e à paz interior.</p>
+                  <a href="contemplacao.html" class="btn btn-outline-info">Leia Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Notificações -->
+    <section id="notificacoes" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-bell"></i> Notificações</h3>
+          <p class="card-text">Receba lembretes para orações e momentos de meditação.</p>
+          <button id="btnNotificar" class="btn btn-warning">
+            <i class="fas fa-bell"></i> Ativar Notificações
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-3 mt-5">
+    <p>&copy; 2025 FSSPX Santa Tradição - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script Personalizado -->
+  <script src="app.js"></script>
+</body>
+</html>

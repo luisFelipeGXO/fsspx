@@ -1,0 +1,112 @@
+/* style.css */
+
+/* Variáveis de cores para a estética FSSPX (Santa Tradição) */
+:root {
+    --primary-color: #4a2c2a; /* tom escuro, marrom/bordô */
+    --secondary-color: #fdf7e3; /* tom de pergaminho */
+    --accent-color: #a67c52;    /* dourado suave */
+    --bg-color: #fdf7e3;
+    --card-bg: #ffffff;
+    --btn-primary-bg: #a67c52;
+    --btn-primary-border: #8c5a2d;
+  }
+  
+  /* Estilo base */
+  body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: 'Merriweather', serif;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--secondary-color);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Hero Section / Tela Inicial */
+  .hero-section {
+    background: url('https://via.placeholder.com/1920x1080.png?text=F%C3%A9+e+Tradi%C3%A7%C3%A3o') no-repeat center center;
+    background-size: cover;
+    padding: 120px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  /* Cartões com bordas arredondadas e sombra */
+  .card {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    transition: box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Alert styling para Oração */
+  .alert {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Placeholder para o calendário (Agenda Litúrgica) */
+  .calendar-placeholder {
+    border: 2px dashed var(--accent-color);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  /* Botões personalizados */
+  .btn-primary {
+    background-color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-border);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--btn-primary-border);
+    border-color: var(--btn-primary-border);
+  }
+  
+  /* Estilização do contador de terço */
+  .counter-circle {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    background-color: var(--btn-primary-bg);
+    color: #fff;
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilização para a Agenda Litúrgica */
+  .list-group-item {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent-color);
+  }
+  
+  /* Hover effect para imagens em Meditações e Contemplações */
+  .card-img-top {
+    transition: transform 0.3s;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.05);
+  }
+  
