@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FSSPX Santa Tradição</title>
+  <title>Dominus Vobiscum</title>
   <!-- Google Font: Merriweather para um toque clássico -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Bootstrap 5 CSS -->
@@ -12,10 +12,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- CSS Personalizado -->
   <link rel="stylesheet" href="style.css">
+  
+
 </head>
 <body>
 
-     <!-- Cabeçalho e Navbar -->
+  <!-- Cabeçalho e Navbar -->
   <header class="mb-4">
     <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container-fluid">
@@ -39,16 +41,21 @@
       </div>
     </nav>
   </header>
-  <!-- Tela Inicial / Hero Section -->
-  <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
-    <div class="container">
-      <h1 style="color: #4a2c2a" class="display-4">Bem-vindo à FSSPX Santa Tradição</h1>
-      <p style="color: #4a2c2a" class="lead">Preservando a fé e a tradição católica</p>
-      <p style="color: #4a2c2a" >Descubra orações, liturgias, agenda, meditações e muito mais para enriquecer sua vida espiritual.</p>
-      <a href="#oracao" class="btn btn-primary mt-3">Explore as Funcionalidades</a>
+
+  <section id="home" class="hero-section">
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yKeRc6qFfck?si=6X7O6CJyrchmuzF5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  
+    <!-- Se quiser uma .container do Bootstrap, tudo bem.
+         Mas ela não é obrigatória para centralizar. -->
+    <div class="container hero-content">
+      <h1 class="display-4">Bem-vindo à FSSPX Santa Tradição</h1>
+      <p class="lead">Preservando a fé e a tradição católica</p>
+      <p>Descubra orações, liturgias, agenda, meditações e muito mais para enriquecer sua vida espiritual.</p>
     </div>
   </section>
-
+  
  
 
   <!-- Conteúdo Principal -->
@@ -69,12 +76,30 @@
           <div class="alert alert-primary" role="alert" id="textoOracao">
             Aqui serão exibidas as orações do dia.
           </div>
-          <button id="favoritarOracao" class="btn btn-outline-primary">
-            <i class="fas fa-heart"></i> Favoritar Oração
+          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#oracaoDoDia">
+            Orações das Horas
           </button>
         </div>
       </div>
     </section>
+
+    <!-- Modal: Detalhes da Oração do Dia -->
+    <div class="modal fade" id="oracaoDoDia" tabindex="-1" aria-labelledby="oracaoDoDia" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="oracaoDoDia">Orações das Horas:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <h6><strong>Laudes:</strong></h6>
+            <p>O Senhor é meu pastor, nada me faltará. Em verdes pastagens me faz repousar, e para águas tranquilas me conduz. Restaura minha alma; guia-me pelas veredas da justiça, por amor do Seu nome. Mesmo quando eu andar pelo vale da sombra da morte, não temerei mal algum, porque Tu estás comigo; a Tua vara e o Teu cajado me consolam. Preparas uma mesa perante mim, na presença dos meus inimigos; unges a minha cabeça com óleo; o meu cálice transborda. Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida, e habitarei na casa do Senhor por longos dias. </p>
+            <h6><strong>Completas:</strong></h6>
+            <p>Porque Deus amou tanto o mundo, que deu o Seu Filho unigênito, para que todo aquele que n'Ele crê não pereça, mas tenha a vida eterna. </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Seção: Liturgia Diária -->
     <section id="liturgia" class="mb-5">
@@ -233,10 +258,33 @@
         <div class="card-body">
           <h3 class="card-title"><i class="fas fa-video"></i> Catequese</h3>
           <p class="card-text">Aprofunde seu conhecimento com artigos e vídeos sobre a doutrina tradicional. Clique abaixo para acessar a página de Catequese.</p>
-          <a href="catequese.html" class="btn btn-outline-primary">Ir para Catequese</a>
+          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#catequeseModal">Saiba Mais</button>
         </div>
       </div>
     </section>
+
+    <!-- Modal: Detalhes do Santo do Dia -->
+    <div class="modal fade" id="catequeseModal" tabindex="-1" aria-labelledby="catequeseModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="catequeseModal">Catequese</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim orci. Suspendisse 
+              congue ullamcorper massa, non porta turpis porta sed. Pellentesque ut pulvinar ligula. Quisque mauris 
+              felis, condimentum id sem sed, viverra elementum nulla. Duis mattis, ex at rutrum ultrices, 
+              neque augue ornare dui, id pellentesque tellus metus eget orci. In ultrices nulla varius, 
+              accumsan massa sit amet, tempor nunc. Nullam pharetra rutrum nunc, sed suscipit libero malesuada id. 
+              Sed commodo sollicitudin mauris, quis accumsan erat placerat sit amet. Curabitur tortor arcu, rhoncus 
+              at cursus ac, imperdiet in diam. Ut dictum justo massa. Quisque vel tempus est. Vestibulum ante ipsum 
+              primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac elit velit. Cras posuere sed velit vitae tincidunt.
+                </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Seção: Meditações -->
     <section id="meditacoes" class="mb-5">
@@ -247,31 +295,100 @@
           <div class="row">
             <div class="col-md-4 mb-3">
               <div class="card h-100">
-                <img src="https://via.placeholder.com/400x250.png?text=Medita%C3%A7%C3%A3o+1" class="card-img-top" alt="Meditação 1">
+                <img src="imagem.jpg" class="card-img-top" alt="Meditação 1">
                 <div class="card-body">
                   <h5 class="card-title">Meditação 1</h5>
                   <p class="card-text">A beleza da tradição se revela na simplicidade da oração.</p>
-                  <a href="meditacao.html" class="btn btn-outline-info">Leia Mais</a>
+                  <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#meditacaoUm">Saiba Mais</button>
+                </div>
+                 <!-- Modal: Detalhes da meditação 1 -->
+                <div class="modal fade" id="meditacaoUm" tabindex="-1" aria-labelledby="meditacaoUm" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="meditacaoUm">Meditação 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim orci. Suspendisse 
+                          congue ullamcorper massa, non porta turpis porta sed. Pellentesque ut pulvinar ligula. Quisque mauris 
+                          felis, condimentum id sem sed, viverra elementum nulla. Duis mattis, ex at rutrum ultrices, 
+                          neque augue ornare dui, id pellentesque tellus metus eget orci. In ultrices nulla varius, 
+                          accumsan massa sit amet, tempor nunc. Nullam pharetra rutrum nunc, sed suscipit libero malesuada id. 
+                          Sed commodo sollicitudin mauris, quis accumsan erat placerat sit amet. Curabitur tortor arcu, rhoncus 
+                          at cursus ac, imperdiet in diam. Ut dictum justo massa. Quisque vel tempus est. Vestibulum ante ipsum 
+                          primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac elit velit. Cras posuere sed velit vitae tincidunt.
+                        </p>
+                        <img src="imagem.jpg" class="card-img-top" alt="Meditação 1">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card h-100">
-                <img src="https://via.placeholder.com/400x250.png?text=Medita%C3%A7%C3%A3o+2" class="card-img-top" alt="Meditação 2">
+                <img src="imagem.jpg" class="card-img-top" alt="Meditação 2">
                 <div class="card-body">
                   <h5 class="card-title">Meditação 2</h5>
                   <p class="card-text">Reflexões sobre o sacrifício e a redenção em cada momento.</p>
-                  <a href="meditacao.html" class="btn btn-outline-info">Leia Mais</a>
+                  <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#meditacaoDois">Saiba Mais</button>
+                </div>
+                 <!-- Modal: Detalhes da meditação 2-->
+                 <div class="modal fade" id="meditacaoDois" tabindex="-1" aria-labelledby="meditacaoDois" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="meditacaoDois">Meditação 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim orci. Suspendisse 
+                          congue ullamcorper massa, non porta turpis porta sed. Pellentesque ut pulvinar ligula. Quisque mauris 
+                          felis, condimentum id sem sed, viverra elementum nulla. Duis mattis, ex at rutrum ultrices, 
+                          neque augue ornare dui, id pellentesque tellus metus eget orci. In ultrices nulla varius, 
+                          accumsan massa sit amet, tempor nunc. Nullam pharetra rutrum nunc, sed suscipit libero malesuada id. 
+                          Sed commodo sollicitudin mauris, quis accumsan erat placerat sit amet. Curabitur tortor arcu, rhoncus 
+                          at cursus ac, imperdiet in diam. Ut dictum justo massa. Quisque vel tempus est. Vestibulum ante ipsum 
+                          primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac elit velit. Cras posuere sed velit vitae tincidunt.
+                        </p>
+                        <img src="imagem.jpg" class="card-img-top" alt="Meditação 1">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card h-100">
-                <img src="https://via.placeholder.com/400x250.png?text=Medita%C3%A7%C3%A3o+3" class="card-img-top" alt="Meditação 3">
+                <img src="imagem.jpg" class="card-img-top" alt="Meditação 3">
                 <div class="card-body">
                   <h5 class="card-title">Meditação 3</h5>
                   <p class="card-text">Um convite à contemplação e à comunhão com o divino.</p>
-                  <a href="meditacao.html" class="btn btn-outline-info">Leia Mais</a>
+                  <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#meditacaoTres">Saiba Mais</button>
+                </div>
+                 <!-- Modal: Detalhes da meditação 3 -->
+                 <div class="modal fade" id="meditacaoTres" tabindex="-1" aria-labelledby="meditacaoTres" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="meditacaoTres">Meditação 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim orci. Suspendisse 
+                          congue ullamcorper massa, non porta turpis porta sed. Pellentesque ut pulvinar ligula. Quisque mauris 
+                          felis, condimentum id sem sed, viverra elementum nulla. Duis mattis, ex at rutrum ultrices, 
+                          neque augue ornare dui, id pellentesque tellus metus eget orci. In ultrices nulla varius, 
+                          accumsan massa sit amet, tempor nunc. Nullam pharetra rutrum nunc, sed suscipit libero malesuada id. 
+                          Sed commodo sollicitudin mauris, quis accumsan erat placerat sit amet. Curabitur tortor arcu, rhoncus 
+                          at cursus ac, imperdiet in diam. Ut dictum justo massa. Quisque vel tempus est. Vestibulum ante ipsum 
+                          primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac elit velit. Cras posuere sed velit vitae tincidunt.
+                        </p>
+                        <img src="imagem.jpg" class="card-img-top" alt="Meditação 1">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -289,7 +406,7 @@
           <div class="row">
             <div class="col-md-6 mb-3">
               <div class="card">
-                <img src="https://via.placeholder.com/500x300.png?text=Contempla%C3%A7%C3%A3o+1" class="card-img-top" alt="Contemplação 1">
+                <img src="imagem.jpg" class="card-img-top" alt="Contemplação 1">
                 <div class="card-body">
                   <h5 class="card-title">Contemplação 1</h5>
                   <p class="card-text">A serenidade que vem do encontro com o sagrado.</p>
@@ -299,7 +416,7 @@
             </div>
             <div class="col-md-6 mb-3">
               <div class="card">
-                <img src="https://via.placeholder.com/500x300.png?text=Contempla%C3%A7%C3%A3o+2" class="card-img-top" alt="Contemplação 2">
+                <img src="imagem.jpg" class="card-img-top" alt="Contemplação 2">
                 <div class="card-body">
                   <h5 class="card-title">Contemplação 2</h5>
                   <p class="card-text">Uma jornada visual rumo à introspecção e à paz interior.</p>
@@ -328,7 +445,7 @@
 
   <!-- Rodapé -->
   <footer class="text-center py-3 mt-5">
-    <p>&copy; 2025 FSSPX Santa Tradição - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Luís Felipe - Todos os direitos reservados.</p>
   </footer>
 
   <!-- Bootstrap 5 JS Bundle -->
