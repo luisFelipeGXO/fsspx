@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- CSS Personalizado -->
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
   
 
 </head>
@@ -21,41 +23,36 @@
   <header class="mb-4">
     <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">FSSPX Santa Tradição</a>
+        <a class="navbar-brand" href="#">Dominus Vobiscum</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#oracao">Oração do Dia</a></li>
-            <li class="nav-item"><a class="nav-link" href="#liturgia">Liturgia Diária</a></li>
-            <li class="nav-item"><a class="nav-link" href="#agenda">Agenda Litúrgica</a></li>
-            <li class="nav-item"><a class="nav-link" href="#santo">Santo do Dia</a></li>
-            <li class="nav-item"><a class="nav-link" href="#igrejas">Igrejas da Tradição</a></li>
-            <li class="nav-item"><a class="nav-link" href="#terco">Contador de Terço</a></li>
-            <li class="nav-item"><a class="nav-link" href="catequese.html">Catequese</a></li>
-            <li class="nav-item"><a class="nav-link" href="#meditacoes">Meditações</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contemplacoes">Contemplações</a></li>
+            <li class="nav-item"><a class="nav-link" href="#oracao"><i class="fas fa-praying-hands"></i> Oração do Dia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#liturgia"><i class="fas fa-book-bible"></i> Liturgia Diária</a></li>
+            <li class="nav-item"><a class="nav-link" href="#terco"><i class="fas fa-cross"></i> Contador de Terço</a></li>
+            <li class="nav-item"><a class="nav-link" href="#agenda"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico</a></li>
+            <li class="nav-item"><a class="nav-link" href="#santo"><i class="fas fa-user"></i> Santo do Dia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#igrejas"><i class="fas fa-map-marker-alt"></i> Igrejas da Tradição</a></li>
+            <li class="nav-item"><a class="nav-link" href="catequese.html"><i class="fas fa-video"></i> Catequese</a></li>
+            <li class="nav-item"><a class="nav-link" href="#meditacoes"><i class="fas fa-heartbeat"></i> Meditações</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contemplacoes"><i class="fas fa-eye"></i> Contemplações</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <section id="home" class="hero-section">
-    <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/yKeRc6qFfck?si=6X7O6CJyrchmuzF5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-  
-    <!-- Se quiser uma .container do Bootstrap, tudo bem.
-         Mas ela não é obrigatória para centralizar. -->
-    <div class="container hero-content">
-      <h1 class="display-4">Bem-vindo à FSSPX Santa Tradição</h1>
-      <p class="lead">Preservando a fé e a tradição católica</p>
-      <p>Descubra orações, liturgias, agenda, meditações e muito mais para enriquecer sua vida espiritual.</p>
+
+
+  <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <h1 style="color: #4a2c2a" class="display-4">Dominus Vobiscum</h1>
+      <p style="color: #4a2c2a" class="lead">Et cum Spirituo Tuo</p>
+      <p style="color: #4a2c2a" >Descubra orações, liturgias, calendário, meditações e muito mais para enriquecer sua vida espiritual.</p>
     </div>
   </section>
-  
  
 
   <!-- Conteúdo Principal -->
@@ -123,14 +120,84 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="liturgiaModalLabel">Detalhes da Liturgia Diária</h5>
+            <h5 class="modal-title" id="liturgiaModalLabel">Liturgia Diária</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <h6>Leituras:</h6>
-            <p>O Senhor é meu pastor, nada me faltará. Em verdes pastagens me faz repousar, e para águas tranquilas me conduz. Restaura minha alma; guia-me pelas veredas da justiça, por amor do Seu nome. Mesmo quando eu andar pelo vale da sombra da morte, não temerei mal algum, porque Tu estás comigo; a Tua vara e o Teu cajado me consolam. Preparas uma mesa perante mim, na presença dos meus inimigos; unges a minha cabeça com óleo; o meu cálice transborda. Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida, e habitarei na casa do Senhor por longos dias. </p>
-            <h6>Evangelho:</h6>
-            <p>Porque Deus amou tanto o mundo, que deu o Seu Filho unigênito, para que todo aquele que n'Ele crê não pereça, mas tenha a vida eterna. </p>
+            <h6><strong>Leituras:</strong></h6>
+            <p>20.
+              É o pecador que deve perecer. Nem o filho responderá pelas faltas do pai nem o pai pelas do filho. É ao justo que se imputará sua justiça e ao mau a sua malícia.
+              
+              21.
+              Se, no entanto, o mau renuncia a todos os seus erros para praticar as minhas leis e seguir a justiça e a equidade, então ele viverá decerto, e não há de perecer.
+              
+              22.
+              Não lhe será tomada em conta qualquer das faltas cometidas: ele há de viver por causa da justiça que praticou.
+              
+              23.
+              Terei eu prazer com a morte do malvado? – oráculo do Senhor Javé –. Não desejo eu, antes, que ele mude de proceder e viva?*
+              
+              24.
+              E, se um justo abandonar a sua justiça, se praticar o mal e imitar todas as abominações cometidas pelo malvado, viverá ele? Não será tido em conta qualquer dos atos bons que houver praticado. É em razão da infidelidade da qual se tornou culpado e dos pecados que tiver cometido que deverá morrer.
+              
+              25.
+              Dizeis: não é justo o modo de proceder do Senhor. Escutai-me então, israelitas: o meu modo de proceder não é justo? Não será o vosso que é injusto?
+              
+              26.
+              Quando um justo renunciar à sua justiça para cometer o mal e ele morrer, então é devido ao mal praticado que ele perece.
+              
+              27.
+              Quando um malvado renuncia ao mal para praticar a justiça e a equidade, ele faz reviver a sua alma.
+              
+              28.
+              Se ele se corrige e renuncia a todas as suas faltas, certamente viverá e não perecerá.</p>
+              <p>Ezequiel, 18</p>
+            <h6><strong>Evangelho:</strong></h6>
+            <p>1.
+              Depois disso, houve uma festa dos judeus, e Jesus subiu a Jerusalém.*
+              
+              2.
+              Há em Jerusalém, junto à porta das Ovelhas, um tanque, chamado em hebraico Betesda, que tem cinco pórticos.
+              
+              3.
+              Nesses pórticos jazia um grande número de enfermos, de cegos, de coxos e de paralíticos, que esperavam o movimento da água.
+              
+              4.
+              [Pois de tempos em tempos um anjo do Senhor descia ao tanque e a água se punha em movimento. E o primeiro que entrasse no tanque, depois da agitação da água, ficava curado de qualquer doença que tivesse.]*
+              
+              5.
+              Estava ali um homem enfermo havia trinta e oito anos.
+              
+              6.
+              Vendo-o deitado e sabendo que já havia muito tempo que estava enfermo, perguntou-lhe Jesus: “Queres ficar curado?”.
+              
+              7.
+              O enfermo respondeu-lhe: “Se­nhor, não tenho ninguém que me ponha no tanque, quando a água é agitada; enquanto vou, já outro desceu antes de mim.”
+              
+              8.
+              Ordenou-lhe Jesus: “Levanta-te, toma o teu leito e anda”.
+              
+              9.
+              No mesmo instante, aquele homem ficou curado, tomou o seu leito e foi andando. Ora, aquele dia era sábado.
+              
+              10.
+              E os judeus diziam ao homem curado: “É sábado, não te é permitido carregar o teu leito.”
+              
+              11.
+              Respondeu-lhes ele: “Aquele que me curou disse: Toma o teu leito e anda.”
+              
+              12.
+              Perguntaram-lhe eles: “Quem é o homem que te disse: Toma o teu leito e anda?”.
+              
+              13.
+              O que havia sido curado, porém, não sabia quem era, porque Jesus se havia retirado da multidão que estava naquele lugar.
+              
+              14.
+              Mais tarde, Jesus o achou no templo e lhe disse: “Eis que ficaste são; já não peques, para não te acontecer coisa pior”.
+              
+              15.
+              Aquele homem foi então contar aos judeus que fora Jesus quem o havia curado.</p>
+              <p>São João 15</p>
           </div>
         </div>
       </div>
@@ -140,24 +207,92 @@
     <section id="agenda" class="mb-5">
       <div class="card shadow-sm">
         <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Agenda Litúrgica</h3>
+          <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico Tradicional</h3>
           <p class="card-text">Fique por dentro das principais festas e solenidades da Santa Tradição:</p>
           <ul class="list-group">
             <li class="list-group-item">
-              <strong>01/01</strong> - Solenidade de Santa Maria, Mãe de Deus
+              <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
             </li>
             <li class="list-group-item">
-              <strong>19/03</strong> - São José, Patrono da Igreja Tradicional
+              <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
             </li>
             <li class="list-group-item">
-              <strong>15/08</strong> - Assunção de Nossa Senhora
+              <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
             </li>
             <li class="list-group-item">
-              <strong>08/12</strong> - Imaculada Conceição
+              <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
             </li>
           </ul>
         </div>
       </div>
+      <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#calendarioModal">Ver mais Igrejas</button>
+
+              <!-- Modal: Detalhes do Santo do Dia -->
+              <div class="modal fade" id="calendarioModal" tabindex="-1" aria-labelledby="calendarioModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="calendarioModal">Calendário Litúrgico Tradicional</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico Tradicional</h3>
+                        <p class="card-text">Fique por dentro das principais festas e solenidades da Santa Tradição:</p>
+                        <ul class="list-group">
+                          <li class="list-group-item">
+                            <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
+                          </li>
+                          <li class="list-group-item">
+                            <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
     </section>
 
     <!-- Seção: Santo do Dia -->
@@ -229,6 +364,87 @@
                   </a>                </div>
               </div>
             </div>
+            <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#igrejasModal">Ver mais Igrejas</button>
+
+              <!-- Modal: Detalhes do Santo do Dia -->
+              <div class="modal fade" id="igrejasModal" tabindex="-1" aria-labelledby="igrejasModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="igrejasModal">Encontre paróquias e igrejas que preservam a Santa Tradição em sua região:</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="col-md-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
+                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
+                            <a href="https://g.co/kgs/NQkwr5o">
+                              <button class="btn btn-outline-success">Ver no Mapa</button>
+                            </a>                </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
+                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
+                            <a href="https://g.co/kgs/NQkwr5o">
+                              <button class="btn btn-outline-success">Ver no Mapa</button>
+                            </a>                </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
+                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
+                            <a href="https://g.co/kgs/NQkwr5o">
+                              <button class="btn btn-outline-success">Ver no Mapa</button>
+                            </a>                </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
+                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
+                            <a href="https://g.co/kgs/NQkwr5o">
+                              <button class="btn btn-outline-success">Ver no Mapa</button>
+                            </a>                </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
+                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
+                            <a href="https://g.co/kgs/NQkwr5o">
+                              <button class="btn btn-outline-success">Ver no Mapa</button>
+                            </a>                </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
+                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
+                            <a href="https://g.co/kgs/NQkwr5o">
+                              <button class="btn btn-outline-success">Ver no Mapa</button>
+                            </a>                </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
           </div>
         </div>
       </div>
@@ -258,7 +474,9 @@
         <div class="card-body">
           <h3 class="card-title"><i class="fas fa-video"></i> Catequese</h3>
           <p class="card-text">Aprofunde seu conhecimento com artigos e vídeos sobre a doutrina tradicional. Clique abaixo para acessar a página de Catequese.</p>
-          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#catequeseModal">Saiba Mais</button>
+          <a href="catequese.html">
+            <button class="btn btn-outline-success">Catequese</button>
+          </a>
         </div>
       </div>
     </section>
@@ -295,10 +513,10 @@
           <div class="row">
             <div class="col-md-4 mb-3">
               <div class="card h-100">
-                <img src="imagem.jpg" class="card-img-top" alt="Meditação 1">
+                <img src="paraiso.jpeg" class="card-img-top" alt="Meditação 1">
                 <div class="card-body">
-                  <h5 class="card-title">Meditação 1</h5>
-                  <p class="card-text">A beleza da tradição se revela na simplicidade da oração.</p>
+                  <h5 class="card-title">Paraíso</h5>
+                  <p class="card-text">Nem olhos viram, nem ouvidos ouviram, nem jamais penetrou em coração humano o que Deus preparou para aqueles que O amam.</p>
                   <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#meditacaoUm">Saiba Mais</button>
                 </div>
                  <!-- Modal: Detalhes da meditação 1 -->
@@ -306,20 +524,67 @@
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="meditacaoUm">Meditação 1</h5>
+                        <h5 class="modal-title" id="meditacaoUm">Paraíso</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                       </div>
                       <div class="modal-body">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim orci. Suspendisse 
-                          congue ullamcorper massa, non porta turpis porta sed. Pellentesque ut pulvinar ligula. Quisque mauris 
-                          felis, condimentum id sem sed, viverra elementum nulla. Duis mattis, ex at rutrum ultrices, 
-                          neque augue ornare dui, id pellentesque tellus metus eget orci. In ultrices nulla varius, 
-                          accumsan massa sit amet, tempor nunc. Nullam pharetra rutrum nunc, sed suscipit libero malesuada id. 
-                          Sed commodo sollicitudin mauris, quis accumsan erat placerat sit amet. Curabitur tortor arcu, rhoncus 
-                          at cursus ac, imperdiet in diam. Ut dictum justo massa. Quisque vel tempus est. Vestibulum ante ipsum 
-                          primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac elit velit. Cras posuere sed velit vitae tincidunt.
+                        <p>"Nem olhos viram, nem ouvidos ouviram, nem jamais penetrou em coração humano o que Deus preparou para aqueles que O amam" (1 Coríntios 2,9).
+
+                          Fecha os olhos por um momento e imagina: o último suspiro desta vida. Tudo o que era transitório se desfaz como uma sombra ao pôr do sol. O peso dos dias, as lutas, os sofrimentos... tudo fica para trás. E então, o silêncio. Um silêncio profundo, mas não vazio. Pelo contrário, é um silêncio cheio de paz, como uma manhã serena em que o sol começa a despontar no horizonte.
+                          
+                          Então, de repente, a consciência se ilumina. O véu que separava a terra do céu é rasgado. Diante de ti, não há mais tempo, apenas eternidade. E uma luz — não uma luz comum, mas uma luz viva, uma luz que te envolve por completo. Não fere os olhos, mas os abre; não cega, mas revela. É a luz de Deus.
+                          
+                          Ao longe, percebes uma figura aproximando-se. É um anjo, majestoso e sereno. Seu semblante resplandece com a glória do Altíssimo. Ele te chama pelo nome. Mas não é um chamado qualquer. É um chamado carregado de amor, um chamado que ressoa nas profundezas da tua alma, como se desde toda a eternidade esperasses por este momento.
+                          
+                          Então, vês que não estás sozinho. Outros anjos, santos e bem-aventurados estão ali, jubilosos, esperando por ti. Entre eles, um olhar brilha com ternura especial: é Nossa Senhora. A Virgem Santa te contempla como uma mãe que recebe o filho que esteve longe por muito tempo.
+                          
+                          Mas antes de seguir adiante, um último olhar para trás: a terra, que foi apenas um exílio, agora parece tão pequena, tão distante...
+                          O Juízo e a Misericórdia
+                          
+                          Então, és conduzido à presença do Justo Juiz. O olhar de Cristo pousa sobre ti, mas não é um olhar de acusação, e sim de verdade e amor. Tudo na tua vida se revela diante d’Ele. Cada palavra, cada pensamento, cada obra, cada omissão. Mas a cada erro, cada pecado reconhecido com arrependimento, a Sua misericórdia cobre como um oceano imenso. Se morreste em Sua graça, purificado pelo sofrimento ou pelo Purgatório, agora nada mais te impede de entrar na felicidade eterna.
+                          
+                          Então, ouves aquelas palavras pelas quais os santos suspiraram durante toda a vida:
+                          
+                          "Vinde, bendito de meu Pai, tomai posse do Reino que vos está preparado desde a criação do mundo" (Mateus 25,34).
+                          
+                          E num instante, tudo se transforma. És envolvido por um júbilo inefável, uma alegria que preenche cada fibra do teu ser.
+                          A Entrada no Paraíso
+                          
+                          A porta do Paraíso se abre diante de ti. E que visão esplêndida! Nenhum poeta, nenhum artista, nenhum sábio jamais poderia captar a imensidão da beleza que agora se desvela.
+                          
+                          São João Crisóstomo dizia que se pudéssemos vislumbrar um instante da glória celestial, desprezaríamos todos os reinos da terra como cinza. E agora, entendes por quê.
+                          
+                          O primeiro som que ouves é um cântico. Os coros angélicos entoam hinos de louvor ao Cordeiro imolado. Os santos se unem a esse cântico, e nele encontrarás a tua voz.
+                          
+                          Não há cansaço, não há dor, não há sombra. Cada fibra do teu ser agora está em harmonia perfeita, pois foste criado para isto: para ver a Deus, para conhecê-Lo, para amá-Lo e ser amado por Ele eternamente.
+                          A Vida na Eternidade
+                          
+                          Mas como é a eternidade? Não um simples repouso, mas um movimento incessante de amor. Santo Tomás de Aquino explica que a bem-aventurança consiste na visão beatífica: contemplar Deus face a face, sem véus, sem distâncias.
+                          
+                          Na terra, buscaste-O na oração, na fé, nos sacramentos. Agora, Ele está diante de ti, mais real do que tudo o que já experimentaste. Seu olhar penetra tua alma e, em um instante eterno, compreendes tudo. Cada mistério, cada sofrimento, cada cruz carregada – tudo fazia parte de um plano de amor.
+                          
+                          Os santos te cercam. Reconheces figuras que admiravas nos livros: Santo Agostinho, São Francisco de Assis, Santa Teresinha, São José... e cada um deles transborda alegria, pois o Céu não é solidão, mas comunhão.
+                          
+                          E não há tédio. Como poderia haver? Cada momento na eternidade é um novo êxtase de amor, uma nova revelação da infinita glória de Deus. Como dizia Santa Catarina de Sena:
+                          
+                          "O céu não é estático, mas um contínuo mergulhar no oceano infinito do amor divino."
+                          O Banquete do Cordeiro
+                          
+                          Então, és convidado para algo ainda maior: o Banquete do Cordeiro. Vês a mesa preparada, e à frente dela, Cristo, resplandecente. A Eucaristia que recebias na terra era apenas uma sombra, um prenúncio desta união agora plena e perfeita.
+                          
+                          E neste festim eterno, os eleitos celebram, amam, louvam. Não há inveja, não há divisão, não há tristeza. Cada alma recebe a plenitude da felicidade para a qual foi criada, e ao mesmo tempo, alegra-se pela felicidade dos outros.
+                          
+                          Este é o Paraíso: um êxtase eterno de amor e comunhão com Deus.
+                          O Que Fazer Agora?
+                          
+                          Voltas agora à tua vida terrena. Mas algo mudou. Tens um vislumbre do teu destino final. Não foste criado para o pó, mas para a glória. Para alcançar este Céu, há um caminho: a santidade.
+                          
+                          Então, vive cada dia como um peregrino que caminha para o Lar. Ama, reza, recebe os sacramentos, carrega a tua cruz com paciência. Porque um dia, e pode ser mais breve do que imaginas, ouvirás aquela voz dizendo:
+                          
+                          "Servo bom e fiel... entra na alegria do teu Senhor!" (Mateus 25,21).
+                          
+                          E então, tudo terá valido a pena.
                         </p>
-                        <img src="imagem.jpg" class="card-img-top" alt="Meditação 1">
                       </div>
                     </div>
                   </div>
@@ -328,10 +593,10 @@
             </div>
             <div class="col-md-4 mb-3">
               <div class="card h-100">
-                <img src="imagem.jpg" class="card-img-top" alt="Meditação 2">
+                <img src="purgatorio.jpeg" class="card-img-top" alt="Meditação 2">
                 <div class="card-body">
-                  <h5 class="card-title">Meditação 2</h5>
-                  <p class="card-text">Reflexões sobre o sacrifício e a redenção em cada momento.</p>
+                  <h5 class="card-title">Purgatório</h5>
+                  <p class="card-text">Nada de impuro entrará no Reino dos Céus.</p>
                   <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#meditacaoDois">Saiba Mais</button>
                 </div>
                  <!-- Modal: Detalhes da meditação 2-->
@@ -343,16 +608,62 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                       </div>
                       <div class="modal-body">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim orci. Suspendisse 
-                          congue ullamcorper massa, non porta turpis porta sed. Pellentesque ut pulvinar ligula. Quisque mauris 
-                          felis, condimentum id sem sed, viverra elementum nulla. Duis mattis, ex at rutrum ultrices, 
-                          neque augue ornare dui, id pellentesque tellus metus eget orci. In ultrices nulla varius, 
-                          accumsan massa sit amet, tempor nunc. Nullam pharetra rutrum nunc, sed suscipit libero malesuada id. 
-                          Sed commodo sollicitudin mauris, quis accumsan erat placerat sit amet. Curabitur tortor arcu, rhoncus 
-                          at cursus ac, imperdiet in diam. Ut dictum justo massa. Quisque vel tempus est. Vestibulum ante ipsum 
-                          primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac elit velit. Cras posuere sed velit vitae tincidunt.
+                        <p>"Nada de impuro entrará no Reino dos Céus" (Apocalipse 21,27).
+
+                          Fecha os olhos por um momento e imagina: o último suspiro desta vida. A respiração se esvai, os sentidos se apagam, e tua alma se desprende do corpo. O mundo material, com todas as suas preocupações e ilusões, fica para trás. E então, o silêncio. Mas não um silêncio vazio. Há algo além, algo que se aproxima...
+                          
+                          De repente, percebes uma luz. Não é uma luz comum, mas uma luz que te atravessa, revelando tudo o que há em ti. Então, um grande temor e um grande amor te invadem ao mesmo tempo. O temor vem porque essa luz é Deus, e diante d’Ele, vês tua alma com uma clareza impossível de ter na terra. O amor vem porque Ele é o próprio Amor, e estás diante Daquele que sempre buscaste, ainda que imperfeitamente.
+                          
+                          Diante de ti, Cristo. Seu olhar não é de condenação, mas de verdade absoluta. Ele te mostra tua vida inteira. Vês cada graça que recebeste e cada resposta que deste — ou deixaste de dar. Vês tuas boas obras, mas também cada mancha, cada imperfeição que ainda te impede de mergulhar na plenitude da visão beatífica.
+                          
+                          E então compreendes: amas a Deus mais do que nunca, desejas estar com Ele para sempre, mas percebes que ainda há impurezas em ti. Como poderias entrar no Paraíso assim? Como poderias contemplar a pureza infinita de Deus carregando ainda o menor resquício de egoísmo, impaciência ou negligência?
+                          
+                          A verdade se impõe com clareza: precisas ser purificado. E num ato de amor perfeito, aceitas o fogo purificador.
+                          A Primeira Experiência do Purgatório
+                          
+                          Num instante, sentes um calor intenso. Não um fogo material, mas um fogo que arde na alma. É o fogo do amor divino, consumindo toda impureza que ainda resta em ti. São João da Cruz chamou isso de a "Noite Escura da Alma". Santa Catarina de Gênova explicou que a alma no Purgatório está em perfeito abandono à vontade de Deus, ardendo de amor e saudade, desejando ser digna de vê-Lo.
+                          
+                          Aqui não há desespero, pois sabes que a tua salvação está garantida. Mas há uma dor imensa: a ausência de Deus. Agora que O viste, que O experimentaste, tudo o que não for Ele é vazio.
+                          
+                          Imagina um sedento no deserto, vendo uma fonte de água cristalina à sua frente, mas ainda incapaz de beber. Imagina um noivo esperando o momento exato para ver sua amada após longa separação. Esse é o sofrimento do Purgatório: a fome ardente por Deus, uma fome que só pode ser saciada quando toda impureza for consumida.
+                          A Visão das Almas e a Misericórdia de Deus
+                          
+                          Ao teu redor, outras almas compartilham dessa purificação. Algumas estão quase prontas para a glória, outras acabam de chegar e iniciam um caminho mais longo de purificação. Há santos que passaram brevemente por aqui, e há almas que, na vida terrena, viveram na tibieza e agora enfrentam uma purificação mais profunda.
+                          
+                          Mas todas compartilham um mesmo anseio: Deus. E todas estão em paz, porque sabem que a misericórdia divina as sustenta. Aqui não há revolta, não há amargura, apenas um amor crescente que purifica, transforma e eleva.
+                          
+                          E há algo mais: a Igreja Militante, os fiéis que ainda estão na terra. Tu os vês rezando, oferecendo Missas, penitências e sufrágios pelas almas do Purgatório. Cada oração, cada sacrifício os alcança como uma brisa fresca em meio às chamas ardentes.
+                          
+                          Agora entendes o valor da intercessão. O quanto a Santa Missa, as indulgências e as orações aliviam o sofrimento e apressam a purificação. Agora compreendes como cada Ato de Amor na terra poderia ter reduzido este tempo de espera.
+                          A Última Purificação e a Entrada no Céu
+                          
+                          Então, chega o momento. O fogo consumiu toda mancha, toda sombra da alma. E num instante, a dor dá lugar a uma alegria indescritível.
+                          
+                          Um anjo se aproxima e te chama:
+                          
+                          "Está pronto. O Rei te espera."
+                          
+                          E num abrir e fechar de olhos, as portas do Paraíso se abrem. A luz da glória divina te envolve completamente. Todo o sofrimento se dissolve, como a noite que desaparece diante da aurora.
+                          
+                          Ouves um cântico, os santos te recebem, Nossa Senhora te acolhe. E então, enfim, vês a Deus. Não mais em sombras, não mais em desejo, mas face a face.
+                          
+                          O tempo de espera acabou. O exílio terminou.
+                          
+                          Ouves a voz de Cristo dizendo:
+                          
+                          "Servo bom e fiel... entra na alegria do teu Senhor!"
+                          
+                          E num instante eterno, entras na glória que jamais terá fim.
+                          O Que Fazer Agora?
+                          
+                          Voltando ao presente, tua vida terrena continua. Mas agora, sabes o que te espera. Então, vive com sabedoria! Purifica-te agora, para que essa jornada seja breve.
+                          
+                          Reza pelas almas do Purgatório, pois um dia talvez estejas entre elas e precisarás das orações da Igreja. Oferece sacrifícios, busca a Confissão, vive a Eucaristia com amor.
+                          
+                          Pois aqueles que buscam a santidade desde já, experimentarão menos as chamas e mais rapidamente verão a Face de Deus.
+                          
+                          E então, tudo terá valido a pena.
                         </p>
-                        <img src="imagem.jpg" class="card-img-top" alt="Meditação 1">
                       </div>
                     </div>
                   </div>
@@ -361,10 +672,10 @@
             </div>
             <div class="col-md-4 mb-3">
               <div class="card h-100">
-                <img src="imagem.jpg" class="card-img-top" alt="Meditação 3">
+                <img src="inferno.jpeg" class="card-img-top" alt="Meditação 3">
                 <div class="card-body">
-                  <h5 class="card-title">Meditação 3</h5>
-                  <p class="card-text">Um convite à contemplação e à comunhão com o divino.</p>
+                  <h5 class="card-title">Inferno</h5>
+                  <p class="card-text">Apartai-vos de mim, malditos, para o fogo eterno, preparado para o diabo e seus anjos.</p>
                   <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#meditacaoTres">Saiba Mais</button>
                 </div>
                  <!-- Modal: Detalhes da meditação 3 -->
@@ -376,16 +687,86 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                       </div>
                       <div class="modal-body">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim orci. Suspendisse 
-                          congue ullamcorper massa, non porta turpis porta sed. Pellentesque ut pulvinar ligula. Quisque mauris 
-                          felis, condimentum id sem sed, viverra elementum nulla. Duis mattis, ex at rutrum ultrices, 
-                          neque augue ornare dui, id pellentesque tellus metus eget orci. In ultrices nulla varius, 
-                          accumsan massa sit amet, tempor nunc. Nullam pharetra rutrum nunc, sed suscipit libero malesuada id. 
-                          Sed commodo sollicitudin mauris, quis accumsan erat placerat sit amet. Curabitur tortor arcu, rhoncus 
-                          at cursus ac, imperdiet in diam. Ut dictum justo massa. Quisque vel tempus est. Vestibulum ante ipsum 
-                          primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac elit velit. Cras posuere sed velit vitae tincidunt.
+                        <p> "Apartai-vos de mim, malditos, para o fogo eterno, preparado para o diabo e seus anjos" (Mateus 25,41).
+
+                          Fecha os olhos por um momento e imagina: o último suspiro. O coração para. Os sentidos se apagam. O mundo ao teu redor desaparece. O que antes era sólido e familiar agora é apenas um eco distante. A terra, com suas distrações, riquezas e prazeres passageiros, já não te pertence.
+                          
+                          De repente, sentes que tua alma se desprende do corpo. Mas ao contrário de uma leve ascensão, há um peso esmagador. Algo te arrasta para baixo. Como um condenado que já sabe sua sentença antes mesmo de ouvi-la, percebes a terrível verdade: morreste em pecado mortal, separado da graça de Deus.
+                          O Juízo Particular: O Olhar que Julga
+                          
+                          Diante de ti, surge Cristo. Mas seu olhar não é mais o olhar misericordioso que chamava à conversão. Agora é um olhar de juízo. Nele, vês toda a tua vida, cada oportunidade de graça rejeitada, cada apelo à conversão ignorado, cada pecado cometido com desprezo pela santidade de Deus.
+                          
+                          Tentas justificar-te, mas nada há para dizer. O tempo da misericórdia passou. Agora há apenas justiça.
+                          
+                          A sentença ressoa como um trovão que sacode todo o teu ser:
+                          
+                          "Apartai-vos de mim, malditos, para o fogo eterno" (Mateus 25,41).
+                          
+                          E num instante, és arrancado para longe da presença de Deus.
+                          A Queda no Abismo
+                          
+                          Não há anjos para te guiar. Não há luz. Apenas um vazio aterrador que te puxa para baixo, cada vez mais fundo.
+                          
+                          O calor aumenta. Um calor que não é o de uma chama comum, mas um fogo que consome sem destruir. Um fogo que arde na própria alma. Esse fogo é a justiça de Deus, que agora te pesa como um fardo eterno.
+                          
+                          Cada vez mais rápido, és precipitado no abismo. O grito de outros condenados ecoa ao teu redor, mas ninguém te consola. Não há compaixão aqui. Não há piedade.
+                          O Primeiro Contato com o Inferno
+                          
+                          Então, cais. E agora compreendes o que é a perdição.
+                          
+                          Ao teu redor, trevas espessas, mais escuras do que qualquer noite já vista. Mas, paradoxalmente, dentro dessas trevas, tudo é visível. Como se uma luz horrível e maldita iluminasse apenas para mostrar a dor e o horror ao teu redor.
+                          
+                          A atmosfera é de desespero absoluto. Todos gritam, todos choram, mas ninguém se escuta. Todos odeiam, mas ninguém é amado.
+                          
+                          O tormento mais profundo, porém, não são as chamas, nem a dor, nem os demônios que te cercam e zombam de ti. O pior de tudo é a ausência total de Deus.
+                          
+                          Se no Purgatório as almas sofrem, mas amam a Deus e têm esperança, aqui não há esperança. Jamais verás a Deus. Jamais sentirás paz. Jamais conhecerás o alívio.
+                          
+                          E essa eternidade começou.
+                          Os Tormentos do Inferno
+                          
+                          Os Santos Padres e Doutores da Igreja descrevem os tormentos do Inferno com detalhes aterradores. Santo Afonso de Ligório fala da privação eterna da visão de Deus como o maior sofrimento de todos.
+                          
+                          Santo Tomás de Aquino ensina que os condenados serão atormentados pelo fogo, não um fogo comum, mas um fogo criado pela justiça divina, que queimará tanto a alma quanto, após a ressurreição dos mortos, o próprio corpo.
+                          
+                          Santo Agostinho fala da angústia sem fim, da dor de saber que a condenação é definitiva, que nunca haverá fim para este sofrimento.
+                          
+                          Aqui, todo desejo se torna tormento. A sede nunca será saciada. A fome nunca será alimentada. A alma deseja amor, mas só encontra ódio.
+                          
+                          Cada pecado cometido na terra se torna agora um tormento. O avarento é condenado a ver riquezas que nunca poderá tocar. O luxurioso é consumido por um desejo que nunca será satisfeito. O soberbo é esmagado pela humilhação eterna.
+                          
+                          E o pior de tudo: cada condenado sabe que este sofrimento é justo. Deus ofereceu misericórdia, mas foi rejeitada. Deus chamou à conversão, mas o pecador preferiu sua própria vontade. Agora, Deus concede ao condenado o que ele escolheu: uma eternidade sem Deus.
+                          A Eternidade sem Esperança
+                          
+                          Imagina agora o tempo passando. Séculos. Milênios. Mas para ti, não há fim. Não há relógios no Inferno. Não há manhãs. Não há noites. Apenas dor, trevas e ódio.
+                          
+                          O desespero aumenta a cada instante, porque a cada momento percebes que este é apenas o começo.
+                          
+                          O fogo nunca se apaga. O verme nunca morre. A dor nunca cessa.
+                          
+                          E Deus? Deus está infinitamente distante. Ele que te criou por amor, que te chamou tantas vezes, que morreu na Cruz para salvar-te… agora está para sempre fora do teu alcance.
+                          O Que Fazer Agora?
+                          
+                          Abre os olhos. Ainda estás vivo. Ainda há tempo.
+                          
+                          Se estás em pecado mortal, confessa-te imediatamente. Se tens vivido na tibieza, converte-te agora. Se tens negligenciado a tua alma, cuida dela antes que seja tarde demais.
+                          
+                          O Inferno não foi feito para ti. Foi feito para Satanás e seus anjos (Mateus 25,41). Mas se rejeitares a Deus, estarás escolhendo o mesmo destino deles.
+                          
+                          Cristo morreu para que tivesses a vida eterna. Ele te oferece a graça agora.
+                          
+                          Não sejas tolo a ponto de rejeitá-la.
+                          
+                          Porque um dia, o tempo acabará. E então, apenas uma dessas sentenças será pronunciada para ti:
+                          
+                          "Vinde, benditos de meu Pai, tomai posse do Reino" (Mateus 25,34).
+                          
+                          Ou...
+                          
+                          "Apartai-vos de mim, malditos, para o fogo eterno" (Mateus 25,41).
+                          
+                          Escolhe agora. Pois a eternidade depende desta escolha.
                         </p>
-                        <img src="imagem.jpg" class="card-img-top" alt="Meditação 1">
                       </div>
                     </div>
                   </div>
