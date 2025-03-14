@@ -2,160 +2,163 @@
 
 /* Variáveis de cores para a estética FSSPX (Santa Tradição) */
 :root {
-    --primary-color: #4a2c2a; /* tom escuro, marrom/bordô */
-    --secondary-color: #fdf7e3; /* tom de pergaminho */
-    --accent-color: #a67c52;    /* dourado suave */
-    --bg-color: #fdf7e3;
-    --card-bg: #ffffff;
-    --btn-primary-bg: #a67c52;
-    --btn-primary-border: #8c5a2d;
-  }
-  
-  /* Estilo base */
-  body {
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    font-family: 'Merriweather', serif;
-    transition: background-color 0.3s, color 0.3s;
-    line-height: 1.6;
-  }
-  
-  header, footer {
-    background-color: var(--secondary-color);
-  }
-  
-  /* Navbar */
-  .navbar {
-    background-color: var(--secondary-color);
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
+  --primary-color: #4a2c2a; /* tom escuro, marrom/bordô */
+  --secondary-color: #fdf7e3; /* tom de pergaminho */
+  --accent-color: #a67c52;    /* dourado suave */
+  --bg-color: #fdf7e3;
+  --card-bg: #ffffff;
+  --btn-primary-bg: #a67c52;
+  --btn-primary-border: #8c5a2d;
+}
 
-  /* HERO SECTION: ocupa a tela inteira e centraliza o conteúdo */
+/* Estilo base */
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-family: 'Merriweather', serif;
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 1.6;
+}
+
+
+
+header, footer {
+  background-color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--secondary-color);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Hero Section / Tela Inicial */
 .hero-section {
+  background: url('textura.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 150px 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   position: relative;
-  min-height: 100vh; /* preenche a altura total da tela */
-  display: flex;
-  align-items: center;     /* centraliza verticalmente */
-  justify-content: center; /* centraliza horizontalmente */
-  overflow: hidden;
-  background: #000; /* fallback simples (opcional) */
 }
 
-/* CONTEÚDO DO TEXTO (em cima do vídeo) */
-.hero-content {
-  position: relative;
-  z-index: 2;        /* fica acima do vídeo */
-  text-align: center;  
-  color: #fff;       /* texto branco para melhor contraste */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  /* Se estiver usando .container do Bootstrap, 
-     ela já tem margens laterais automáticas. */
-}
-
-/* VÍDEO DE FUNDO (posição absoluta) */
-.video-container {
+/* Efeito de escurecimento sutil */
+.hero-section::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  overflow: hidden; /* esconde o que extrapolar */
+  background: rgba(0, 0, 0, 0.3);
 }
 
-/* ESCALA O IFRAME ALÉM DE 100% PARA NÃO MOSTRAR BORDAS PRETAS */
-.video-container iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  /* Aumente para 130%, 150%, etc. caso ainda veja barras pretas 
-     em telas com proporção muito diferente de 16:9. */
-}
-
-/* OPCIONAL: em telas pequenas, aumentar ainda mais para evitar faixas pretas */
-@media (max-width: 576px) {
-  .video-container iframe {
-    width: 200%;  /* ou 220%, 250%... */
-    height: 200%;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+.hero-section h1 {
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 4.5rem;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), 1px 1px 3px gold;
+  animation: fadeIn 1.5s ease-in-out;
+
+}
 
 
 
 
-  
-  /* Cartões com bordas arredondadas e sombra */
-  .card {
-    border: none;
-    border-radius: 10px;
-    background-color: var(--card-bg);
-    transition: box-shadow 0.3s, background-color 0.3s;
-  }
-  
-  .card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Alert styling para Oração */
-  .alert {
-    background-color: var(--accent-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  /* Placeholder para o calendário (Agenda Litúrgica) */
-  .calendar-placeholder {
-    border: 2px dashed var(--accent-color);
-    border-radius: 8px;
-    background-color: #fff;
-  }
-  
-  /* Botões personalizados */
-  .btn-primary {
-    background-color: var(--btn-primary-bg);
-    border-color: var(--btn-primary-border);
-  }
-  
-  .btn-primary:hover {
-    background-color: var(--btn-primary-border);
-    border-color: var(--btn-primary-border);
-  }
-  
-  /* Estilização do contador de terço */
-  .counter-circle {
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    border-radius: 50%;
-    background-color: var(--btn-primary-bg);
-    color: #fff;
-    font-size: 3rem;
-    margin: 0 auto;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Estilização para a Agenda Litúrgica */
-  .list-group-item {
-    background-color: var(--secondary-color);
-    border: 1px solid var(--accent-color);
-  }
-  
-  /* Hover effect para imagens em Meditações e Contemplações */
-  .card-img-top {
-    transition: transform 0.3s;
-  }
-  
-  .card-img-top:hover {
-    transform: scale(1.05);
-  }
-  
+
+
+
+
+/* Cartões com bordas arredondadas e sombra */
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--card-bg);
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Alert styling para Oração */
+.alert {
+  background: linear-gradient(135deg, #a67c52, #8c5a2d);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Placeholder para o calendário (Agenda Litúrgica) */
+.calendar-placeholder {
+  border: 2px dashed var(--accent-color);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Botões personalizados */
+.btn-primary {
+  background: linear-gradient(135deg, #a67c52, #8c5a2d);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #8c5a2d, #6b3f1f);
+  transform: scale(1.05);
+}
+
+/* Estilização do contador de terço */
+.counter-circle {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  background-color: var(--btn-primary-bg);
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização para a Agenda Litúrgica */
+.list-group-item {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent-color);
+}
+
+
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* ajuste conforme necessário */
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
