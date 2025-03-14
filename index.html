@@ -30,12 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="#oracao"><i class="fas fa-praying-hands"></i> Oração do Dia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ladainhas"><i class="fas fa-plus"></i> Ladainhas</a></li>
             <li class="nav-item"><a class="nav-link" href="#liturgia"><i class="fas fa-book-bible"></i> Liturgia Diária</a></li>
             <li class="nav-item"><a class="nav-link" href="#terco"><i class="fas fa-cross"></i> Contador de Terço</a></li>
             <li class="nav-item"><a class="nav-link" href="#agenda"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico</a></li>
             <li class="nav-item"><a class="nav-link" href="#santo"><i class="fas fa-user"></i> Santo do Dia</a></li>
             <li class="nav-item"><a class="nav-link" href="#igrejas"><i class="fas fa-map-marker-alt"></i> Igrejas da Tradição</a></li>
-            <li class="nav-item"><a class="nav-link" href="catequese.html"><i class="fas fa-video"></i> Catequese</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catequese"><i class="fas fa-video"></i> Catequese</a></li>
             <li class="nav-item"><a class="nav-link" href="#meditacoes"><i class="fas fa-heartbeat"></i> Meditações</a></li>
             <li class="nav-item"><a class="nav-link" href="#contemplacoes"><i class="fas fa-eye"></i> Contemplações</a></li>
           </ul>
@@ -57,22 +58,20 @@
 
   <!-- Conteúdo Principal -->
   <main class="container">
+
+    <section>
+      <p>
+
+      </p>
+    </section>
+
     <!-- Seção: Oração do Dia -->
     <section id="oracao" class="mb-5">
       <div class="card shadow-sm">
         <div class="card-body">
           <h3 class="card-title"><i class="fas fa-praying-hands"></i> Oração do Dia</h3>
-          <p class="card-text">Selecione um tema para receber uma oração tradicional:</p>
-          <div class="mb-3">
-            <select id="temaOracao" class="form-select w-50">
-              <option value="familia">Oração pela Família</option>
-              <option value="trabalho">Oração pelo Trabalho</option>
-              <option value="cura">Oração pela Cura</option>
-            </select>
-          </div>
-          <div class="alert alert-primary" role="alert" id="textoOracao">
-            Aqui serão exibidas as orações do dia.
-          </div>
+          <p class="card-text">Selecione um tema para receber uma oração.</p>
+
           <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#oracaoDoDia">
             Orações das Horas
           </button>
@@ -89,10 +88,103 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <h6><strong>Laudes:</strong></h6>
-            <p>O Senhor é meu pastor, nada me faltará. Em verdes pastagens me faz repousar, e para águas tranquilas me conduz. Restaura minha alma; guia-me pelas veredas da justiça, por amor do Seu nome. Mesmo quando eu andar pelo vale da sombra da morte, não temerei mal algum, porque Tu estás comigo; a Tua vara e o Teu cajado me consolam. Preparas uma mesa perante mim, na presença dos meus inimigos; unges a minha cabeça com óleo; o meu cálice transborda. Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida, e habitarei na casa do Senhor por longos dias. </p>
-            <h6><strong>Completas:</strong></h6>
-            <p>Porque Deus amou tanto o mundo, que deu o Seu Filho unigênito, para que todo aquele que n'Ele crê não pereça, mas tenha a vida eterna. </p>
+            <p class="card-text">Selecione um tema para receber uma oração.</p>
+          <div class="mb-3">
+            <select id="temaOracao" class="form-select w-50">
+              <option value="familia">Oração pela Família</option>
+              <option value="trabalho">Oração pelo Trabalho</option>
+              <option value="cura">Oração pela Cura</option>
+            </select>
+          </div>
+          <div class="alert alert-primary" role="alert" id="textoOracao">
+            Aqui serão exibidas as orações do dia.
+          </div>
+            <h6 style="color:red"><strong>Laudes:</strong></h6>
+            <p><strong>Antífona:</strong> Bendigamos ao Senhor, que nos concede um novo dia para louvá-Lo e servi-Lo.
+
+              <p><strong>Salmo 62 (63), 2-9</strong></p>
+              Ó Deus, sois o meu Deus, desde a aurora Vos procuro.
+              A minha alma tem sede de Vós, minha carne por Vós anseia,
+              como terra árida, exausta, sem água.
+              
+              Quero contemplar-Vos no santuário,
+              para ver o Vosso poder e a Vossa glória.
+              Porque a Vossa graça vale mais do que a vida,
+              os meus lábios hão de cantar-Vos louvores.
+              
+              Assim Vos bendirei toda a minha vida,
+              e em vosso nome levantarei as minhas mãos.
+              Serei saciado com saborosos manjares,
+              e com vozes de júbilo Vos louvarei.
+              
+              Quando no leito me recordo de Vós,
+              passo a noite inteira a meditar em Vós.
+              Porque fostes o meu auxílio,
+              exulto de alegria à sombra das Vossas asas.
+              <p></p>
+              <p><strong>Oração Final:</strong></p>
+              Senhor Deus, Pai misericordioso, neste novo dia que nos dais, fortalecei-nos para que, em tudo o que fizermos, glorifiquemos o Vosso santo Nome. Concedei-nos a graça de viver segundo a Vossa vontade e de buscar, em cada instante, a santidade a que nos chamais. Por Cristo, nosso Senhor. Amém.</p>
+              <h6 style="color:red"><strong>Completas:</strong></h6>
+              <p><strong>Antífona: </strong>Em paz me deito e em paz adormeço, pois Vós, Senhor, me guardais.
+                <p>
+                Salmo 4
+                Quando Vos invoco, respondei-me, ó Deus de justiça.
+                Vós que me destes alívio na angústia,
+                compadecei-Vos de mim e ouvi a minha oração.
+                
+                Sabei que o Senhor faz maravilhas por Seu amigo;
+                o Senhor me ouvirá quando eu O invocar.
+                Tremei e não pequeis; refleti no silêncio dos vossos leitos.
+                Oferecei sacrifícios justos e confiai no Senhor.
+                
+                Muitos dizem: “Quem nos fará ver a felicidade?”
+                Fazei brilhar sobre nós, Senhor, a luz da Vossa face.
+                Destes alegria ao meu coração,
+                bem maior que a abundância de trigo e de vinho.
+                
+                Em paz me deito e logo adormeço,
+                porque, só Vós, Senhor, me fazeis repousar tranquilo.
+                </p>
+                <p><strong>Oração Final:</strong></p>
+                Visitai, Senhor, esta casa e afastai dela todas as ciladas do inimigo. Habitem nela os Vossos santos Anjos para nos guardarem em paz, e a Vossa bênção permaneça sempre conosco. Por Cristo, nosso Senhor. Amém.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       <!-- Seção: Ladainhas -->
+    <section id="ladainhas" class="mb-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title"><i class="fas fa-plus"></i> Ladainhas</h3>
+          <p class="card-text">Selecione uma ladainha específica.</p>
+          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ladainhasModal">
+            Ver detalhes
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Modal: Detalhes do Santo do Dia -->
+    <div class="modal fade" id="ladainhasModal" tabindex="-1" aria-labelledby="ladainhasModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ladainhasModal"><i class="fas fa-plus"></i> Ladainhas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="card-text">Selecione uma ladainha específica:</p>
+          <div class="mb-3">
+            <select id="temaLadainhas" class="form-select w-50">
+              <option value="ladainhaUm">Ladainha de Todos os Santos</option>
+              <option value="ladainhaDois">Ladainha do Santíssimo nome de Jesus</option>
+              <option value="ladainhaTres">Ladainha a Nossa Senhora</option>
+            </select>
+          </div>
+          <div class="alert alert-primary" role="alert" id="textoLadainhas">
+            Aqui serão exibidas as orações do dia.
+          </div>
           </div>
         </div>
       </div>
@@ -207,8 +299,8 @@
     <section id="agenda" class="mb-5">
       <div class="card shadow-sm">
         <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico Tradicional</h3>
-          <p class="card-text">Fique por dentro das principais festas e solenidades da Santa Tradição:</p>
+          <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico Tradicional do mês de <strong>Março</strong></h3>
+          <p class="card-text">Fique por dentro das principais festas e solenidades da Santa Igreja:</p>
           <ul class="list-group">
             <li class="list-group-item">
               <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
@@ -226,7 +318,7 @@
 
         </div>
         <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#calendarioModal">
-          Ver Detalhes
+          Ver Mais
         </button>
       </div>
 
@@ -244,53 +336,48 @@
                         <p class="card-text">Fique por dentro das principais festas e solenidades da Santa Tradição:</p>
                         <ul class="list-group">
                           <li class="list-group-item">
-                            <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
+                            <strong>18/03</strong> - Terça-feira da 2º semana da Quaresma <strong style="color: red">(3º Classe)</strong> 
                           </li>
                           <li class="list-group-item">
-                            <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
+                            <strong>19/03</strong> - São José, esposo da Santíssima Virgem e Patrono da Igreja universal <strong style="color: red">(1º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
+                            <strong>20/03</strong> - Quinta-feira da 2º semana da Quaresma <strong style="color: red">(3º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
+                            <strong>21/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
+                            <strong>22/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
+                            <strong>23/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
+                            <strong>24/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
+                            <strong>25/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
+                            <strong>26/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
+                            <strong>27/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
+                            <strong>28/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
+                            <strong>29/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
+                            <strong>30/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
                           </li>
                           <li class="list-group-item">
-                            <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
+                            <strong>31/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
                           </li>
-                          <li class="list-group-item">
-                            <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
-                          </li>
+                          
                         </ul>
                       </div>
                   </div>
@@ -305,11 +392,14 @@
           <h3 class="card-title"><i class="fas fa-user"></i> Santo do Dia</h3>
           <div class="row">
             <div class="col-md-4">
-              <img src="saopiox.jpg" alt="Santo do Dia" class="img-fluid rounded">
+              <img src="santododia.jpg" alt="Santo do Dia" class="img-fluid rounded">
             </div>
             <div class="col-md-8">
-              <h5>São Pio X</h5>
-              <p>São Pio X nasceu em 2 de junho de 1835, na pequena vila de Riese, na região de Vêneto, Itália. Seu nome de batismo era Giuseppe Melchiorre Sarto. Filho de uma família humilde, desde cedo demonstrou grande piedade e desejo de servir a Deus. Apesar das dificuldades financeiras, conseguiu estudar no seminário de Pádua e foi ordenado sacerdote em 1858.</p>
+              <p>
+
+              </p>
+              <h5>Santa Matilde de Ringelheim (895-968) – Rainha e Santa da Caridade</h5>
+              <p>Santa Matilde de Ringelheim foi uma rainha da Germânia conhecida por sua piedade, humildade e generosidade com os pobres. Nascida por volta do ano 895, era filha do conde Teodorico de Ringelheim e da condessa Reinhilda da Frísia. Desde a infância, foi educada em um convento beneditino, onde aprendeu os valores cristãos que marcaram sua vida.</p>
               <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#santoModal">Saiba Mais</button>
             </div>
           </div>
@@ -322,18 +412,11 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="santoModalLabel">Detalhes sobre São Pio X</h5>
+            <h5 class="modal-title" id="santoModalLabel">Detalhes sobre Santa Matilde de Ringelheim</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <p>Como padre, exerceu seu ministério com dedicação exemplar, sendo nomeado bispo de Mântua em 1884 e depois patriarca de Veneza em 1893. Sua reputação de santidade e zelo pastoral chamou a atenção do Vaticano, e em 1903 foi eleito Papa, adotando o nome Pio X.
-
-                São Pio X ficou conhecido por sua firme defesa da doutrina católica e pelo combate ao modernismo, que ele chamou de "síntese de todas as heresias". Entre suas principais realizações como Papa, destacam-se:
-                
-                Incentivo à comunhão frequente e à comunhão das crianças: Antes de seu pontificado, era comum que os fiéis comungassem poucas vezes ao ano. Pio X reformou essa prática, incentivando a comunhão frequente e permitindo que as crianças recebessem a Eucaristia a partir da idade da razão (cerca de 7 anos).
-                
-                Reforma litúrgica e da música sacra: Defendeu o canto gregoriano como modelo para a música litúrgica e promoveu a participação ativa dos fiéis na liturgia.
-                </p>
+            <p>Ainda jovem, Matilde casou-se com Henrique I, o Passarinho, duque da Saxônia, que mais tarde se tornou rei da Germânia (Sacro Império Romano-Germânico). Como rainha, Matilde foi uma esposa dedicada e mãe de cinco filhos, entre eles Otão I, que viria a ser imperador do Sacro Império. Mesmo vivendo na corte, manteve uma vida de oração e serviço aos necessitados. Era conhecida por sua caridade incansável, ajudando órfãos, viúvas e enfermos. Sua generosidade era tamanha que, após a morte de Henrique I, seus filhos chegaram a acusá-la de desperdiçar riquezas com os pobres, levando-a a se retirar temporariamente para um convento. Após superar os desentendimentos familiares, Matilde se dedicou ainda mais à vida de oração e fundou diversos mosteiros, igrejas e hospitais. Passou seus últimos anos no Mosteiro de Quedlimburgo, onde morreu em 14 de março de 968. Seu legado de fé e caridade fez com que fosse reconhecida como santa pela Igreja Católica, sendo celebrada em 14 de março. É considerada padroeira das mães de família e das viúvas. </p>
           </div>
         </div>
       </div>
@@ -378,72 +461,56 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                     </div>
                     <div class="modal-body">
-                      <div class="col-md-6 mb-3">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
-                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
-                            <a href="https://g.co/kgs/NQkwr5o">
-                              <button class="btn btn-outline-success">Ver no Mapa</button>
-                            </a>                </div>
+   
+                        <div class="mb-3">
+                          <label for="selectRegion" class="form-label">Selecione a Região:</label>
+                          <select id="selectRegion" class="form-select w-50">
+                            <option value="all">Todas as Regiões</option>
+                            <option value="centro-oeste">Centro-Oeste</option>
+                            <option value="sudeste">Sudeste</option>
+                            <option value="norte">Norte</option>
+                            <option value="sul">Sul</option>
+                          </select>
                         </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
-                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
-                            <a href="https://g.co/kgs/NQkwr5o">
-                              <button class="btn btn-outline-success">Ver no Mapa</button>
-                            </a>                </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
-                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
-                            <a href="https://g.co/kgs/NQkwr5o">
-                              <button class="btn btn-outline-success">Ver no Mapa</button>
-                            </a>                </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
-                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
-                            <a href="https://g.co/kgs/NQkwr5o">
-                              <button class="btn btn-outline-success">Ver no Mapa</button>
-                            </a>                </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
-                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
-                            <a href="https://g.co/kgs/NQkwr5o">
-                              <button class="btn btn-outline-success">Ver no Mapa</button>
-                            </a>                </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Capela São Pio X - FSSPX</h5>
-                            <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
-                            <a href="https://g.co/kgs/NQkwr5o">
-                              <button class="btn btn-outline-success">Ver no Mapa</button>
-                            </a>                </div>
-                        </div>
-                      </div>
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
+                        <div class="row">
+                          <!-- Card da região Centro-Oeste -->
+                          <div class="col-md-6 mb-3 card-region" data-region="centro-oeste">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">Capela Santa Maria das Vitórias</h5>
+                                <p class="card-text">Rua Espírito Santo, SN Qd E, Lt 26 e 27 - Vila Santa RITA, Anápolis - GO</p>
+                                <a href="https://g.co/kgs/W1SvqgY">
+                                  <button class="btn btn-outline-success">Ver no Mapa</button>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">Capela São Pio X - FSSPX</h5>
+                                <p class="card-text">R. Bahia, 1605 - Monte Castelo, Campo Grande - MS</p>
+                                <a href="https://g.co/kgs/NQkwr5o">
+                                  <button class="btn btn-outline-success">Ver no Mapa</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        
+                          <!-- Card da região Sudeste -->
+                          <div class="col-md-6 mb-3 card-region" data-region="sudeste">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Belo Horizonte -Missão da FSSPX
+                                  </h5>
+                                <p class="card-text">Av. Cel. José Dias Bicalho, 17
+                                  Belo Horizonte-MG</p>
+                                <a href="https://fsspx.com.br/pt">
+                                  <button class="btn btn-outline-success">Ver no Mapa</button>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
 
 
 
@@ -477,31 +544,32 @@
         <div class="card-body">
           <h3 class="card-title"><i class="fas fa-video"></i> Catequese</h3>
           <p class="card-text">Aprofunde seu conhecimento com artigos e vídeos sobre a doutrina tradicional. Clique abaixo para acessar a página de Catequese.</p>
-          <a href="catequese.html">
-            <button class="btn btn-outline-success">Catequese</button>
-          </a>
+          <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#catequeseModal">Saiba Mais</button>
+
         </div>
       </div>
     </section>
 
-    <!-- Modal: Detalhes do Santo do Dia -->
-    <div class="modal fade" id="catequeseModal" tabindex="-1" aria-labelledby="catequeseModal" aria-hidden="true">
+     <!-- Modal: Detalhes da Oração do Dia -->
+     <div class="modal fade" id="catequeseModal" tabindex="-1" aria-labelledby="catequeseModal" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="catequeseModal">Catequese</h5>
+            <h5 class="modal-title" id="catequeseModal">Orações das Horas:</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim orci. Suspendisse 
-              congue ullamcorper massa, non porta turpis porta sed. Pellentesque ut pulvinar ligula. Quisque mauris 
-              felis, condimentum id sem sed, viverra elementum nulla. Duis mattis, ex at rutrum ultrices, 
-              neque augue ornare dui, id pellentesque tellus metus eget orci. In ultrices nulla varius, 
-              accumsan massa sit amet, tempor nunc. Nullam pharetra rutrum nunc, sed suscipit libero malesuada id. 
-              Sed commodo sollicitudin mauris, quis accumsan erat placerat sit amet. Curabitur tortor arcu, rhoncus 
-              at cursus ac, imperdiet in diam. Ut dictum justo massa. Quisque vel tempus est. Vestibulum ante ipsum 
-              primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac elit velit. Cras posuere sed velit vitae tincidunt.
-                </p>
+            <p class="card-text">Selecione um tema para receber uma oração tradicional:</p>
+          <div class="mb-3">
+            <select id="temaCatequese" class="form-select w-50">
+              <option value="catequeseUm">Catequese Um</option>
+              <option value="catequeseDois">Catequese Dois</option>
+              <option value="catequeseTres">Catequese Três</option>
+            </select>
+          </div>
+          <div class="alert alert-primary" role="alert" id="textoCatequese">
+            Aqui serão exibidas as orações do dia.
+          </div>
           </div>
         </div>
       </div>
@@ -691,83 +759,47 @@
                       </div>
                       <div class="modal-body">
                         <p> "Apartai-vos de mim, malditos, para o fogo eterno, preparado para o diabo e seus anjos" (Mateus 25,41).
-
                           Fecha os olhos por um momento e imagina: o último suspiro. O coração para. Os sentidos se apagam. O mundo ao teu redor desaparece. O que antes era sólido e familiar agora é apenas um eco distante. A terra, com suas distrações, riquezas e prazeres passageiros, já não te pertence.
-                          
                           De repente, sentes que tua alma se desprende do corpo. Mas ao contrário de uma leve ascensão, há um peso esmagador. Algo te arrasta para baixo. Como um condenado que já sabe sua sentença antes mesmo de ouvi-la, percebes a terrível verdade: morreste em pecado mortal, separado da graça de Deus.
                           O Juízo Particular: O Olhar que Julga
-                          
                           Diante de ti, surge Cristo. Mas seu olhar não é mais o olhar misericordioso que chamava à conversão. Agora é um olhar de juízo. Nele, vês toda a tua vida, cada oportunidade de graça rejeitada, cada apelo à conversão ignorado, cada pecado cometido com desprezo pela santidade de Deus.
-                          
                           Tentas justificar-te, mas nada há para dizer. O tempo da misericórdia passou. Agora há apenas justiça.
-                          
                           A sentença ressoa como um trovão que sacode todo o teu ser:
-                          
                           "Apartai-vos de mim, malditos, para o fogo eterno" (Mateus 25,41).
-                          
                           E num instante, és arrancado para longe da presença de Deus.
                           A Queda no Abismo
-                          
                           Não há anjos para te guiar. Não há luz. Apenas um vazio aterrador que te puxa para baixo, cada vez mais fundo.
-                          
                           O calor aumenta. Um calor que não é o de uma chama comum, mas um fogo que consome sem destruir. Um fogo que arde na própria alma. Esse fogo é a justiça de Deus, que agora te pesa como um fardo eterno.
-                          
                           Cada vez mais rápido, és precipitado no abismo. O grito de outros condenados ecoa ao teu redor, mas ninguém te consola. Não há compaixão aqui. Não há piedade.
                           O Primeiro Contato com o Inferno
-                          
                           Então, cais. E agora compreendes o que é a perdição.
-                          
                           Ao teu redor, trevas espessas, mais escuras do que qualquer noite já vista. Mas, paradoxalmente, dentro dessas trevas, tudo é visível. Como se uma luz horrível e maldita iluminasse apenas para mostrar a dor e o horror ao teu redor.
-                          
                           A atmosfera é de desespero absoluto. Todos gritam, todos choram, mas ninguém se escuta. Todos odeiam, mas ninguém é amado.
-                          
                           O tormento mais profundo, porém, não são as chamas, nem a dor, nem os demônios que te cercam e zombam de ti. O pior de tudo é a ausência total de Deus.
-                          
                           Se no Purgatório as almas sofrem, mas amam a Deus e têm esperança, aqui não há esperança. Jamais verás a Deus. Jamais sentirás paz. Jamais conhecerás o alívio.
-                          
                           E essa eternidade começou.
                           Os Tormentos do Inferno
-                          
                           Os Santos Padres e Doutores da Igreja descrevem os tormentos do Inferno com detalhes aterradores. Santo Afonso de Ligório fala da privação eterna da visão de Deus como o maior sofrimento de todos.
-                          
                           Santo Tomás de Aquino ensina que os condenados serão atormentados pelo fogo, não um fogo comum, mas um fogo criado pela justiça divina, que queimará tanto a alma quanto, após a ressurreição dos mortos, o próprio corpo.
-                          
                           Santo Agostinho fala da angústia sem fim, da dor de saber que a condenação é definitiva, que nunca haverá fim para este sofrimento.
-                          
                           Aqui, todo desejo se torna tormento. A sede nunca será saciada. A fome nunca será alimentada. A alma deseja amor, mas só encontra ódio.
-                          
                           Cada pecado cometido na terra se torna agora um tormento. O avarento é condenado a ver riquezas que nunca poderá tocar. O luxurioso é consumido por um desejo que nunca será satisfeito. O soberbo é esmagado pela humilhação eterna.
-                          
                           E o pior de tudo: cada condenado sabe que este sofrimento é justo. Deus ofereceu misericórdia, mas foi rejeitada. Deus chamou à conversão, mas o pecador preferiu sua própria vontade. Agora, Deus concede ao condenado o que ele escolheu: uma eternidade sem Deus.
                           A Eternidade sem Esperança
-                          
                           Imagina agora o tempo passando. Séculos. Milênios. Mas para ti, não há fim. Não há relógios no Inferno. Não há manhãs. Não há noites. Apenas dor, trevas e ódio.
-                          
                           O desespero aumenta a cada instante, porque a cada momento percebes que este é apenas o começo.
-                          
                           O fogo nunca se apaga. O verme nunca morre. A dor nunca cessa.
-                          
                           E Deus? Deus está infinitamente distante. Ele que te criou por amor, que te chamou tantas vezes, que morreu na Cruz para salvar-te… agora está para sempre fora do teu alcance.
                           O Que Fazer Agora?
-                          
                           Abre os olhos. Ainda estás vivo. Ainda há tempo.
-                          
                           Se estás em pecado mortal, confessa-te imediatamente. Se tens vivido na tibieza, converte-te agora. Se tens negligenciado a tua alma, cuida dela antes que seja tarde demais.
-                          
                           O Inferno não foi feito para ti. Foi feito para Satanás e seus anjos (Mateus 25,41). Mas se rejeitares a Deus, estarás escolhendo o mesmo destino deles.
-                          
                           Cristo morreu para que tivesses a vida eterna. Ele te oferece a graça agora.
-                          
                           Não sejas tolo a ponto de rejeitá-la.
-                          
                           Porque um dia, o tempo acabará. E então, apenas uma dessas sentenças será pronunciada para ti:
-                          
                           "Vinde, benditos de meu Pai, tomai posse do Reino" (Mateus 25,34).
-                          
                           Ou...
-                          
                           "Apartai-vos de mim, malditos, para o fogo eterno" (Mateus 25,41).
-                          
                           Escolhe agora. Pois a eternidade depende desta escolha.
                         </p>
                       </div>
@@ -790,21 +822,85 @@
           <div class="row">
             <div class="col-md-6 mb-3">
               <div class="card">
-                <img src="imagem.jpg" class="card-img-top" alt="Contemplação 1">
+                <img src="imagemmisteriogozoso.jpeg" class="card-img-top" alt="Contemplação 1">
                 <div class="card-body">
-                  <h5 class="card-title">Contemplação 1</h5>
+                  <h5 class="card-title">Mistérios Gozosos</h5>
                   <p class="card-text">A serenidade que vem do encontro com o sagrado.</p>
-                  <a href="contemplacao.html" class="btn btn-outline-info">Leia Mais</a>
+                  <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#contemplacaoUm">Saiba Mais</button>
+                </div>
+                <!-- Modal: Detalhes da Contemplaçao 1 -->
+                <div class="modal fade" id="contemplacaoUm" tabindex="-1" aria-labelledby="contemplacaoUm" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="contemplacaoUm">Meditação 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p> "Apartai-va.
+                          Porque um dia, o tempo acabará. E então, apenas uma dessas sentenças será pronunciada para ti:
+                          "Vinde, benditos de meu Pai, tomai posse do Reino" (Mateus 25,34).
+                          Ou...
+                          "Apartai-vos de mim, malditos, para o fogo eterno" (Mateus 25,41).
+                          Escolhe agora. Pois a eternidade depende desta escolha.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <div class="card">
-                <img src="imagem.jpg" class="card-img-top" alt="Contemplação 2">
+                <img src="imagemmisteriodoloroso.jpeg" class="card-img-top" alt="Contemplação 2">
                 <div class="card-body">
-                  <h5 class="card-title">Contemplação 2</h5>
+                  <h5 class="card-title">Mistérios Dolorosos</h5>
                   <p class="card-text">Uma jornada visual rumo à introspecção e à paz interior.</p>
-                  <a href="contemplacao.html" class="btn btn-outline-info">Leia Mais</a>
+                  <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#contemplacaoDois">Saiba Mais</button>
+                </div>
+                <!-- Modal: Detalhes da Contemplaçao 1 -->
+                <div class="modal fade" id="contemplacaoDois" tabindex="-1" aria-labelledby="contemplacaoDois" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="contemplacaoDois">Meditação 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p> "Apartai-va.
+                          PocontemplacaoDoismim, malditos, para o fogo eterno" (Mateus 25,41).
+                          Escolhe agora. Pois a eternidade depende desta escolha.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <img src="imagemmisterioglorioso.jpeg" class="card-img-top" alt="Contemplação 2">
+                <div class="card-body">
+                  <h5 class="card-title">Mistérios Gloriosos</h5>
+                  <p class="card-text">Uma jornada visual rumo à introspecção e à paz interior.</p>
+                  <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#contemplacaoTres">Saiba Mais</button>
+                </div>
+                <!-- Modal: Detalhes da Contemplaçao 1 -->
+                <div class="modal fade" id="contemplacaoTres" tabindex="-1" aria-labelledby="contemplacaoTres" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="contemplacaoTres">Meditação 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p> "Apartai-va.
+                          contemplacaoTres, malditos, para o fogo eterno" (Mateus 25,41).
+                          Escolhe agora. Pois a eternidade depende desta escolha.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
