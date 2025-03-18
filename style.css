@@ -162,3 +162,60 @@ header, footer {
 .card-img-top:hover {
   transform: scale(1.05);
 }
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Melhorias visuais */
+.carousel-item .card {
+border: 2px solid #ccc;
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+min-height: 400px; /* Ajuste conforme necessário */
+display: flex;
+flex-direction: column;
+justify-content: space-between;      
+}
+      .carousel-indicators button {
+          background-color: #000;
+      }
+      .modal-backdrop {
+          background-color: rgba(0, 0, 0, 0.7) !important; /* Modal mais escuro */
+      }
+
+      .carousel-item .card-body {
+        flex-grow: 1; /* Faz com que o conteúdo ocupe o mesmo espaço em todas */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .carousel-item .list-group {
+        flex-grow: 1;
+        max-height: 250px; /* Ajuste conforme necessário */
+        overflow-y: auto; /* Adiciona rolagem caso tenha muitos itens */
+      }
+/* Estilo para deixar o switch mais bonito */
+.form-check-input:checked {
+  background-color: #007bff; /* Cor azul quando ativado */
+  border-color: #007bff;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.form-check-label {
+  font-weight: bold;
+  font-size: 1rem;
+}
