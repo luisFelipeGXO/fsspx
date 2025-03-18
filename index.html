@@ -67,7 +67,7 @@
     </section>
 
     <!-- Seção: Dom Lefebvre -->
-    <section id="santo" class="mb-5">
+    <section id="lefebvre" class="mb-5">
       <div class="card shadow-sm">
         <div class="card-body">
           <h3 class="card-title"><i class=""></i>✠ Dedicado a Dom Marcel Lefebvre</h3>
@@ -84,7 +84,7 @@
 
                 <p>Seu amor pela Santa Missa, seu compromisso com a formação sacerdotal e sua coragem em defender a Verdade inspiram-nos a perseverar na fidelidade a Nosso Senhor Jesus Cristo e à Sua Igreja imutável.</p>
                 
-                <p>Que este humilde trabalho contribua, ainda que de modo pequeno, para a restauração da Santa Tradição e para a glória de Deus.</p>
+                <p><em>Que este humilde trabalho contribua, ainda que de modo pequeno, para a restauração da Santa Tradição e para a glória de Deus.</em></p>
                 
                 <p><strong>Dom Marcel Lefebvre, rogai por nós!</strong></p></p>
               <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#lefebrveModal">Biografia de Dom Marcel Lefebvre</button>
@@ -126,10 +126,10 @@
       <div class="card shadow-sm">
         <div class="card-body">
           <h3 class="card-title"><i class="fas fa-praying-hands"></i> Oração do Dia</h3>
-          <p class="card-text">Selecione um tema para receber uma oração.</p>
+          <p class="card-text">Selecione uma oração específica.</p>
 
           <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#oracaoDoDia">
-            Orações das Horas
+            Orações
           </button>
         </div>
       </div>
@@ -140,17 +140,26 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="oracaoDoDia">Orações das Horas:</h5>
+            <h5 class="modal-title" id="oracaoDoDia">Orações:</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
           <div class="modal-body">
             <p class="card-text">Selecione um tema para receber uma oração.</p>
           <div class="mb-3">
             <select id="temaOracao" class="form-select w-50">
-              <option value="familia">Oração pela Família</option>
-              <option value="trabalho">Oração pelo Trabalho</option>
-              <option value="cura">Oração pela Cura</option>
+              <option value="familia">Anjo da Guarda</option>
+              <option value="trabalho">Pelas almas do Purgatório</option>
+              <option value="cura">São Pio X pela Igreja</option>
+              <option value="saomiguelarcanjo">São Miguel Arcanjo</option>
+              <option value="consagracaocoracaoimaculadomaria">Consagração ao Imaculado Coração de Maria</option>
+              <option value="confissao">Confissão</option>
             </select>
+            <!-- Switch para alternar entre Português e Latim -->
+<div class="mb-3 form-check">
+  <input type="checkbox" class="form-check-input" id="switchIdioma">
+  <label class="form-check-label" for="switchIdioma">Oração em Latim</label>
+</div>
+
           </div>
           <div class="alert alert-primary" role="alert" id="textoOracao">
             Aqui serão exibidas as orações do dia.
@@ -207,44 +216,51 @@
         </div>
       </div>
     </div>
+<!-- Seção: Ladainhas -->
+<section id="ladainhas" class="mb-5">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h3 class="card-title"><i class="fas fa-plus"></i> Ladainhas</h3>
+      <p class="card-text">Selecione uma ladainha específica.</p>
+      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ladainhasModal">
+        Ver detalhes
+      </button>
+    </div>
+  </div>
+</section>
 
-       <!-- Seção: Ladainhas -->
-    <section id="ladainhas" class="mb-5">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-plus"></i> Ladainhas</h3>
-          <p class="card-text">Selecione uma ladainha específica.</p>
-          <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ladainhasModal">
-            Ver detalhes
-          </button>
-        </div>
+<!-- Modal: Detalhes do Santo do Dia -->
+<div class="modal fade" id="ladainhasModal" tabindex="-1" aria-labelledby="ladainhasModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ladainhasModal"><i class="fas fa-plus"></i> Ladainhas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
       </div>
-    </section>
-    
-    <!-- Modal: Detalhes do Santo do Dia -->
-    <div class="modal fade" id="ladainhasModal" tabindex="-1" aria-labelledby="ladainhasModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="ladainhasModal"><i class="fas fa-plus"></i> Ladainhas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      <div class="modal-body">
+        <p class="card-text">Selecione uma ladainha específica:</p>
+        <div class="mb-3">
+          <select id="temaLadainhas" class="form-select w-50">
+            <option value="ladainhaUm">Ladainha de Todos os Santos</option>
+            <option value="ladainhaDois">Ladainha do Santíssimo Nome de Jesus</option>
+            <option value="ladainhaTres">Ladainha a Nossa Senhora</option>
+          </select>
+
+          <!-- Switch para alternar entre Português e Latim -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="switchIdiomaLadainha">
+            <label class="form-check-label" for="switchIdiomaLadainha">Oração em Latim</label>
           </div>
-          <div class="modal-body">
-            <p class="card-text">Selecione uma ladainha específica:</p>
-          <div class="mb-3">
-            <select id="temaLadainhas" class="form-select w-50">
-              <option value="ladainhaUm">Ladainha de Todos os Santos</option>
-              <option value="ladainhaDois">Ladainha do Santíssimo nome de Jesus</option>
-              <option value="ladainhaTres">Ladainha a Nossa Senhora</option>
-            </select>
-          </div>
-          <div class="alert alert-primary" role="alert" id="textoLadainhas">
-            Aqui serão exibidas as orações do dia.
-          </div>
-          </div>
+        </div>
+
+        <div class="alert alert-primary" role="alert" id="textoLadainhas">
+          Aqui serão exibidas as orações do dia.
         </div>
       </div>
     </div>
+  </div>
+</div>
+
 
     <!-- Seção: Liturgia Diária -->
     <section id="liturgia" class="mb-5">
@@ -351,95 +367,226 @@
       </div>
     </div>
 
-    <!-- Seção: Agenda Litúrgica -->
     <section id="agenda" class="mb-5">
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico Tradicional do mês de <strong>Março</strong></h3>
-          <p class="card-text">Fique por dentro das principais festas e solenidades da Santa Igreja:</p>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <strong>14/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
-            </li>
-            <li class="list-group-item">
-              <strong>15/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
-            </li>
-            <li class="list-group-item">
-              <strong>16/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
-            </li>
-            <li class="list-group-item">
-              <strong>17/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
-            </li>
-          </ul>
-
-        </div>
-        <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#calendarioModal">
-          Ver Mais
-        </button>
-      </div>
-
-              <!-- Modal: Detalhes do Santo do Dia -->
-              <div class="modal fade" id="calendarioModal" tabindex="-1" aria-labelledby="calendarioModal" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="calendarioModal">Calendário Litúrgico Tradicional</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="card-body">
-                        <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico Tradicional</h3>
-                        <p class="card-text">Fique por dentro das principais festas e solenidades da Santa Tradição:</p>
-                        <ul class="list-group">
-                          <li class="list-group-item">
-                            <strong>18/03</strong> - Terça-feira da 2º semana da Quaresma <strong style="color: red">(3º Classe)</strong> 
-                          </li>
-                          <li class="list-group-item">
-                            <strong>19/03</strong> - São José, esposo da Santíssima Virgem e Patrono da Igreja universal <strong style="color: red">(1º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>20/03</strong> - Quinta-feira da 2º semana da Quaresma <strong style="color: red">(3º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>21/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>22/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>23/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>24/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>25/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>26/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>27/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>28/03</strong> - II Domingo da Quaresma <strong style="color: red">(1º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>29/03</strong> - Segunda-feira da 2 semana da quaresma <strong style="color: red">(2º Classe)</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>30/03</strong> - Sexta-feira das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong> | <strong>Abstinência de carne</strong>
-                          </li>
-                          <li class="list-group-item">
-                            <strong>31/03</strong> - Sábado das Têmporas da Quaresma <strong style="color: red">(2º Classe)</strong>
-                          </li>
-                          
-                        </ul>
-                      </div>
-                  </div>
-                </div>
+      <div id="calendarioCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner">
+          
+          <!-- Março -->
+          <div class="carousel-item active">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Março</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
               </div>
+            </div>
+          </div>
+    
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Abril</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Maio -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Maio</strong></h3>
+                <p class="card-text">Principais solenidades do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/05</strong> - São José Operário <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>30/05</strong> - Corpus Christi <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>01/05</strong> - São José Operário <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>30/05</strong> - Corpus Christi <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>01/05</strong> - São José Operário <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>30/05</strong> - Corpus Christi <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>01/05</strong> - São José Operário <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>30/05</strong> - Corpus Christi <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>01/05</strong> - São José Operário <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>30/05</strong> - Corpus Christi <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Junho</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Julho</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Agosto</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Setembro</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Outubro</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Novembro</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Dezembro</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Janeiro</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Abril -->
+          <div class="carousel-item">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-calendar-alt"></i> Calendário Litúrgico de <strong>Fevereiro</strong></h3>
+                <p class="card-text">Confira as festas do mês:</p>
+                <ul class="list-group">
+                  <li class="list-group-item"><strong>01/04</strong> - Segunda-feira da Semana Santa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>07/04</strong> - Sexta-feira da Paixão <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                  <li class="list-group-item"><strong>09/04</strong> - Domingo de Páscoa <strong style="color: red">(1º Classe)</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- Controles do Carrossel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#calendarioCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#calendarioCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+    
+      </div>
     </section>
+    
 
     <!-- Seção: Santo do Dia -->
     <section id="santo" class="mb-5">
@@ -532,8 +679,9 @@
                         </div>
                         <div class="row">
                           <!-- Card da região Centro-Oeste -->
-                           <h1>Goiás</h1>
                           <div class="col-md-6 mb-3 card-region" data-region="centro-oeste">
+                            <h1>Goiás</h1>
+
                             <div class="card">
                               <div class="card-body">
                                 <h5 class="card-title">Capela Santa Maria das Vitórias</h5>
