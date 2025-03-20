@@ -6,104 +6,119 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 
-    const oracoes = {
-      familia: "Santo Anjo do Senhor, meu zeloso guardador, se a ti me confiou a piedade divina, sempre me rege, me guarda, me governa, me ilumina. Amém.",
-      trabalho: 
-      `Deus onipotente, Pai de bondade e de misericórdia, tende piedade das benditas almas do purgatório e ajudai a meus queridos pais e antepassados.
+const oracoes = {
+  almadecristo: 
+  `Alma de Cristo, santificai-me. 
+Corpo de Cristo, salvai-me. 
+Sangue de Cristo, inebriai-me. 
+Água do lado de Cristo, lavai-me 
+Paixão de Cristo, confortai-me. 
+Ó bom Jesus, ouvi-me. 
+Dentro das Vossas chagas, escondei-me. 
+Não permitais que eu me separe de Vós. 
+Do inimigo maligno defendei-me. 
+Na hora da minha morte, chamai-me. 
+Mandai-me ir para Vós, 
+Para que Vos louve com os Vossos Santos 
+Pelos séculos dos séculos. Ámen.
+  `,
+atodeadoracao: 
+`Meu Jesus, amo-­Vos de todo o meu coração. Arrependo-­me de, no passado, ter ofendido tantas vezes Vossa bondade infinita. Proponho, com Vossa graça, não mais Vos ofender no futuro. Nesta hora, miserável como sou, consagro-­me todo a Vós, dou e entrego-Vos minha vontade, meus afetos, meus desejos e tudo o que me pertence. Daqui em diante, fazei de mim e de tudo o que sou eu o que Vos aprouver.
 
-Jesus meu, misericórdia! Ajudai a meus irmãos e parentes.
+Somente Vos peço e quero Vosso amor, a perseverança final e o perfeito cumprimento da Vossa vontade.
 
-Jesus meu, misericórdia! Ajudai a todos meus benfeitores espirituais e temporais.
+Recomendo-Vos as almas do purgatório, especialmente as mais devotas do Santíssimo Sacramento e da Virgem Maria. Recomendo-­Vos também todos os pobres pecadores. Enfim, amado Salvador meu, uno todos os meus afetos aos afetos do Vosso coração amantíssimo e, assim unidos, eu os ofereço a Vosso eterno Pai, pedindo-­Lhe em Vosso nome e, por Vosso amor, que se digne a aceitá-­los e atendê-­los.
 
-Jesus meu, misericórdia! Ajudai aos que tem sido meus amigos e empregados.
+Ó Jesus, Pão vivo descido do Céu, como é grande Vossa bondade! Para perpetuar a fé em Vossa presença real na Eucaristia, com extraordinário poder, dignastes-Vos mudar as espécies do pão e do vinho em Carne e Sangue, como se conservam no Santuário Eucarístico de Lanciano.
 
-Jesus meu, misericórdia! Ajudai a quantos devo amor e orar.
+Aumentai sempre mais a nossa fé em Vós, Senhor sacramentado! Ardendo de amor por Vós, fazei com que, nos perigos, nas angústias e necessidades, só em Vós encontremos auxílio e consolação, ó divino Prisioneiro dos nossos tabernáculos, ó fonte inesgotável de todas as graças.
 
-Jesus meu, misericórdia! Ajudai a quantos tive prejudicado e ferido.
+Suscitai em nós a fome e a sede do Vosso alimento eucarístico, para que, saboreando este pão celeste, possamos gozar da verdadeira vida, agora e sempre. Amém.`,
+      atodecaridade: 
+      `Meu Deus, porque sois infinitamente bom e digno de ser amado sobre todas as coisas, eu Vos amo de todo o meu coração, a exemplo de Jesus; e, por Vosso amor, amo também o meu próximo como a mim mesmo. Senhor, fazei que eu Vos ame cada vez mais. Ámen.`,
+      atodecontricao: 
+`Confesso a Deus Todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo, ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os Santos e a vós, Padre, que pequei muitas vezes por pensamentos, palavras e obras.
 
-Jesus meu, misericórdia! Ajudai aos que tiveram faltado contra mim.
+Por minha culpa, minha culpa, minha máxima culpa. 
 
-Jesus meu, misericórdia! Ajudai aqueles a quem professais predileção.
+Portanto, rogo à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo, ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os Santos e a vós, Padre, que oreis por mim a Deus, Nosso Senhor.`,
+atodeesperanca: 
+      `Eu espero, meu Deus, com firme confiança, que pelos merecimentos do meu Senhor Jesus Cristo me dareis a salvação eterna e as graças necessárias para consegui-la, porque Vós, sumamente bom e poderoso, a haveis prometido a quem observar fielmente os Vossos mandamentos e o Evangelho de Jesus Cristo, como eu proponho fazer com o Vosso auxílio.
+      `,
+atodefe: 
+      `Eu creio firmemente que há um só Deus, em três Pessoas realmente distintas: Pai Filho e Espírito Santo. Creio que o Filho de Deus se fez Homem, padeceu e morreu na cruz para nos salvar, e que ao terceiro dia ressuscitou. Creio em tudo que crê e ensina a Santa Igreja Católica e Apostólica, porque Deus, verdade infalível, lhe revelou. E nesta fé quero viver e morrer. Amém.`,
+atodehumildade: 
+      `Senhor, meu Deus, eu me humilho diante de Vós, reconhecendo que sou um ser frágil e limitado. Agradeço por tudo o que me concedestes e peço perdão pelas minhas falhas. Vós, que sois a fonte de toda a sabedoria e misericórdia, guiai-me no caminho da verdade e da bondade. Que eu, com humildade, busque sempre fazer a Vossa vontade e viver conforme o Vosso exemplo de amor e serviço. Amém.
+      `,
+      atodeoferecimento: 
+      `Meu Deus, eu te ofereço todas as ações que realizarei hoje com as intenções e para a glória do Sagrado Coração de Jesus. Quero santificar as batidas do meu coração, os meus pensamentos e as minhas obras, inclusive as mais simples, unindo-as aos seus méritos infinitos, e reparar as minhas faltas lançando-as à fornalha do seu Amor misericordioso.
 
-Jesus meu, misericórdia! Ajudai aos que estão mais próximos a união convosco.
+Ó meu Deus! Quero pedir-te, para mim e para os meus entes queridos, a graça de cumprir perfeitamente a tua santa vontade, de aceitar por teu amor as alegrias e tristezas desta vida passageira, para que estejamos um dia reunidos no céu para toda a eternidade. Que assim seja.
+      `,
+      atodereparacao: 
+      `Dulcíssimo Jesus, cuja infinita caridade para com os homens é por eles tão ingratamente correspondida com esquecimentos, friezas e desprezos, eis-nos aqui prostrados na Vossa presença, para Vos desagravarmos, com especiais homenagens, da insensibilidade tão insensata e das nefandas injúrias com que é de toda parte alvejado o Vosso amorosíssimo coração.
 
-Jesus meu, misericórdia! Ajudai aos que vos desejam mais ardentemente.
+Reconhecendo, porém, com a mais profunda dor, que também nós mais de uma vez cometemos as mesmas indignidades, para nós, em primeiro lugar, imploramos a Vossa misericórdia, prontos a expiar não só as próprias culpas, senão também as daqueles que, errando longe do caminho da salvação, ou se obstinam na sua infidelidade, não Vos querendo como pastor e guia, ou, conculcando as promessas do batismo, sacudiram o suavíssimo jugo da Vossa santa lei.
 
-Jesus meu, misericórdia! Ajudai aos que sofrem mais.
+De todos estes tão deploráveis crimes, Senhor, queremos nós hoje desagravar-Vos, mais particularmente da licença dos costumes e imodéstia do vestido, de tantos laços de corrupção armados à inocência, da violação dos dias santificados, das execrandas blasfêmias contra Vós e Vossos Santos, dos insultos ao Vosso Vigário e a todo o Vosso clero, do desprezo e das horrendas e sacrílegas profanações do Sacramento do divino amor e, enfim, dos atentados e rebeldias das nações contra os direitos e o Magistério da Vossa Igreja.
 
-Jesus meu, misericórdia! Ajudai aos que estão mais longe de sua liberação.
+Oh! Se pudéssemos lavar com o próprio sangue tantas iniqüidades!
 
-Jesus meu, misericórdia! Ajudai aos que menos auxílios recebem.
+Entretanto, para reparar a honra divina ultrajada, Vos oferecemos, juntamente com os merecimentos da Virgem Mãe, de todos os santos e almas piedosas, aquela infinita satisfação, que Vós oferecestes ao eterno Pai sobre a cruz, e que não cessais de renovar todos os dias sobre nossos altares.
 
-Jesus meu, misericórdia! Ajudai aos que mais méritos tem pela Igreja.
+Ajudai-nos Senhor, com o auxílio da Vossa graça, para que possamos, como é nosso firme propósito, com a vivência da fé, com a pureza dos costumes, com a fiel observância da lei e caridade evangélicas, reparar todos os pecados cometidos por nós e por nosso próximo, impedir, por todos os meios, novas injúrias à Vossa divina Majestade e atrair ao Vosso serviço o maior número de almas possível.
 
-Jesus meu, misericórdia! Ajudai aos que foram ricos aqui, e ali são os mais pobres.
+Recebei, ó benigníssimo Jesus, pelas mãos de Maria santíssima reparadora, a espontânea homenagem deste nosso desagravo, e concedei-nos a grande graça de perseverarmos constantes, até à morte, no fiel cumprimento de nossos deveres e no Vosso santo serviço, para que possamos chegar todos à pátria bem-aventurada, onde Vós com o Pai e o Espírito Santo viveis e reinais por todos os séculos dos séculos.
 
-Jesus meu, misericórdia! Ajudai aos poderosos, que agora são como servos.
+Amém.
+      `,
+      atoderesignacao: 
+      `Senhor, Deus meu, desde já aceito de vossa mão, resignado e contente, conforme vos aprouver, todo e qualquer gênero de morte, Vosso Filho Jesus dentre os mortos, eu me entrego em Vossas mãos paternais, e espero de Vossa misericórdia ser revestido de imortalidade e acolhido em Vosso reino eterno.
+Amém.
+      `,
+      atodeuniao: 
+      `Ó Senhora minha,
+Ó minha Mãe,
+Eu me ofereço todo a Vós,
+E em prova da minha devoção para convosco,
+Vos consagro neste dia,
+Os meus olhos, os meus ouvidos,
+A minha boca, o meu coração,
+Toda a minha alma, e todo o meu ser.
+Onde quer que eu vá,
+Eu Vos pertenço.
+Ó minha boa Mãe,
+Guardai-me e defendei-me,
+Como coisa e propriedade vossa.
+Amém.
+      `,
+      bencaodamesa: 
+      `Senhor Deus, abençoai esta mesa,
+abençoai os alimentos que vamos receber,
+e a todos nós, que aqui estamos.
+Que nossa vida seja sempre regida
+pela vossa paz e amor.
+Por Cristo, nosso Senhor.
+Amém.
+      `,
+      bencaodanoite: 
+      `Em nome do Pai, do Filho e do Espírito Santo. Amém.
 
-Jesus meu, misericórdia! Ajudai aos cegos que agora reconhecem sua cegueira.
+Senhor, antes de me entregar ao sono, venho a Ti em oração, agradecendo pelo dia que passou e por todas as bênçãos que recebi. Peço-Te, Senhor, que me concedas uma noite tranquila, cheia de paz, e que me protejas de todo o mal.
 
-Jesus meu, misericórdia! Ajudai aos vaidosos que desperdiçaram seu tempo.
+Que o Teu Santo Anjo me guarde durante a noite, livrando-me de perigos e trazendo a paz para o meu coração. Que no amanhecer eu possa acordar renovado, pronto para viver um novo dia segundo a Tua vontade.
 
-Jesus meu, misericórdia! Ajudai aos pobres que não buscaram as riquezas divinas.
+Em nome de Jesus, Teu Filho amado, Te peço. Amém.
+      `,
+      bencaodolar: 
+      `Senhor, Deus Todo-Poderoso, abençoai esta casa e todos os que nela habitam. Que o vosso amor e paz estejam sempre presentes em nosso lar. Abençoai cada cômodo, os objetos e os corações de cada pessoa que aqui vive, para que possamos sempre viver em harmonia e alegria.
 
-Jesus meu, misericórdia! Ajudai aos tíbios que muito pouca oração tem feito.
+Que a vossa luz brilhe sobre nós, dissipando as trevas e as dificuldades que possam surgir. Protegei-nos, Senhor, contra todo o mal e perigo. Concedei-nos a graça de viver em união, fé, esperança e amor, seguindo o exemplo de Jesus Cristo, nosso Salvador.
 
-Jesus meu, misericórdia! Ajudai aos presunços que tem descuidado de tantas obras boas.
+Fazei de nossa casa um lugar de acolhimento, de oração e de caridade, onde todos possam sentir a vossa presença e amor.
 
-Jesus meu, misericórdia! Ajudai aos de pouca fé que descuidaram dos Santos Sacramentos.
-
-Jesus meu, misericórdia! Ajudai aos reincidentes que apenas por um milagre da graça se tem salvado.
-
-Jesus meu, misericórdia! Ajudai aos pais que não vigiaram bem a seus filhos.
-
-Jesus meu, misericórdia! Ajudai aos superiores pouco atentos a salvação de seus súditos.
-
-Jesus meu, misericórdia! Ajudai aos pobres homens, que quase apenas se preocuparam do dinheiro e do prazer.
-
-Jesus meu, misericórdia! Ajudai aos de espírito mundano que não aproveitaram suas riquezas ou talentos para o céu.
-
-Jesus meu, misericórdia! Ajudai aos néscios, que viram morrer a tantos não se lembrando de sua própria morte.
-
-Jesus meu, misericórdia! Ajudai aos que não dispuseram a tempo de sua casa, estando completamente desprevenidos para a viagem mais importante.
-
-Jesus meu, misericórdia! Ajudai aos que julgais mais severamente, quanto mais lhes foi confiado.
-
-Jesus meu, misericórdia! Ajudai aos pontífices, reis e príncipes.
-
-Jesus meu, misericórdia! Ajudai aos bispos e seus conselheiros.
-
-Jesus meu, misericórdia! Ajudai a meus mestres e pastores de almas.
-
-Jesus meu, misericórdia! Ajudai aos finados sacerdotes desta diocese.
-
-Jesus meu, misericórdia! Ajudai aos sacerdotes e religiosos da Igreja católica.
-
-Jesus meu, misericórdia! Ajudai aos defensores da santa fé.
-
-Jesus meu, misericórdia! Ajudai aos caídos nos campos de batalha.
-
-Jesus meu, misericórdia! Ajudai aos sepultados nos mares.
-
-Jesus meu, misericórdia! Ajudai aos mortos repentinamente.
-
-Jesus meu, misericórdia! Ajudai aos falecidos sem receber os Santos Sacramentos.
-
-Jesus meu, misericórdia! Dai-lhes, Senhor, a todas as almas o descanso eterno.
-
-Jesus meu, misericórdia! E fazei brilhar sobre elas vossa eterna luz.
-
-Jesus meu, misericórdia! Que em paz descansem.
-
-Jesus meu, misericórdia! Amém.`,
-      cura: "Ó Santo Pontífice, fiel servo do Senhor, fiel e humilde discípulo do divino Mestre. Na dor e na alegria, nos trabalhos e nas solicitudes, experimentado pastor do rebanho de Cristo, volvei o vosso olhar sobre nós.  Árduos são os tempos em que vivemos. Duras as fadigas que de nós exigem. A Esposa de Cristo, confiada aos vossos cuidados, está de novo em angústias terríveis. Os vossos filhos se vêem ameaçados por inúmeros perigos na alma e no corpo.  O espírito do mundo, qual leão enfurecido, rodeia-nos buscando a quem devorar. Não poucos caem nas suas garras. Têm olhos e não vêem. Têm ouvidos e não ouvem.  Fecham os olhos à luz da eterna verdade, preferindo dar ouvidos às vozes que insinuam mensagens enganadoras.  Vós que fostes na terra grande animador e guia do povo de Deus, sede auxílio e intercessor nosso e de todos os que se professam seguidores de Cristo.  Vós, cujo coração se rompeu quando o mundo se precipitou em sanguinolenta luta, socorrei a humanidade, a cristandade, exposta presentemente a semelhantes abalos.  Obtende-nos da misericórdia divina o dom da paz duradoura e, como aproximação, o retorno dos espíritos àquele sentido de fraternidade, que somente pode dar aos homens e as nações a justiça e a concórdia desejadas por Deus. Assim seja.",
-      saomiguelarcanjo: 
-`São Miguel Arcanjo, defendei-nos no combate.
-Sede o nosso refúgio contra as maldades e ciladas do demônio.
-Que Deus manifeste o seu poder sobre ele. Eis a nossa humilde súplica.
-E vós, Príncipe da Milícia Celeste, com o poder que Deus vos conferiu,
-precipitai no inferno Satanás e os outros espíritos malignos,
-que andam pelo mundo tentando as almas. Amém.`,
+Por Cristo, nosso Senhor. Amém.
+      `,
       consagracaocoracaoimaculadomaria: 
       `Ó Maria, Mãe de Deus e nossa Mãe, recorremos a Vós nesta hora de tribulação. Vós sois Mãe, amais-nos e conheceis-nos: de quanto temos no coração, nada Vos é oculto. Mãe de misericórdia, muitas vezes experimentamos a vossa ternura providente, a vossa presença que faz voltar a paz, porque sempre nos guiais para Jesus, Príncipe da paz.
 
@@ -131,141 +146,427 @@ Santa Mãe de Deus, enquanto estáveis ao pé da cruz, Jesus, ao ver o discípul
 
 Por isso nós, ó Mãe de Deus e nossa, solenemente confiamos e consagramos ao vosso Imaculado Coração nós mesmos, a Igreja e a humanidade inteira, de modo especial a Rússia e a Ucrânia. Acolhei este nosso ato que realizamos com confiança e amor, fazei que cesse a guerra, providenciai ao mundo a paz. O sim que brotou do vosso Coração abriu as portas da história ao Príncipe da Paz; confiamos que mais uma vez, por meio do vosso Coração, virá a paz. Assim a Vós consagramos o futuro da família humana inteira, as necessidades e os anseios dos povos, as angústias e as esperanças do mundo.
 
-Por vosso intermédio, derrame-se sobre a Terra a Misericórdia divina e o doce palpitar da paz volte a marcar as nossas jornadas. Mulher do sim, sobre Quem desceu o Espírito Santo, trazei de volta ao nosso meio a harmonia de Deus. Dessedentai a aridez do nosso coração, Vós que «sois fonte viva de esperança». Tecestes a humanidade para Jesus, fazei de nós artesãos de comunhão. Caminhastes pelas nossas estradas, guiai-nos pelas sendas da paz. Amen.`,
-confissao: 
-`Confesso a Deus Todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo, ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os Santos e a vós, Padre, que pequei muitas vezes por pensamentos, palavras e obras.
+Por vosso intermédio, derrame-se sobre a Terra a Misericórdia divina e o doce palpitar da paz volte a marcar as nossas jornadas. Mulher do sim, sobre Quem desceu o Espírito Santo, trazei de volta ao nosso meio a harmonia de Deus. Dessedentai a aridez do nosso coração, Vós que «sois fonte viva de esperança». Tecestes a humanidade para Jesus, fazei de nós artesãos de comunhão. Caminhastes pelas nossas estradas, guiai-nos pelas sendas da paz. Amém.
+`,
+      consagracaoaosagradocoracaodejesus: 
+      `Eu me dou e consagro ao sagrado Coração de nosso Senhor Jesus Cristo: minha pessoa e minha vida, minhas ações, meus trabalhos e meus sofrimentos, a fim de no futuro pregar tudo quanto sou e tenho, unicamente para sua honra, amor e glória. É minha resolução irrevogável ser inteiramente dele e fazer tudo por seu amor, renunciando de todo o meu coração a tudo que lhe puder desagradar. Portanto, o Coração Sagrado, eu vos escolho para único objeto de meu amor, para protetor de minha vida, penhor de minha salvação, amparo de minha fragilidade e inconstância, reparação de todas as faltas de minha vida e asilo seguro na hora de minha morte. Coração de ternura e bondade, sede Vós minha justificação diante de Deus vosso Pai e afastai de mim os castigos de sua justa cólera. Coração de amor, em Vós ponho toda a minha confiança; de minha fraqueza e maldade tudo temo, mas de Vossa bondade tudo espero. Consumi, pois, em mim, tudo o que puder desagradar-vos ou se opor a Vós. Imprimi o Vosso puro amor tão firmemente no meu coração, que nunca mais Vos possa esquecer nem nunca possa de vós me separar, Coração Sagrado, eu vos conjuro, por toda a Vossa bondade, que o meu nome seja profundamente gravado em Vós, pois eu quero que toda a minha felicidade e glória seja viver e morrer no Vosso serviço. Amém.
+      `,
+      consagracaoanossasenhora: 
+      `Ó minha Senhora, minha Mãe, eu me ofereço inteiramente a vós, e em prova de minha devoção, eu vos consagro neste dia, meus olhos, meus ouvidos, minha boca, meu coração, minha vida, tudo o que sou, tudo o que tenho. Porque sois minha Mãe, quero servir-vos com todo o meu ser. Aceitai-me como vosso e, como Mãe amorosa, conduzi-me sempre para o caminho de vosso Filho, Jesus.
 
-Por minha culpa, minha culpa, minha máxima culpa. 
+Maria, Mãe da Igreja, intercedei por nós, agora e na hora de nossa morte. Amém.
+      `,
+      consagracaoasaojose: 
+      `Ó glorioso São José, que Deus escolheu para pai adotivo de Jesus, para Esposo puríssimo da Virgem Maria e chefe da Sagrada família, e que o Sumo Pontífice declarou Padroeiro e Protetor da Igreja fundada por Jesus, eu recorro a vós neste momento e imploro com a maior confiança, o vosso poderoso auxilio para toda a Igreja militante.
 
-Portanto, rogo à bem-aventurada sempre Virgem Maria, ao bem-aventurado Miguel Arcanjo, ao bem-aventurado João Batista, aos santos Apóstolos Pedro e Paulo, e a todos os Santos e a vós, Padre, que oreis por mim a Deus, Nosso Senhor.`
+Protejei, e especialmente, com vosso amor verdadeiramente paternal, o Vigário de Cristo e todos os Bispos e Sacerdotes, unidos à Santa Sé de Pedro.
+Defendei os que trabalham pela salvação das almas, entre as angústias de tribulações desta vida, e fazei que todos os povos da Terra se sujeitem docilmente à Igreja, que é o meio de salvação necessário para todos.
+
+Dignai-vos também, meu querido São José, aceitar a consagração que vos faço de mim mesmo. Eu me ofereço todo a vós, para que sejais sempre meu pai, o meu protetor e meu guia no caminho da salvação. Alcançai-me uma grande pureza de coração e um amor ardente à vida interior.
+
+Fazei que seguindo o vosso exemplo, todas as minhas obras sejam dirigidas para a maior gloria de Deus em união como o Coração Divino de Jesus e com o Coração imaculado de Maria e convosco. Amém. 
+      `,
+      credo:
+      `textodaoracao
+      `,
+      defendeinosnocombate:
+      `textodaoracao
+      `,
+      deprofundis:
+      `textodaoracao
+      `,
+      devocionario:
+      `textodaoracao
+      `,
+      exorcismodesaobento:
+      `textodaoracao
+      `,
+      exorcismodesaomiguel:
+      `textodaoracao
+      `,
+      gloriaaopai:
+      `textodaoracao
+      `,
+      gozosdenossasenhoradocarmo:
+      `textodaoracao
+      `,
+      gozosdenossasenhoradoperpetuosocorro:
+      `textodaoracao
+      `,
+      hinoacristorei:
+      `textodaoracao
+      `,
+      hinoaoespiritosanto:
+      `textodaoracao
+      `,
+      hinoasaomiguelarcanjo:
+      `textodaoracao
+      `,
+      hinodaigrejatriunfante:
+      `textodaoracao
+      `,
+      jesusmariajose:
+      `textodaoracao
+      `,
+      magnificat:
+      `textodaoracao
+      `,
+      nomedmiserereaoracao:
+      `textodaoracao
+      `,
+      memorare:
+      `textodaoracao
+      `,
+      oracaoanossasenhoraauxiliadora:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradaassuncao:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradasgracas:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradefatima:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradocarmo:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradoperpetuosocorro:
+      `textodaoracao
+      `,
+      oracaoasaobento:
+      `textodaoracao
+      `,
+      oracaoasaofranciscodeassis:
+      `textodaoracao
+      `,
+      oracaoasaojosepelapureza:
+      `textodaoracao
+      `,
+      oracaoasaomiguelarcanjo:
+      `textodaoracao
+      `,
+      oracaoasantateresinhadomeninojesus:
+      `textodaoracao
+      `,
+      oracaodaconfiancaemmaria:
+      `textodaoracao
+      `,
+      oracaodeagradecimento:
+      `textodaoracao
+      `,
+      oracaodeconsagracaoaoespiritosanto:
+      `textodaoracao
+      `,
+      oracaodesaobernardo:
+      `textodaoracao
+      `,
+      oracaoantescomunhao:
+      `textodaoracao
+      `,
+      oracaodepoiscomunhao:
+      `textodaoracao
+      `,
+      oracaoaoanjodeportugal:
+      `textodaoracao
+      `,
+      oracaodoperdao:
+      `textodaoracao
+      `,
+      oracaopelosagonizantes:
+      `textodaoracao
+      `,
+      oracaopelossacerdotes:
+      `textodaoracao
+      `,
+      painosso:
+      `textodaoracao
+      `,
+      pelasalmasdopurgatorio:
+      `textodaoracao
+      `,
+      pequenoexorcismo:
+      `textodaoracao
+      `,
+      pequenooficio:
+      `textodaoracao
+      `,
+      precepelosfalecidos:
+      `textodaoracao
+      `,
+      precesdaboamorte:
+      `textodaoracao
+      `,
+      precesparaantesdaconfissao:
+      `textodaoracao
+      `,
+      precesparadepoisdaconfissao:
+      `textodaoracao
+      `,
+      reginacaeli:
+      `textodaoracao
+      `,
+      salmonoventa:
+      `textodaoracao
+      `,
+      salverainha:
+      `textodaoracao
+      `,
+      saopioxpelaigreja:
+      `textodaoracao
+      `,
+      subtuumpraesidium:
+      `textodaoracao
+      `,
+      tedeum:
+      `textodaoracao
+      `,
+      visitaaosantissimosacramento:
+      `textodaoracao
+      `
     };
   
-   
-  
-
     const oracoesLatim = {
-      familia: "Angele Dei, qui custos es mei, me tibi commíssum pietáte supérna, illúmina, custódi, rege et gubérna. ",
-      trabalho: 
-      `Deus omnipotens, Pater bonitatis et misericordiae, miserere animarum beatarum purgatorii et adiuva meos carissimos parentes et maiores.
+      almadecristo: 
+      `Anima Christi, sanctífica me.
+Corpus Christi, salva me.
+Sanguis Christi, inébria me.
+Aqua láteris Christi, lava me.
+Pássio Christi, confórta me.
+O bone Iesu, exáudi me.
+Intra tua vúlnera abscónde me.
+Ne permíttas me separári a te.
+Ab hoste malígno defénde me.
+In hora mortis meæ voca me.
+Et iube me veníre ad te, ut cum Sanctis tuis laudem te in sæcula sæculórum.
+Amen
+      `,
+      atodeadoracao: 
+      `Domine Iesu, te amo ex toto corde meo. Poenitet me, quod praeteritum tempus tuam infinitam bonitatem saepissime offendi. Propono, tua gratia, ne amplius te offendam in futurum. In hoc momento, miserrimus ut sum, me totum tibi consecro, do et tradam tibi voluntatem meam, affectus meos, desideria mea et omnia quae mihi pertinent. Ab hoc momento, fac de me et de omnibus quae sum ut tibi placuerit.
 
-Iesus meus, misericordia! Adiuva fratres meos et cognatos.
+Solum peto et volo amorem tuum, perseverantiam finalem et perfectum implendum voluntatis tuae.
 
-Iesus meus, misericordia! Adiuva omnes benefactores meos spirituales et temporales.
+Commendo tibi animas purgatorii, praesertim eas quae maxime devotae sunt Sacramento Sanctissimo et Virgini Mariae. Commendo tibi etiam omnes pauperes peccatores. Denique, amatus Salvator meus, unio omnes affectus meos affectibus cordis tui amantissimi et, ita uniti, offero eos Patri tuo aeterno, rogans eum in nomine tuo et pro amore tuo, ut dignetur accipere eos et exaudire.
 
-Iesus meus, misericordia! Adiuva eos, qui fuerunt amici mei et servi.
+O Iesu, Panis vivus descendens de Caelo, quantus est tua bonitas! Ut fidem tuam in praesentia reali Eucharistiae perpetuaret, mirabili potestate dignatus es species panis et vini in Caro et Sanguinem converti, sicut conservantur in Sanctuario Eucharistico Lanciani.
 
-Iesus meus, misericordia! Adiuva omnes, quibus debeo amorem et orationem.
+Augmenta semper fidem nostram in te, Domine sacramentato! Aestuans amore tui, fac ut, in periculis, angustia et necessitatibus, solum in te auxilium et consolationem inveniamus, o divinum Captivum in tabernaculis nostris, o fons inexhaustibilis omnium gratiarum.
 
-Iesus meus, misericordia! Adiuva eos, quos laesi et vulneravi.
-
-Iesus meus, misericordia! Adiuva eos, qui mihi defecerunt.
-
-Iesus meus, misericordia! Adiuva illos, quibus tu potius favorem praestitisti.
-
-Iesus meus, misericordia! Adiuva eos, qui sunt propinquiores unionem tecum.
-
-Iesus meus, misericordia! Adiuva eos, qui ardentius te cupiunt.
-
-Iesus meus, misericordia! Adiuva eos, qui magis dolorum laborant.
-
-Iesus meus, misericordia! Adiuva eos, qui longius sunt a liberatione sua.
-
-Iesus meus, misericordia! Adiuva eos, qui minimum auxilium accipiunt.
-
-Iesus meus, misericordia! Adiuva eos, qui maxima merita habent pro Ecclesia.
-
-Iesus meus, misericordia! Adiuva eos, qui hic divites fuerunt, et ibi sunt pauperes.
-
-Iesus meus, misericordia! Adiuva eos, qui potentes erant et nunc sunt servi.
-
-Iesus meus, misericordia! Adiuva eos, qui caeci sunt et nunc suam caecitatem agnoscunt.
-
-Iesus meus, misericordia! Adiuva eos, qui vani fuerunt et tempus suum dissipaverunt.
-
-Iesus meus, misericordia! Adiuva eos, qui pauperes sunt et divitias divinas non quaesierunt.
-
-Iesus meus, misericordia! Adiuva eos, qui tepidi sunt et modicam orationem fecerunt.
-
-Iesus meus, misericordia! Adiuva eos, qui superbi fuerunt et multum neglexerunt bona opera.
-
-Iesus meus, misericordia! Adiuva eos, qui parvam fidem habent et Sacramenta Sancta neglexerunt.
-
-Iesus meus, misericordia! Adiuva eos, qui peccaverunt et per miraculum gratiae servati sunt.
-
-Iesus meus, misericordia! Adiuva parentes, qui filios suos non bene custodiverunt.
-
-Iesus meus, misericordia! Adiuva superiores, qui non satis curaverunt salutem subditorum.
-
-Iesus meus, misericordia! Adiuva pauperes homines, qui solum de pecunia et voluptate curaverunt.
-
-Iesus meus, misericordia! Adiuva eos, qui spiritum mundanum habent et divitias vel dona sua ad caelum non convertissent.
-
-Iesus meus, misericordia! Adiuva nescientes, qui videntes mortem multorum, sui mortis memores non fuerunt.
-
-Iesus meus, misericordia! Adiuva eos, qui tempus domum suam non paraverunt et ad viam maximam omnino immemores venerunt.
-
-Iesus meus, misericordia! Adiuva eos, quos severius iudicasti, quantum eis fuerit commissum.
-
-Iesus meus, misericordia! Adiuva pontifices, reges et principes.
-
-Iesus meus, misericordia! Adiuva episcopos et eorum consiliarios.
-
-Iesus meus, misericordia! Adiuva magistris meis et pastoribus animarum.
-
-Iesus meus, misericordia! Adiuva sacerdotes defunctos huius dioecesis.
-
-Iesus meus, misericordia! Adiuva sacerdotes et religiosos Ecclesiae catholicae.
-
-Iesus meus, misericordia! Adiuva defensores sanctae fidei.
-
-Iesus meus, misericordia! Adiuva eos, qui in acie pugnant.
-
-Iesus meus, misericordia! Adiuva eos, qui in mari sepulti sunt.
-
-Iesus meus, misericordia! Adiuva eos, qui subito mortui sunt.
-
-Iesus meus, misericordia! Adiuva eos, qui sine Sacramentis Sanctis decesserunt.
-
-Iesus meus, misericordia! Da eis, Domine, omnium animarum requiem aeternam.
-
-Iesus meus, misericordia! Et fac illis fulgere lumen aeternum tuum.
-
-Iesus meus, misericordia! Ut in pace requiescant.
-
-Iesus meus, misericordia! Amen.`,
-      cura: 
-      `O Sancte Pontifex, fidelis servus Domini, fidelis et humilis discipulus divini Magistri. In dolore et in gaudio, in laboribus et sollicitudinibus, pastor experientissimus gregis Christi, conversus oculos tuos super nos. Durae sunt tempora quibus vivimus. Gravissimae sunt laboriosae exigentiae a nobis. Sponsa Christi, cui curas vestri commisit, iterum in angustiis terribilibus versatur. Filii tui variis periculis in anima et corpore oppressi sunt. Spiritus mundi, quasi leo furibundus, nos circumvenit quaerens quem devorare. Non pauci in manus eius cadunt. Oculos habent et non vident. Aures habent et non audiunt. Oculos a luce aeternae veritatis claudent, malunt aures praebere vocibus, quae dolosas nuntiant.
-      Tu, qui in terra magnus animosus et dux populi Dei fuisti, adiuva et intercessor noster et omnium qui se Christo sectatores profitentur. Tu, cuius cor contritum est cum mundus in sanguinolentam pugnam se praecipitavit, succurre humanitati, christianae fidei, nunc talibus perturbationibus obnoxiae. Obtine nobis a misericordia divina donum pacis perpetuae et, ut adveniat, reditus spirituum ad fratrum sensum, quem solus Deus hominibus et nationibus dare potest, iustitiam et concordiam desideratam. Sic sit.`,
-      saomiguelarcanjo: "Sancte Michael Archangele, defende nos in praelio, contra nequitiam et insidias diaboli esto praesidium. Imperet illi Deus, supplices deprecamur: tuque, Princeps militiae caelestis, Satanam aliosque spiritus malignos, qui ad perditionem animarum pervagantur in mundo, divina virtute in infernum detrude. Amen.",
-      consagracaocoracaoimaculadomaria: 
-      `O Maria, Mater Dei et Mater nostra, confugimus ad Te in hoc tempore tribulationis. Tu es Mater, amasti nos et nos cognoscis: de omnibus quae in corde habemus, nihil tibi est occultum. Mater misericordiae, saepe experti sumus tuam providentem clementiam, tuam praesentiam quae pacem reparat, quia semper nos ducis ad Iesum, Principem pacis.
-
-Sed amisimus viam pacis. Obliviscimur lectionem tragediarum saeculi praeteriti, sacrificium milionum mortuorum in bellis mundanis. Neglegimus obligationes, quas tamquam Communitas Nationum suscepimus, et proditores sumus somniorum pacis populorum et spei iuvenum. Avaritia nos adfecit, claudimur in studiis nationalisticis, indifferentiæ nos sequi permitimus et aegri sumus ab egoismo. Malumus Deum ignorare, vivere cum nostris mendaciis, alere aggressivitatem, supprimere vitae et arma cumulanda, obliviscendo nos esse custodientes proximi nostri et ipsius domus communis. Bellum laceravit hortum Terrae, peccatum vulneravit cor Patris nostri, qui fratres et sorores nos vult. Facti sumus indifferentes ad omnia et ad cuncta, nisi ad nos ipsos. Et, cum verecundia, dicimus: ignosce nobis, Domine!
-
-In miseria peccati, laboribus et fragilitate nostra, in mysterio iniquitatis mali et belli, tu, Mater Sancta, mone nos Deum non nos derelinquere, sed nos amare perseverare et nobis iterum ignoscere et suscitare. Ipse qui nos tibi dedit et in Immaculato Corde tuo posuit refugium Ecclesiae et hominum. Ob bonitatem divinam, es nobiscum et dulciter nos ducis etiam in angustiis historiae.
-
-Ideo confugimus ad Te, pulsamus ad januam Corde tuo, nos filii tui dilectissimi, qui nunquam defatigaris nos visitare omni tempore et ad conversionem invitem. In hac hora obscura, veni ad auxilium nostrum et consolationem. Repeti unicuique nostrum: "Non sumne ego hic, quae mater tua sum?" Tu nosti quomodo dissipare nodos cordis nostri et solvere vincula temporis nostri. Restituimus fiduciam nostram in Te. Certi sumus quod Tu, praesertim in momento probationis, non despicis preces nostras et venis in auxilium nostrum.
-
-Sic fecisti in Cana Galilaeae, cum festinasti horam interventionis Iesu et introduxisti primum signum suum in mundo. Cum festum in tristitiam mutatum esset, dixisti ei: "Vinum non habent!" (Io 2, 3). O Mater, iterum hoc dicite Deo, quia hodie vinum spei exhaustum est, laetitia evanuit, fraternitas diluta est. Perdidimus humanitatem, pacem dissipavimus. Facti sumus capaces omnium violentiae et destructionis. Urgente necessitate interventionis tuae maternae.
-
-Ideo accipe, O Mater, hanc nostram supplicationem: Tu, stella maris, non sinas nos naufragare in tempestate belli; Tu, arca novi foederis, inspira consilia et vias reconciliationis; Tu, "terra caeli", revertere in mundum concordiam Dei; Extinguas odium, sedes ultionem, doceas nos veniam; Libera nos a bello, praeserva mundum a minatione nucleari; Regina Rosarii, excita in nobis necessitatem orandi et amandi; Regina humanae familiae, monstra populis viam fraternitatis; Regina pacis, obtine pacem mundo.
-
-Luctus tuus, O Mater, commoveat corda nostra duritia. Lacrimae, quas pro nobis fudiisti, faciant refluere hunc vallem quem odium nostrum siccavit. Et, dum fragor armorum non sileat, oratio tua nos praeparabit ad pacem. Manus tuae maternae leniant eos qui dolorum sub onere bombarum patiuntur et fugient. Complexus tuus maternos consolare eos, qui domos suas et patriam relinquere coguntur. Cor tuum dolorum moveat nos ad compassionem et excitet nos ad portas apertas et curam humanitatis vulneratae et reiectae.
-
-Sancta Mater Dei, dum ad crucem stabas, Iesus, discipulum videns a te, dixit: "Ecce filius tuus!" (Io 19, 26). Sic confidi nobis singulos. Deinde dixit discipulo, unicuique nostrum: "Ecce mater tua!" (Io 19, 27). Mater, nunc volumus te accipere in vita nostra et in historia nostra. In hac hora, humanitas, fessa et turbata, est ad crucem tecum. Et opus habet se tibi committere, se Christi per te consecrare. Populus Ucrainae et populus Russiae, qui te amore venerantur, confugiunt ad Te, dum cor tuum palpitans pro eis et pro omnibus populis a bello, fame, iniustitia et miseria deminutis.
-
-Ideo nos, O Mater Dei et nostra, solenni modo confestim et consacramus Immaculato Corde tuo nos ipsos, Ecclesiam et totam humanitatem, specialiter Russiam et Ucrainam. Accipe hoc actum nostrum quem confide et amore perficimus, fac ut bellum cesset, provide pacem mundo. Sic fiat ut per cor tuum pacem afferat. Sic confestim dedicamus futurum humanitatis universae, necessitates et desideria populorum, angustias et spem mundi.
-
-Per te, effundatur super Terram Misericordia divina et dulcis pulsatio pacis redeat in vias nostras. Mulier sim, super quam Spiritus Sanctus descendit, revertere harmoniam Dei inter nos. Seca ariditatem cordis nostri, quae "es fons vivus spei". Texuisti humanitatem Iesu, fac nos artifices communionis. Perambulasti vias nostras, duce nos per semitas pacis. Amen.`,
-      confissao: 
+Excita in nobis famem et sitim tuae Eucharistici cibi, ut, gustando hunc panem caelestem, veram vitam gustare possimus, nunc et semper. Amen.`,
+      atodecaridade: `Deus meus, quia es infinitus bonus et dignus amari super omnia, te amo ex toto corde meo, exemplo Iesu; et, propter amorem tuum, amo etiam proximum meum sicut me ipsum. Domine, fac ut te amem semper magis. Amen.`,
+      atodecontricao: 
       `Confiteor Deo omnipotenti, beatae Mariae semper Virgini, beato Michaeli Archangelo, beato Joanni Baptistae, sanctis apostolis Petro et Paulo, omnibus Sanctis, et tibi, Pater, quia peccavi nimis cogitatione, verbo et opere.
 
 Mea culpa, mea culpa, mea maxima culpa.
 
-Ideo precor beatam Mariam semper Virginem, beatum Michaelem Archangelum, beatum Joanem Baptistam, Sanctos apostolos Petrum et Paulum, omnes Sanctos, et Te, Pater, orare pro me ad Dominum Deum nostrum.`
-    };
+Ideo precor beatam Mariam semper Virginem, beatum Michaelem Archangelum, beatum Joanem Baptistam, Sanctos apostolos Petrum et Paulum, omnes Sanctos, et Te, Pater, orare pro me ad Dominum Deum nostrum.`,
+atodeesperanca: 
+      `Spero, Deus meus, cum firma fiducia, quod per merita Domini mei Iesu Christi salutem aeternam et gratias necessarias ad eam consequendam mihi dabitis, quia Tu, summe bonus et potens, promissisti eam iis qui fideliter mandata Tua et Evangelium Iesu Christi servaverint, sicut ego propono facere auxilio Tuo.
+      `,
+      atodefe: 
+      `Confiteor Deo omnipotenti, beatae Mariae semper Virgini, beato Michaeli Archangelo, beato Joanni Baptistae, sanctis apostolis Petro et Paulo, omnibus Sanctis, et tibi, Pater, quia peccavi nimis cogitatione, verbo et opere.
 
-    const switchIdioma = document.getElementById('switchIdioma');  // O switch para alternar o idioma
+Mea culpa, mea culpa, mea maxima culpa.
+
+Ideo precor beatam Mariam semper Virginem, beatum Michaelem Archangelum, beatum Joanem Baptistam, Sanctos apostolos Petrum et Paulum, omnes Sanctos, et Te, Pater, orare pro me ad Dominum Deum nostrum.`,
+atodehumildade: 
+      `textodaoracao
+      `,
+      atodeoferecimento: 
+      `textodaoracao
+      `,
+      atodereparacao: 
+      `textodaoracao
+      `,
+      atoderesignacao: 
+      `textodaoracao
+      `,
+      atodeuniao: 
+      `textodaoracao
+      `,
+      bencaodamesa: 
+      `textodaoracao
+      `,
+      bencaodanoite: 
+      `textodaoracao
+      `,
+      bencaodolar: 
+      `textodaoracao
+      `,
+      consagracaocoracaoimaculadomaria: 
+      `textodaoracao
+      `,
+      consagracaoaosagradocoracaodejesus: 
+      `textodaoracao
+      `,
+      consagracaoanossasenhora: 
+      `textodaoracao
+      `,
+      consagracaoasaojose: 
+      `textodaoracao
+      `,
+      credo:
+      `textodaoracao
+      `,
+      defendeinosnocombate:
+      `textodaoracao
+      `,
+      deprofundis:
+      `textodaoracao
+      `,
+      devocionario:
+      `textodaoracao
+      `,
+      exorcismodesaobento:
+      `textodaoracao
+      `,
+      exorcismodesaomiguel:
+      `textodaoracao
+      `,
+      gloriaaopai:
+      `textodaoracao
+      `,
+      gozosdenossasenhoradocarmo:
+      `textodaoracao
+      `,
+      gozosdenossasenhoradoperpetuosocorro:
+      `textodaoracao
+      `,
+      hinoacristorei:
+      `textodaoracao
+      `,
+      hinoaoespiritosanto:
+      `textodaoracao
+      `,
+      hinoasaomiguelarcanjo:
+      `textodaoracao
+      `,
+      hinodaigrejatriunfante:
+      `textodaoracao
+      `,
+      jesusmariajose:
+      `textodaoracao
+      `,
+      magnificat:
+      `textodaoracao
+      `,
+      nomedmiserereaoracao:
+      `textodaoracao
+      `,
+      memorare:
+      `textodaoracao
+      `,
+      oracaoanossasenhoraauxiliadora:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradaassuncao:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradasgracas:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradefatima:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradocarmo:
+      `textodaoracao
+      `,
+      oracaoanossasenhoradoperpetuosocorro:
+      `textodaoracao
+      `,
+      oracaoasaobento:
+      `textodaoracao
+      `,
+      oracaoasaofranciscodeassis:
+      `textodaoracao
+      `,
+      oracaoasaojosepelapureza:
+      `textodaoracao
+      `,
+      oracaoasaomiguelarcanjo:
+      `textodaoracao
+      `,
+      oracaoasantateresinhadomeninojesus:
+      `textodaoracao
+      `,
+      oracaodaconfiancaemmaria:
+      `textodaoracao
+      `,
+      oracaodeagradecimento:
+      `textodaoracao
+      `,
+      oracaodeconsagracaoaoespiritosanto:
+      `textodaoracao
+      `,
+      oracaodesaobernardo:
+      `textodaoracao
+      `,
+      oracaoantescomunhao:
+      `textodaoracao
+      `,
+      oracaodepoiscomunhao:
+      `textodaoracao
+      `,
+      oracaoaoanjodeportugal:
+      `textodaoracao
+      `,
+      oracaodoperdao:
+      `textodaoracao
+      `,
+      oracaopelosagonizantes:
+      `textodaoracao
+      `,
+      oracaopelossacerdotes:
+      `textodaoracao
+      `,
+      painosso:
+      `textodaoracao
+      `,
+      pelasalmasdopurgatorio:
+      `textodaoracao
+      `,
+      pequenoexorcismo:
+      `textodaoracao
+      `,
+      pequenooficio:
+      `textodaoracao
+      `,
+      precepelosfalecidos:
+      `textodaoracao
+      `,
+      precesdaboamorte:
+      `textodaoracao
+      `,
+      precesparaantesdaconfissao:
+      `textodaoracao
+      `,
+      precesparadepoisdaconfissao:
+      `textodaoracao
+      `,
+      reginacaeli:
+      `textodaoracao
+      `,
+      salmonoventa:
+      `textodaoracao
+      `,
+      salverainha:
+      `textodaoracao
+      `,
+      saopioxpelaigreja:
+      `textodaoracao
+      `,
+      subtuumpraesidium:
+      `textodaoracao
+      `,
+      tedeum:
+      `textodaoracao
+      `,
+      visitaaosantissimosacramento:
+      `textodaoracao
+      `
+    };
+const switchIdioma = document.getElementById('switchIdioma');  // O switch para alternar o idioma
 
 // Função para atualizar a oração com base no tema e idioma
 const updateOracao = () => {
@@ -285,14 +586,13 @@ switchIdioma.addEventListener('change', updateOracao);
 // Chama a função para inicializar a oração na primeira vez
 updateOracao();
 
-
 // ----- Ladainhas ----- //
 const textoLadainhas = document.getElementById('textoLadainhas');
 const temaLadainhas = document.getElementById('temaLadainhas');
 const switchIdiomaLadainha = document.getElementById('switchIdiomaLadainha');  // O switch para alternar o idioma
 
 const ladainhas = {
-  ladainhaUm: 
+  ladainhadaalmadecristo: 
     `Senhor, tende piedade de nós.
     Cristo, tende piedade de nós. 
     Senhor, tende piedade de nós. 
@@ -386,7 +686,7 @@ const ladainhas = {
     
     Jesus Cristo, ouvi-nos.  
     Jesus Cristo, atendei-nos.`,
-      ladainhaDois: 
+    ladainhadasalmasdopurgatorio: 
       `Senhor, tende piedade de nós.
 Jesus Cristo, tende piedade de nós.
 Senhor, tende piedade de nós.
@@ -475,7 +775,7 @@ nós vos suplicamos que concedais a nós, que vos pedimos, os sentimentos afetiv
 de que vos amemos de todo o coração e que esse amor transcenda por nossas ações. Permiti que tenhamos sempre, 
 Senhor, um igual temor e amor pelo vosso santo nome, pois não deixais de governar aqueles que estabeleceis na 
 firmeza do vosso amor. Vós que viveis e renais pelos séculos dos séculos. Amém.`,
-      ladainhaTres: 
+ladainhadobomjesus: 
       `Senhor, tende piedade de nós
 Cristo, tende piedade de nós
 Senhor, tende piedade de nós
@@ -548,311 +848,639 @@ Cordeiro de Deus, que tirais os pecados do mundo, tende piedade de nós.
 
 Rogai por nós, santa Mãe de Deus.
 
-Para que sejamos dignos das promessas de Cristo.`
-
-      
-    };
+Para que sejamos dignos das promessas de Cristo.`,
+ladainhadocoracaodolorosoeimaculadodemaria: 
+`textodaladainha
+`,
+ladainhadocoracaoeucaristicodejesus: 
+`textodaladainha
+`,
+ladainhadedombosco: 
+`textodaladainha
+`,
+ladainhadoespiritosanto: 
+`textodaladainha
+`,
+ladainhadejesuscristo: 
+`textodaladainha
+`,
+ladainhadonomedejesus: 
+`textodaladainha
+`,
+ladainhadopreciosissimosanguedejesus: 
+`textodaladainha
+`,
+ladainhademariasantissima: 
+`textodaladainha
+`,
+ladainhademariasantissimafavorespecial: 
+`textodaladainha
+`,
+ladainhamariasantissimaalcancarpreserverancafinal: 
+`textodaladainha
+`,
+ladainhanossasenhoraauxiliadora: 
+`textodaladainha
+`,
+ladainhadenossasenhoradaassuncao: 
+`textodaladainha
+`,
+ladainhadenossasenhoradaconceicao: 
+`textodaladainha
+`,
+ladainhanossasenhoradapiedade: 
+`textodaladainha
+`,
+ladainhanossasenhoradasdores: 
+`textodaladainha
+`,
+ladainhanossasenhoradasgracas: 
+`textodaladainha
+`,
+ladainhadenossasenhoradapenha: 
+`textodaladainha
+`,
+ladainhadenossasenhoradasaude: 
+`textodaladainha
+`,
+ladainhadenossasenhoradefatima: 
+`textodaladainha
+`,
+ladainhadenossasenhoradeguadalupe: 
+`textodaladainha
+`,
+ladainhadenossasenhoradelasalette: 
+`textodaladainha
+`,
+ladainhadenossasenhoradelourdes: 
+`textodaladainha
+`,
+ladainhadenossasenhoradocarmo: 
+`textodaladainha
+`,
+ladainhadenossasenhoradoperpetuosocorro: 
+`textodaladainha
+`,
+ladainhedenossasenhoradosremedios: 
+`textodaladainha
+`,
+ladainhadenossasenhorarainhadosapostolos: 
+`textodaladainha
+`,
+ladainhadesaopadrepio: 
+`textodaladainha
+`,
+ladainhadospastoresdebelem: 
+`textodaladainha
+`,
+ladainhadorosario: 
+`textodaladainha
+`,
+ladainhadesantacecilia: 
+`textodaladainha
+`,
+ladainhadesantafilomena: 
+`textodaladainha
+`,
+ladainhadesantateresinhadomeninojesus: 
+`textodaladainha
+`,
+ladainhadosanteagostinho: 
+`textodaladainha
+`,
+ladainhadesantoafonsomaria: 
+`textodaladainha
+`,
+ladainhadesantoantonio: 
+`textodaladainha
+`,
+ladainhadesantoexpedito: 
+`textodaladainha
+`,
+ladainhadesantoinaciodeloyola: 
+`textodaladainha
+`,
+ladainhadesaobenedito: 
+`textodaladainha
+`,
+ladainhadesaobento: 
+`textodaladainha
+`,
+ladainhadesaodomingossavio: 
+`textodaladainha
+`,
+ladainhadesaofranciscodeassis: 
+`textodaladainha
+`,
+ladainhadesaofranciscoxavier: 
+`textodaladainha
+`,
+ladainhadesaogabrielarcanjo: 
+`textodaladainha
+`,
+ladainhadesaogeraldo: 
+`textodaladainha
+`,
+ladainhadesaojose: 
+`textodaladainha
+`,
+ladainhadesaojoaobatista: 
+`textodaladainha
+`,
+ladainhadesaojoaoevangelista: 
+`textodaladainha
+`,
+ladainhadesaojoaomariavianney: 
+`textodaladainha
+`,
+ladainhadesaojudastadeu: 
+`textodaladainha
+`,
+ladainhadesaoluismaria: 
+`textodaladainha
+`,
+ladainhadesaomarcosevangelista: 
+`textodaladainha
+`,
+ladainhadesaomiguelarcanjo: 
+`textodaladainha
+`,
+ladainhadesaopauloapostolo: 
+`textodaladainha
+`,
+ladainhadesaopedroapostolo: 
+`textodaladainha
+`,
+ladainhadesaorafaelarcanjo: 
+`textodaladainha
+`,
+ladainhadesaotomasdeaquino: 
+`textodaladainha
+`,
+ladainhadesaovicentedepaulo: 
+`textodaladainha
+`,
+ladainhadossantos: 
+`textodaladainha
+`,
+ladainhadosagradocoracaodejesus: 
+`textodaladainha
+`,
+ladainhadosantissimonomedejesus: 
+`textodaladainha
+`,
+ladainhadavirgemmaria: 
+`textodaladainha
+`,
+ladainhadavisitacao: 
+`textodaladainha
+`
+};
 
 const ladainhasLatim = {
-  ladainhaUm: 
-  `Kyrie, eleison
-Christe, eleison
-Kyrie, eleison
-Pater de caelis, Deus, miserere nobis.
-Fili, Redemptor mundi, Deus, miserere nobis.
-Spiritus Sancte, Deus, miserere nobis.
-Sancta Trinitas, unus Deus, miserere nobis.
-Sancta Maria, ora pro nobis.
-Sancta Dei Genetrix, ora pro nobis.
-Sancta Virgo virginum, ora pro nobis.
-Sancte Michael Gabriel et Raphael, orate pro nobis.
-Omnes sancti Angeli, orate pro nobis.
-Sancte Abraham, ora pro nobis.
-Sancte Ioannes Baptista, ora pro nobis.
-Sancte Ioseph, ora pro nobis.
-Omnes sancti Patriarchae et Prophetae, orate pro nobis.
-Sancte Petre et Paule, orate pro nobis.
-Sancte Andrea, ora pro nobis.
-Sancte Ioannes et Iacobe, orate pro nobis.
-Sancte Matthaee, ora pro nobis.
-Omnes sancti Apostoli, orate pro nobis.
-Sancte Marce, ora pro nobis.
-Sancta Maria Magdalena, ora pro nobis.
-Omnes sancti discipuli Domini, orate pro nobis.
-Sancte Stephane, ora pro nobis.
-Sancte Ignati, ora pro nobis.
-Sancte Polycarpe, ora pro nobis.
-Sancte Iustine, ora pro nobis.
-Sancte Laurenti, ora pro nobis.
-Sancta Agnes, ora pro nobis.
-Omnes sancti martyres, orate pro nobis.
-Sancti Leo et Gregori, orate pro nobis.
-Sancte Ambrosi, ora pro nobis.
-Sancte Augustine, ora pro nobis.
-Sancti Basili et Gregori, orate pro nobis.
-Sancte Benedicte, ora pro nobis.
-Sancte Ioannes Maria, ora pro nobis.
-Sancta Teresia, ora pro nobis.
-Sancta Elisabeth, ora pro nobis.
-Omnes Sancti et Sanctae Dei, orate pro nobis.
-Propitius esto, libera nos Domine.
-Ab omni malo, libera nos Domine.
-A morte perpetua, libera nos Domine.
-Per Incarnationis tuae, libera nos Domine.
-Per sanctam resurrectionem tuam, libera nos Domine.
-Per refusionem Spiritus Sancti, libera nos Domine.
-Christe Fili Dei vivi, miserere nobis.
-Qui in hunc mundum venisti, miserere nobis.
-Qui in mortem propter nos accepisti, miserere nobis.
-Qui a mortuis resurrexisti, miserere nobis.
-Qui Spiritum Sanctum in Apostolos misisti, miserere nobis.
-Qui venturus es iudicare vivos et mortuos, miserere nobis.
-Ut nobis parcas, te rogamus audi nos.
-Ut ecclesiam tuam sanctam regere et conservare digneris, te rogamus audi nos.
-Ut omnes homines ad Evangelii lumen perducere digneris, te rogamus audi nos.
-Christe audi nos, Christe audi nos.
-Christe exaudi nos, Christe exaudi nos.
-Agnus Dei, qui tollis peccata mundi, miserere nobis.
-Agnus Dei, qui tollis peccata mundi, miserere nobis.
-Agnus Dei, qui tollis peccata mundi, miserere nobis.
-Christe audi nos, Christe audi nos.
-Christe exaudi nos, Christe exaudi nos.`,
-  ladainhaDois: 
-  `Kýrie, eléison.
-Christe, eléison.
-Kýrie, eléison.
+  ladainhadaalmadecristo: 
+    `Senhor, tende piedade de nós.
+    Cristo, tende piedade de nós. 
+    Senhor, tende piedade de nós. 
+    Jesus Cristo, ouvi-nos.
+    Jesus Cristo, atendei-nos. 
+    Deus Pai do Céu, tende piedade de nós. 
+    Deus Filho, Redentor do mundo, tende piedade de nós.
+    Deus Espírito Santo, tende piedade de nós.
+    Santíssima Trindade, que sois um só Deus, tende piedade de nós.
+    
+    Santa Maria, rogai por nós.  
+    Santa Mãe de Deus, rogai por nós. 
+    Santa Virgem das Virgens, rogai por nós.
+    
+    São Miguel, rogai por nós.
+    São Gabriel, rogai por nós.  
+    São Rafael, rogai por nós.  
+    Todos os Santos Anjos e Arcanjos, rogai por nós.  
+    Todas as santas ordens de Espíritos bem-aventurados, rogai por nós.  
+    
+    São João Batista, rogai por nós.  
+    São José, rogai por nós.  
+    Todos os santos Patriarcas e Profetas, rogai por nós.  
+    
+    São Pedro, rogai por nós.  
+    São Paulo, rogai por nós.  
+    Santo André, rogai por nós.  
+    São João, rogai por nós.  
+    Todos os santos Apóstolos e Evangelistas, rogai por nós.  
+    Todos os santos Discípulos do Senhor, rogai por nós.  
+    
+    Santo Estêvão, rogai por nós.  
+    São Lourenço, rogai por nós.  
+    São Vicente, rogai por nós.  
+    Todos os santos Mártires, rogai por nós.  
+    
+    São Silvestre, rogai por nós.  
+    São Gregório, rogai por nós.  
+    Santo Agostinho, rogai por nós.  
+    Todos os santos Pontífices e Confessores, rogai por nós.  
+    Todos os santos Doutores, rogai por nós.  
+    
+    Santo Antão, rogai por nós.  
+    São Bento, rogai por nós.  
+    São Domingos, rogai por nós.  
+    São Francisco, rogai por nós.  
+    Todos os santos Sacerdotes e Levitas, rogai por nós.  
+    Todos os santos Monges e Eremitas, rogai por nós.  
+    
+    Santa Maria Madalena, rogai por nós.  
+    Santa Inês, rogai por nós.  
+    Santa Cecília, rogai por nós.  
+    Santa Águeda, rogai por nós.  
+    Santa Anastácia, rogai por nós.  
+    Todas as santas Virgens e Viúvas, rogai por nós.  
+    Todos os Santos e Santas de Deus, intercedei por nós.  
+    
+    Sede-nos propício, perdoai-nos, Senhor.  
+    Sede-nos propício, ouvi-nos, Senhor.  
+    
+    De todo mal, livrai-nos, Senhor.  
+    De todo pecado, livrai-nos, Senhor.  
+    Da morte eterna, livrai-nos, Senhor.  
+    
+    Pelo mistério da vossa santa Encarnação, livrai-nos, Senhor.  
+    Pela vossa Vinda, livrai-nos, Senhor.  
+    Pelo vosso Nascimento, livrai-nos, Senhor.  
+    Pelo vosso Batismo e santo Jejum, livrai-nos, Senhor.  
+    Pela vossa Cruz e Paixão, livrai-nos, Senhor.  
+    Pela vossa Morte e Sepultura, livrai-nos, Senhor.  
+    Pela vossa santa Ressurreição, livrai-nos, Senhor.  
+    Pela vossa admirável Ascensão, livrai-nos, Senhor.  
+    Pela vinda do Espírito Santo Consolador, livrai-nos, Senhor.  
+    No dia do Juízo, livrai-nos, Senhor.  
+    
+    Pecadores que somos, nós vos rogamos: ouvi-nos.  
+    Para que nos perdoeis, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis governar e conservar a vossa santa Igreja, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis conservar na santa religião o Sumo Pontífice e todas as ordens da hierarquia eclesiástica, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis humilhar os inimigos da santa Igreja, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis conceder a paz e a verdadeira concórdia aos reis e príncipes cristãos, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis confortar-nos e conservar-nos em vosso santo serviço, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis retribuir, com os bens sempiternos, a todos os nossos benfeitores, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis dar e conservar os frutos da terra, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis conceder o descanso eterno a todos os fiéis defuntos, nós vos rogamos: ouvi-nos.  
+    Para que vos digneis atender-nos, nós vos rogamos: ouvi-nos.  
+    
+    Cordeiro de Deus, que tirais os pecados do mundo, perdoai-nos, Senhor.  
+    Cordeiro de Deus, que tirais os pecados do mundo, ouvi-nos, Senhor.  
+    Cordeiro de Deus, que tirais os pecados do mundo, tende piedade de nós.  
+    
+    Jesus Cristo, ouvi-nos.  
+    Jesus Cristo, atendei-nos.`,
+    ladainhadasalmasdopurgatorio: 
+      `Senhor, tende piedade de nós.
+Jesus Cristo, tende piedade de nós.
+Senhor, tende piedade de nós.
 
-Iesu, audi nos.
-Iesu, exáudi nos. 
- 
-Pater de cælis, Deus, 
-miserére nobis.
-Fili, Redémptor mundi, Deus, 
-miserére nobis.
-Spíritus Sancte, Deus, 
-miserére nobis.
-Sancta Trínitas, unus Deus, 
-miserére nobis.
- 
-Iesu, Filii Dei vivi,
-Iesu, splendor Patris,
-Iesu, candor lucis æternæ,
-Iesu, Rex gloriæ,
-Iesu, sol iustitiæ,
-Iesu, Fili Mariæ Virginis,
-Iesu amabilis,
-Iesu admirabilis,
-Iesu, Deus fortis,
-Iesu, pater futuri sæculi,
-Iesu, magni consilii angele,
-Iesu potentissime,
-Iesu patientissime,
-Iesu obedientissime,
-Iesu, mitis et humilis corde,
-Iesu, amator castitatis,
-Iesu, amator noster,
-Iesu, Deus pacis,
-Iesu, auctor vitæ,
-Iesu, exemplar virtutum,
-Iesu, zelator animarum,
-Iesu, Deus noster,
-Iesu, refugium nostrum,
-Iesu, pater pauperum,
-Iesu, thesaure fidelium,
-Iesu, bone pastor,
-Iesu, lux vera,
-Iesu, sapientia æterna,
-Iesu, bonitas infinita,
-Iesu, via et vita nostra,
-Iesu, gaudium Angelorum,
-Iesu, rex Patriarcharum,
-Iesu, magister Apostolorum,
-Iesu, doctor Evangelistarum,
-Iesu, fortitudo Martyrum,
-Iesu, lumen Confessorum,
-Iesu, puritas Virginum,
-Iesu, corona sanctorum omnium,
- 
-Propitius esto; parce nobis, Iesu.
-Propitius esto; exaudi nos, Iesu.
-   
-Ab omni malo, libera-nos, Iesu.
-Ab omni peccato,
-Ab ira tua,
-Ab insidiis diaboli,
-A spiritu fornicátionis,
-A morte perpetua,
-A neglectu inspirationum tuarum,
-Per mysterium sanctæ incarnationis tuæ,
-Per nativitatem tuam,
-Per infantiam tuam,
-Per divinissimam vitam tuam,
-Per labores tuos,
-Per agoniam et passionem tuam,
-Per crucem et derelictionem tuam,
-Per languores tuos,
-Per mortem et sepulturam tuam,
-Per resurrectionem tuam,
-Per ascensionem tuam,
-Per sanctissimæ Eucharistiæ institutionem tuam,
-Per gaudia tua,
-Per gloriam tuam,
- 
-Agnus Dei, qui tollis peccáta mundi, 
-parce nobis, Iesu. 
-Agnus Dei, qui tollis peccáta mundi, 
-exáudi nos, Iesu.
-Agnus Dei, qui tollis peccáta mundi,  
-miserére nobis, Iesu.
-  
-Iesu, audi nos.
-Iesu, exáudi nos.
- 
-Orémus.
+Jesus Cristo, ouvi-nos.
+Jesus Cristo, atendei-nos.
 
-Domine Iesu Christi, qui dixisti: Petite, et accipietis; quærite, et invenietis; pulsate, et aperietur vobis; quæsumus, da nobis, petentibus, divinissimi tui amoris affectum, ut te todo corde, ore et opere diligamus et a tua nunquam laude cessemus.
-Sancti nominis tui, Domine, timorem pariter et amorem fac nos habere perpetuum; quia nunquam tua gubernatione destituis, quos in soliditate tuæ dilectionis instituis. Qui vivis et regnas in sæcula sæculorum.
- 
-Amen.`,
-  ladainhaTres: 
-  `Kýrie, eléison.
-℟. Kýrie, eléison.
-Christe, eléison.
-℟. Christe, eléison.
-Kýrie, eléison.
-℟. Kýrie, eléison.
-Christe, audi nos.
-℟. Christe, audi nos.
-Christe, exaudi nos.
-℟. Christe, exaudi nos.
-Pater de caelis, Deus.
-℟. Miserére nobis.
-Fili, Redémptor mundi, Deus.
-℟. Miserére nobis.
-Spíritus Sancte, Deus.
-℟. Miserére nobis.
-Sancta Trínitas, unus Deus.
-℟. Miserére nobis.
-Sancta Maria.
-℟. Ora pro nobis.
-Sancta Dei Génitrix.
-℟. Ora pro nobis.
-Sancta Virgo vírginum.
-℟. Ora pro nobis.
-Mater Christi.
-℟. Ora pro nobis.
-Mater Ecclésiae.
-℟. Ora pro nobis.
-Mater misericórdiae.
-℟. Ora pro nobis.
-Mater divínae grátiae.
-℟. Ora pro nobis.
-Mater spei.
-℟. Ora pro nobis.
-Mater puríssima.
-℟. Ora pro nobis.
-Mater castíssima.
-℟. Ora pro nobis.
-Mater invioláta.
-℟. Ora pro nobis.
-Mater intemerata.
-℟. Ora pro nobis.
-Mater amábilis.
-℟. Ora pro nobis.
-Mater admirábilis.
-℟. Ora pro nobis.
-Mater boni consílii.
-℟. Ora pro nobis.
-Mater Creatóris.
-℟. Ora pro nobis.
-Mater Salvatóris.
-℟. Ora pro nobis.
-Virgo prudentíssima.
-℟. Ora pro nobis.
-Virgo veneranda.
-℟. Ora pro nobis.
-Virgo praedicánda.
-℟. Ora pro nobis.
-Virgo potens.
-℟. Ora pro nobis.
-Virgo clemens.
-℟. Ora pro nobis.
-Virgo fidélis.
-℟. Ora pro nobis.
-Spéculum iustítiae.
-℟. Ora pro nobis.
-Sedes sapiéntiae.
-℟. Ora pro nobis.
-Causa nostrae laetítiae.
-℟. Ora pro nobis.
-Vas spirituále.
-℟. Ora pro nobis.
-Vas honorábile.
-℟. Ora pro nobis.
-Vas insígne devotiónis.
-℟. Ora pro nobis.
-Rosa mystica.
-℟. Ora pro nobis.
-Turris davídica.
-℟. Ora pro nobis.
-Turris ebúrnea.
-℟. Ora pro nobis.
-Domus áurea.
-℟. Ora pro nobis.
-Féderis arca.
-℟. Ora pro nobis.
-Iánua caeli.
-℟. Ora pro nobis.
-Stella matutina.
-℟. Ora pro nobis.
-Salus infirmórum.
-℟. Ora pro nobis.
-Refúgium peccatórum.
-℟. Ora pro nobis.
-Solácium Migrántium.
-℟. Ora pro nobis.
-Consolátrix afflictórum.
-℟. Ora pro nobis.
-Auxílium christianórum.
-℟. Ora pro nobis.
-Regína angelórum.
-℟. Ora pro nobis.
-Regína patriarchárum.
-℟. Ora pro nobis.
-Regína prophetárum.
-℟. Ora pro nobis.
-Regína apostolórum.
-℟. Ora pro nobis.
-Regína mártyrum.
-℟. Ora pro nobis.
-Regína confessórum.
-℟. Ora pro nobis.
-Regína vírginum.
-℟. Ora pro nobis.
-Regína sanctórum ómnium.
-℟. Ora pro nobis.
-Regína sine labe origináli concepta.
-℟. Ora pro nobis.
-Regína in caelum assumpta.
-℟. Ora pro nobis.
-Regína sacratíssimi rosárii.
-℟. Ora pro nobis.
-Regína famíliae.
-℟. Ora pro nobis.
-Regína pacis.
-℟. Ora pro nobis.
-Agnus Dei, qui tollis peccata mundi.
-℟. Parce nobis Domine.
-Agnus Dei, qui tollis peccata mundi.
-℟. Exaudi nos Domine.
-Agnus Dei, qui tollis peccata mundi.
-℟. Miserere nobis.
-℣. Ora pro nobis, sancta Dei Génitrix.
-℟. Ut digni efficiámur promissiónibus Christi.
-Orémus.
-Deus, cuius Unigénitus per vitam, mortem et resurrectiónem suam nobis salútis aetérnae praemia comparávit, concéde, quaesumus: ut haec mystéria sacratíssimo beátae Maríae Vírginis Rosário recoléntes, et imitémur quod cóntinent, et quod promíttunt assequámur.
-Per eúndem Christum Dóminum nostrum.
-Amen.`
+Pai celeste, que sois Deus, tende piedade de nós.
+Filho, Redentor do mundo, que sois Deus, tende piedade de nós.
+Espírito Santo, que sois Deus, tende piedade de nós.
+Santíssima Trindade, que sois um só Deus, tende piedade de nós.
+
+Jesus, Filho de Deus vivo, tende piedade de nós.
+Jesus, esplendor do Pai,
+Jesus, pureza da luz eterna,
+Jesus, Rei da glória,
+Jesus, sol da justiça,
+Jesus, Filho da Virgem Maria,
+Jesus amável,
+Jesus admirável,
+Jesus, Deus forte,
+Jesus, pai do futuro do século,
+Jesus, anjo do grande conselho,
+Jesus poderosíssimo,
+Jesus pacientíssimo,
+Jesus obedientíssimo,
+Jesus, manso e humilde de coração,
+Jesus, amante da castidade,
+Jesus, amador nosso,
+Jesus, Deus da paz,
+Jesus, autor da vida,
+Jesus, exemplar das virtudes,
+Jesus, zelador das almas,
+Jesus, nosso Deus,
+Jesus, nosso refúgio,
+Jesus, pai dos pobres,
+Jesus, tesouro dos fiéis,
+Jesus, bom pastor,
+Jesus, luz verdadeira,
+Jesus, sabedoria eterna,
+Jesus, bondade infinita,
+Jesus, nosso caminho e nossa vida,
+Jesus, alegria dos anjos,
+Jesus, rei dos patriarcas,
+Jesus, mestre dos Apóstolos,
+Jesus, doutor dos evangelistas,
+Jesus, fortaleza dos mártires,
+Jesus, luz dos confessores,
+Jesus, pureza das virgens,
+Jesus, coroa de todos os santos,
+
+Sede-nos propício, perdoai-nos, Jesus.
+Sede-nos propício, ouvi-nos, Jesus.
+
+De todo o mal, livrai-nos, Jesus.
+De todo o pecado,
+De vossa ira,
+Das ciladas do demônio,
+Do espírito de impureza,
+Da morte eterna,
+Do desprezo das vossas inspirações,
+Pelo mistério da vossa santa Encarnação,
+Pela vossa natividade,
+Pela vossa infância,
+Pela vossa santíssima vida,
+Pelos vossos trabalhos,
+Pela vossa agonia e paixão,
+Pela vossa cruz e desamparo,
+Pelas vossas angústias,
+Pela vossa morte e sepultura,
+Pela vossa ressurreição,
+Pela vossa ascensão,
+Pela vossa instituição da Santíssima Eucaristia,
+Pelas vossas alegrias,
+Pela vossa glória,
+
+Cordeiro de Deus, que tirais os pecados do mundo, perdoai-nos, Jesus.
+Cordeiro de Deus, que tirais os pecados do mundo, ouvi-nos, Jesus.
+Cordeiro de Deus, que tirais os pecados do mundo, tende piedade de nós, Jesus.
+
+Jesus, ouvi-nos.
+Jesus, atendei-nos.
+
+Oremos: Senhor Jesus Cristo, que dissestes: “Pedi e recebereis, buscai e achareis, batei e abrir-se-vos-á”, 
+nós vos suplicamos que concedais a nós, que vos pedimos, os sentimentos afetivos de vosso divino amor, a fim 
+de que vos amemos de todo o coração e que esse amor transcenda por nossas ações. Permiti que tenhamos sempre, 
+Senhor, um igual temor e amor pelo vosso santo nome, pois não deixais de governar aqueles que estabeleceis na 
+firmeza do vosso amor. Vós que viveis e renais pelos séculos dos séculos. Amém.`,
+ladainhadobomjesus: 
+      `Senhor, tende piedade de nós
+Cristo, tende piedade de nós
+Senhor, tende piedade de nós
+Cristo, ouvi-nos
+Cristo, atendei-nos
+Deus Pai do céu, tende piedade de nós
+Deus Filho Redentor do mundo, tende piedade de nós
+Deus Espírito Santo, tende piedade de nós
+Santíssima Trindade, que sois um só Deus, tende piedade de nós
+
+Santa Maria, rogai por nós.
+Santa Mãe de Deus, 
+Santa Virgem das virgens, 
+Mãe de Cristo,
+Mãe da Igreja,
+Mãe de misericórdia,
+Mãe da divina graça, 
+Mãe da esperança,
+Mãe puríssima, 
+Mãe castíssima, 
+Mãe sempre virgem,
+Mãe imaculada, 
+Mãe digna de amor, 
+Mãe admirável, 
+Mãe do bom conselho, 
+Mãe do Criador, 
+Mãe do Salvador, 
+Virgem prudentíssima,
+Virgem venerável,
+Virgem louvável, 
+Virgem poderosa, 
+Virgem clemente, 
+Virgem fiel,
+Espelho de perfeição, 
+Sede da Sabedoria, 
+Fonte de nossa alegria, 
+Vaso espiritual, 
+Tabernáculo da eterna glória,
+Moradia consagrada a Deus, 
+Rosa mística, 
+Torre de Davi, 
+Torre de marfim,
+Casa de ouro,
+Arca da aliança,
+Porta do céu,
+Estrela da manhã,
+Saúde dos enfermos,
+Refúgio dos pecadores,
+Socorro dos migrantes, 
+Consoladora dos aflitos,
+Auxílio dos cristãos,
+Rainha dos Anjos, 
+Rainha dos Patriarcas,
+Rainha dos Profetas,
+Rainha dos Apóstolos,
+Rainha dos Mártires,
+Rainha dos confessores da fé,
+Rainha das Virgens,
+Rainha de todos os Santos,
+Rainha concebida sem pecado original,
+Rainha assunta ao céu,
+Rainha do santo Rosário,
+Rainha da paz.
+
+Cordeiro de Deus, que tirais os pecados do mundo, perdoai-nos, Senhor.
+
+Cordeiro de Deus, que tirais os pecados do mundo, ouvi-nos, Senhor.
+
+Cordeiro de Deus, que tirais os pecados do mundo, tende piedade de nós.
+
+Rogai por nós, santa Mãe de Deus.
+
+Para que sejamos dignos das promessas de Cristo.`,
+ladainhadocoracaodolorosoeimaculadodemaria: 
+`textodaladainha
+`,
+ladainhadocoracaoeucaristicodejesus: 
+`textodaladainha
+`,
+ladainhadedombosco: 
+`textodaladainha
+`,
+ladainhadoespiritosanto: 
+`textodaladainha
+`,
+ladainhadejesuscristo: 
+`textodaladainha
+`,
+ladainhadonomedejesus: 
+`textodaladainha
+`,
+ladainhadopreciosissimosanguedejesus: 
+`textodaladainha
+`,
+ladainhademariasantissima: 
+`textodaladainha
+`,
+ladainhademariasantissimafavorespecial: 
+`textodaladainha
+`,
+ladainhamariasantissimaalcancarpreserverancafinal: 
+`textodaladainha
+`,
+ladainhanossasenhoraauxiliadora: 
+`textodaladainha
+`,
+ladainhadenossasenhoradaassuncao: 
+`textodaladainha
+`,
+ladainhadenossasenhoradaconceicao: 
+`textodaladainha
+`,
+ladainhanossasenhoradapiedade: 
+`textodaladainha
+`,
+ladainhanossasenhoradasdores: 
+`textodaladainha
+`,
+ladainhanossasenhoradasgracas: 
+`textodaladainha
+`,
+ladainhadenossasenhoradapenha: 
+`textodaladainha
+`,
+ladainhadenossasenhoradasaude: 
+`textodaladainha
+`,
+ladainhadenossasenhoradefatima: 
+`textodaladainha
+`,
+ladainhadenossasenhoradeguadalupe: 
+`textodaladainha
+`,
+ladainhadenossasenhoradelasalette: 
+`textodaladainha
+`,
+ladainhadenossasenhoradelourdes: 
+`textodaladainha
+`,
+ladainhadenossasenhoradocarmo: 
+`textodaladainha
+`,
+ladainhadenossasenhoradoperpetuosocorro: 
+`textodaladainha
+`,
+ladainhedenossasenhoradosremedios: 
+`textodaladainha
+`,
+ladainhadenossasenhorarainhadosapostolos: 
+`textodaladainha
+`,
+ladainhadesaopadrepio: 
+`textodaladainha
+`,
+ladainhadospastoresdebelem: 
+`textodaladainha
+`,
+ladainhadorosario: 
+`textodaladainha
+`,
+ladainhadesantacecilia: 
+`textodaladainha
+`,
+ladainhadesantafilomena: 
+`textodaladainha
+`,
+ladainhadesantateresinhadomeninojesus: 
+`textodaladainha
+`,
+ladainhadosanteagostinho: 
+`textodaladainha
+`,
+ladainhadesantoafonsomaria: 
+`textodaladainha
+`,
+ladainhadesantoantonio: 
+`textodaladainha
+`,
+ladainhadesantoexpedito: 
+`textodaladainha
+`,
+ladainhadesantoinaciodeloyola: 
+`textodaladainha
+`,
+ladainhadesaobenedito: 
+`textodaladainha
+`,
+ladainhadesaobento: 
+`textodaladainha
+`,
+ladainhadesaodomingossavio: 
+`textodaladainha
+`,
+ladainhadesaofranciscodeassis: 
+`textodaladainha
+`,
+ladainhadesaofranciscoxavier: 
+`textodaladainha
+`,
+ladainhadesaogabrielarcanjo: 
+`textodaladainha
+`,
+ladainhadesaogeraldo: 
+`textodaladainha
+`,
+ladainhadesaojose: 
+`textodaladainha
+`,
+ladainhadesaojoaobatista: 
+`textodaladainha
+`,
+ladainhadesaojoaoevangelista: 
+`textodaladainha
+`,
+ladainhadesaojoaomariavianney: 
+`textodaladainha
+`,
+ladainhadesaojudastadeu: 
+`textodaladainha
+`,
+ladainhadesaoluismaria: 
+`textodaladainha
+`,
+ladainhadesaomarcosevangelista: 
+`textodaladainha
+`,
+ladainhadesaomiguelarcanjo: 
+`textodaladainha
+`,
+ladainhadesaopauloapostolo: 
+`textodaladainha
+`,
+ladainhadesaopedroapostolo: 
+`textodaladainha
+`,
+ladainhadesaorafaelarcanjo: 
+`textodaladainha
+`,
+ladainhadesaotomasdeaquino: 
+`textodaladainha
+`,
+ladainhadesaovicentedepaulo: 
+`textodaladainha
+`,
+ladainhadossantos: 
+`textodaladainha
+`,
+ladainhadosagradocoracaodejesus: 
+`textodaladainha
+`,
+ladainhadosantissimonomedejesus: 
+`textodaladainha
+`,
+ladainhadavirgemmaria: 
+`textodaladainha
+`,
+ladainhadavisitacao: 
+`textodaladainha
+`
 };
 
 const updateLadainha = () => {
