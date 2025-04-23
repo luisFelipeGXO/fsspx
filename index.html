@@ -29,7 +29,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#oracao"><i class="fas fa-praying-hands"></i> Oração do Dia</a>
+            <li class="nav-item"><a class="nav-link" href="#oracao"><i class="fas fa-praying-hands"></i> Orações</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="#ladainhas"><i class="fas fa-plus"></i> Ladainhas</a></li>
             <li class="nav-item"><a class="nav-link" href="#liturgia"><i class="fas fa-book-bible"></i> Liturgia Diária</a></li>
@@ -125,7 +125,7 @@
     <section id="oracao" class="mb-5">
       <div class="card shadow-sm">
         <div class="card-body">
-          <h3 class="card-title"><i class="fas fa-praying-hands"></i> Oração do Dia</h3>
+          <h3 class="card-title"><i class="fas fa-praying-hands"></i> Orações</h3>
           <p class="card-text">Selecione uma oração específica.</p>
 
           <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#oracaoDoDia">
@@ -230,7 +230,7 @@
 
           </div>
           <div class="alert alert-primary" role="alert" id="textoOracao">
-            Aqui serão exibidas as orações do dia.
+            Aqui serão exibidas as orações.
           </div>
             <h6 style="color:red"><strong>Laudes:</strong></h6>
             <p><strong>Antífona:</strong> Bendigamos ao Senhor, que nos concede um novo dia para louvá-Lo e servi-Lo.
@@ -284,6 +284,7 @@
         </div>
       </div>
     </div>
+
 <!-- Seção: Ladainhas -->
 <section id="ladainhas" class="mb-5">
   <div class="card shadow-sm">
@@ -297,7 +298,7 @@
   </div>
 </section>
 
-<!-- Modal: Detalhes do Santo do Dia -->
+<!-- Modal: Detalhes da Ladainha -->
 <div class="modal fade" id="ladainhasModal" tabindex="-1" aria-labelledby="ladainhasModal" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -385,9 +386,296 @@
         </div>
 
         <div class="alert alert-primary" role="alert" id="textoLadainhas">
-          Aqui serão exibidas as orações do dia.
+          Aqui serão exibidas as orações.
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Seção: Exame -->
+<section id="exame" class="mb-5">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h3 class="card-title"><i class="fas fa-user"></i> Exame de Consciência</h3>
+      <p class="card-text">Selecione uma ladainha específica.</p>
+      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exameModel">
+        Ver detalhes
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal: Detalhes de Exame -->
+<div class="modal fade" id="exameModel" tabindex="-1" aria-labelledby="exameModel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exameModel"><i class="fas fa-user"></i> Exame de Consciência</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <section class="mb-5">
+
+        <h3><strong>PARA UMA BOA CONFISSÃO</strong></h3>
+        <p>Fazer um bom exame de consciência, pedindo a Deus a graça de conhecer os próprios
+          pecados e de se arrepender deles.</p>
+          <p>Arrepender-se dos pecados, reconhecendo a ofensa causada a Deus, o mal para si
+            mesmo e detestando os pecados.</p>
+          <p>
+            Firme propósito de não mais tornar a pecar.
+          </p>
+          <p>
+            Confissão com acusação íntegra dos pecados, dizendo todos os pecados mortais, sua
+            espécie e quantas vezes foram cometidos. A ocultação deliberada de um pecado
+            mortal torna invalida a confissão.
+          </p>
+         <p>
+          Aceitação da penitência.
+         </p>
+        </section>
+        <section class="mb-5">
+         <h4><strong>Oração para antes do exame de consciência</strong></h4>
+         <p>
+          Senhor Deus onipotente, prostrado humildemente diante da vossa divina majestade,
+          vos rendo infinitas graças por todos os benefícios que de vossa inefável bondade tenho
+          recebido, e em particular por me terdes criado, conservado, remido e cumulado de
+          tantos bens e mercês, muitos dos quais eu ignoro.
+         </p>
+         <p>
+          Rogo-vos, Senhor, humildemente, que vos digneis conceder-me luz abundante para
+conhecer todas as faltas e pecados, com que vos tenho ofendido, e graça eficaz para
+me arrepender e me emendar.
+         </p>
+        </section>
+        <section class="mb-5">
+          <h4><strong>ANTES DOS MANDAMENTOS</strong></h4>
+          <p>Há quanto tempo você fez sua última confissão?</p>
+          <p>Você recebeu absolvição?</p>
+          <p>Você cumpriu sua penitência?</p>
+          <p>Você deliberadamente ocultou um pecado mortal, ou confessou sem
+            arrependimento verdadeiro, ou sem um firme propósito de correção, ou sem a
+            intenção de cumprir sua penitência?</p>
+          <p>Você, após essa má confissão, recebeu a Santa Comunhão em estado de
+            pecado mortal?</p>
+          <p>Quantas dessas Confissões e Comunhões sacrílegas você fez?</p>
+          <p>Você, em estado de pecado mortal, recebeu qualquer outro Sacramento?</p>
+        </section>
+
+        <section class="mb-5">
+
+        <p class="card-text"><strong>Selecione um mandamento:</strong></p>
+        <div class="mb-3">
+          <select id="temaExame" class="form-select w-50">
+            <option value="imandamento">I MANDAMENTO: “Eu sou o Senhor teu Deus, não terás outro deus diante de mim”</option>
+            <option value="iimandamento">II MANDAMENTO: Não tomarás o nome do Senhor teu Deus em vão</option>
+            <option value="iiimandamento">III MANDAMENTO: Lembra-te que deves santificar o dia do Senhor</option>
+            <option value="ivmandamento">IV MANDAMENTO: Honra teu pai e tua mãe</option>
+            <option value="vmandamento">V MANDAMENTO: Não matarás</option>
+            <option value="vimandamento">VI MANDAMENTO: Não cometerás adultério</option>
+            <option value="viimandamento">VII MANDAMENTO: Não roubarás</option>
+            <option value="viiimandamento">VIII MANDAMENTO: Não darás falso testemunho contra o teu próximo</option>
+            <option value="ixmandamento">IX MANDAMENTO: Não cobiçaras a mulher do próximo</option>
+            <option value="xmandamento">X MANDAMENTO: Não cobiçarás os bens do teu próximo</option>
+           
+          </select>
+
+        </section>
+
+
+        <div class="alert alert-primary" role="alert" id="textoExame">
+          Aqui serão exibidas as orações.
+        </div>
+
+        <section class="mb-5">
+          <h5><strong>OS PRECEITOS DA SANTA IGREJA</strong></h5>
+          Além dos Dez Mandamentos da Lei de
+Deus, os fieis são também obrigados a
+seguir os Preceitos da Igreja. O poder
+de fazer estas leis vem de Nosso Senhor
+Jesus Cristo, e inclui tudo o que é
+necessário para o governo da Igreja e
+para a direção dos fieis, a fim de que
+alcancem a salvação eterna.
+        </section>
+        <section class="mb-5">
+          <h5>PRIMEIRO PRECEITO: ASSISTIR À
+            SANTA MISSA TODOS OS DOMINGOS E
+            DIAS SANTOS DE GUARDA</h5>
+            <p>
+              São nove os dias de preceito no Brasil,
+já que a São José (19 de março) não o é.
+Muitos desses dias são transferidos
+para o Domingo seguinte, pelo fato de
+não haver feriado civil.
+            </p>
+            <ul>
+              <li>Natal do Senhor (25 de dezembro)</li>
+              <li>Circuncisão do Senhor (1º de
+                janeiro)</li>
+              <li>Circuncisão do Senhor (1º de
+                janeiro)</li>
+              <li>Ascensão (quarenta dias depois
+                da Páscoa. No Brasil,
+                transferido para o Domingo
+                seguinte.)</li>
+              <li>Corpus Christi (Quinta-feira
+                depois do Domingo da
+                Santíssima Trindade.)</li>
+              <li>Santos Apóstolos Pedro e Paulo
+                (29 de junho. No Brasil,
+                transferido para o Domingo
+                seguinte)</li>
+              <li>A Assunção da Santíssima
+                Virgem (15 de agosto. No
+                Brasil, transferido para o
+                Domingo seguinte.)</li>
+              <li>Todos os Santos (1º de
+                novembro. No Brasil,
+                transferido para o Domingo
+                seguinte.)</li>
+              <li>Imaculada Conceição da
+                Santíssima Virgem (08 de
+                dezembro)</li>
+    
+            </ul>
+            <p>A Santa Igreja nos obriga a nos abster
+              de todo trabalho servil nos Dias Santos
+              de Guarda, como nos Domingos, na
+              medida do possível. Os católicos que
+              devem trabalhar nos Dias Santos de
+              Guarda são obrigados a assistir a Santa
+              Missa a não ser que sejam escusados
+              por uma causa proporcionalmente
+              grave. Esse preceito pode ser violado
+              ao não assistir a Missa nos dias
+              prescritos ou ao se chegar atrasado à
+              Missa sem razão suficiente.
+              Dependendo da qualidade e da
+              quantidade do atraso, pode ser pecado
+              leve ou grave.</p>
+            </section>
+
+              <section class="mb-5">
+                <h5>SEGUNDO PRECEITO: JEJUAR, ABSTER-
+                  SE DE CARNE E FAZER PENITÊNCIA NOS
+                  DIAS PRESCRITOS</h5>
+                  <p>
+                    A lei da abstinência obriga aqueles que
+completaram 14 anos de idade até o
+fim da vida. A lei do jejum obriga
+aqueles que atingiram sua maioridade
+(18 anos) até o início de seus 60 anos.
+                  </p>
+                  <p>
+                    Jejuar significa comer menos comida
+                    do que normalmente se come. Nos dias
+                    de jejum, é permitido comer uma
+                    refeição completa e duas outras
+                    menores que, juntas, não passem a
+                    quantidade de uma refeição completa.
+                    Os dias de jejum são a Quarta-feira de
+                    Cinzas e a Sexta-feira Santa.
+                  </p>
+                  <p>
+                    Nos dias de abstinência, é proibido
+                    comer carne. Os dias de abstinência
+                    são: todas as sextas-feiras do ano e a
+                    quarta-feira de cinzas. No Brasil, a
+                    abstinência pode ser comutada (salvo
+                    na quarta-feira de cinzas e na sexta-
+                    feira santa) por outras formas de
+                    penitência, principalmente em obras de
+                    caridade e exercícios de piedade. Uma
+                    penitência substituta permitida poderia
+                    ser: dizer um terço, a Via Sacra, visitar
+                    os doentes ou presos, etc. O mais
+                    aconselhável é guardar a tradicional
+                    abstinência.
+                  </p>
+              </section>
+              <section class="mb-5">
+                <h5>TERCEIRO PRECEITO DA IGREJA:
+                  CONFISSÃO DOS PECADOS MORTAIS
+                  AO MENOS UMA VEZ POR ANO</h5>
+                  <p>
+                    A Santa Igreja insta-nos a confessar-nos
+freqüentemente, mas nos obriga a
+fazê-lo somente uma vez por ano para
+admoestar aqueles que possam ter a
+presunção da misericórdia de Deus, o
+que é um pecado contra o Espírito
+Santo. Os pais devem preparar seus
+filhos para a confissão tão logo a
+criança aprenda a distinguir o certo do errado (isto é, por volta dos sete anos
+de idade). A obrigação de se confessar
+uma vez por ano obriga somente
+àqueles que cometeram um pecado
+mortal e não se confessaram por pelo
+menos um ano.
+                  </p>
+                </section>
+                <section class="mb-5">
+                  <h5>QUARTO PRECEITO: RECEBER A SANTA
+                    COMUNHÃO DURANTE O PERÍODO DA
+                    PÁSCOA</h5>
+                    <p>
+                      O período da Páscoa para a comunhão
+pascal começa na Quinta-feira Santa e
+termina no Primeiro Domingo depois
+de Pentecostes (Festa da Santíssima
+Trindade). Entretanto, após ter
+recebido a Primeira Comunhão, é
+fortemente recomendado que se
+receba este magno Sacramento
+freqüentemente durante a vida
+(mesmo diariamente, se possível, como
+recomendado pelo Papa São Pio X).
+                    </p>
+                </section>
+                <section class="mb-5">
+                  <h5>QUINTO PRECEITO: CONTRIBUIR PARA
+                    O SUSTENTO DA IGREJA E DE SEUS
+                    MINISTROS</h5>
+                    <p>
+                      Este preceito requer que cada um
+preste auxílio às necessidades materiais
+da Igreja conforme suas possibilidades.
+                    </p>
+                </section>
+                <section class="mb-5">
+                  <h5>SEXTO PRECEITO: OBSERVAR AS LEIS
+                    DA IGREJA NO QUE TANGE À
+                    CELEBRAÇÃO DO MATRIMÔNIO</h5>
+                  <p>Casei-me ou ajudei alguém a se casar,
+                    sem a permissão da Santa Igreja, diante
+                    de um oficial do Estado ou de um
+                    Ministro protestante ou acatólico? Ou
+                    sem a dispensa necessária para os
+                    graus de parentesco proibidos? Ou com
+                    qualquer outro impedimento
+                    conhecido? Separou-se sem causa
+                    justa? Separou-se e juntou-se com
+                    outra pessoa, em segunda união?</p>
+                </section>
+                <section class="mb-5">
+                  <h3><strong>Oração para depois da confissão (após sair do confessionário)</strong></h3>
+                  <p>Meu bom Jesus, quão bondoso sois! Oh! quem nunca vos ofendera! Apesar de
+                    ter sido tão ingrato para convosco, ainda me recebeis na vossa amizade.
+                    Podíeis ter me dado a morte, quando eu estava em pecado; podíeis ter me
+                    sepultado no inferno para castigar a minha ousadia em transgredir a vossa lei.
+                    Mas o vosso amor superou à minha ingratidão e trouxestes-me aos vossos pés
+                    para aí me pordes de novo em vossa graça e tranquilizardes o meu coração.
+                    Bendito sejais, ó meu Deus misericordioso! Não permitais que eu perca de
+                    novo a graça recebida! Antes morrer, que ofender-vos! Meu bom Jesus, minha
+                    Mãe Maria Santíssima, meu anjo da guarda, valei-me, para que não torne a
+                    pecar.</p>
+                </section>
+       
+      </div>
+      
     </div>
   </div>
 </div>
@@ -1332,7 +1620,7 @@
             </select>
           </div>
           <div class="alert alert-primary" role="alert" id="textoCatequese">
-            Aqui serão exibidas as orações do dia.
+            Aqui serão exibidas as orações.
           </div>
           </div>
         </div>
@@ -1538,26 +1826,105 @@
                   <p class="card-text">A serenidade que vem do encontro com o sagrado.</p>
                   <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#contemplacaoUm">Saiba Mais</button>
                 </div>
-                <!-- Modal: Detalhes da Contemplaçao 1 -->
-                <div class="modal fade" id="contemplacaoUm" tabindex="-1" aria-labelledby="contemplacaoUm" aria-hidden="true">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="contemplacaoUm">Meditação 3</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p> "Apartai-va.
-                          Porque um dia, o tempo acabará. E então, apenas uma dessas sentenças será pronunciada para ti:
-                          "Vinde, benditos de meu Pai, tomai posse do Reino" (Mateus 25,34).
-                          Ou...
-                          "Apartai-vos de mim, malditos, para o fogo eterno" (Mateus 25,41).
-                          Escolhe agora. Pois a eternidade depende desta escolha.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <!-- Modal: Detalhes da Contemplação 1 -->
+<div class="modal fade" id="contemplacaoUm" tabindex="-1" aria-labelledby="contemplacaoUm" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="contemplacaoUm">Meditação 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <h3><strong>1º Mistério Gozoso: A Anunciação do Anjo a Nossa Senhora</strong></h3>
+<h5>No primeiro mistério gozoso, contemplamos a Anunciação do Arcanjo São Gabriel à Santíssima Virgem Maria e a Encarnação do Verbo de Deus em seu puríssimo seio.</h5>
+
+    <p style="color: red;">“E o anjo, aproximando-se dela, disse: ‘Ave, cheia de graça, o Senhor é contigo.’” (Lc 1, 28)</p>
+
+    <img src="anunciacao.jpeg" class="img-fluid mb-4" style="max-height: 300px; display: block; margin: 0 auto;" alt="Anunciação">
+
+<p>Neste sublime mistério, somos transportados ao silêncio sagrado de Nazaré. Lá, no recolhimento de uma jovem Virgem imaculada, resplandece a plenitude da humildade e da fé. O Arcanjo Gabriel, embaixador celeste, inclina-se diante daquela que é menor que os anjos por natureza, mas maior que todos por graça: Maria Santíssima.</p>
+
+<p>A Encarnação do Verbo Eterno acontece não com estrondo, mas no mais profundo silêncio — Deus se fez carne e habitou entre nós (Jo 1, 14) — no ventre de uma virgem que respondeu com fé heroica: “Fiat mihi secundum verbum tuum” (Lc 1, 38).</p>
+
+ <p style="color: red;">"A obediência de Maria desatou o nó da desobediência de Eva." – Santo Irineu de Lião</p>   
+
+<p>A Virgem torna-se então Theotókos, Mãe de Deus. O universo inteiro curva-se diante desse instante: é o princípio da Redenção.</p>
+
+<p><strong>Meditação: Contempla a docilidade da Santíssima Virgem ao plano divino. Medita sobre tua própria resposta à vontade de Deus. Tens acolhido Sua Palavra com humildade e prontidão como Maria?
+  
+  
+  
+  <h3><strong></strong>2º Mistério Gozoso: A Visitação de Maria a Santa Isabel</h3></strong></p>
+
+<h5>No segundo mistério gozoso, contemplamos a visita da Santíssima Virgem à sua prima Santa Isabel, levando em seu seio o Salvador do mundo."</h5>
+
+   <p style="color: red;">“Maria, levantando-se naqueles dias, foi às pressas à região montanhosa, a uma cidade de Judá.” (Lc 1, 39)</p> 
+   <img src="visitacao.jpeg" class="img-fluid mb-4" style="max-height: 300px; display: block; margin: 0 auto;" alt="Anunciação">
+
+
+<p>Maria, recém-cheia de Deus, não se volta para si, mas parte às pressas para servir. Mesmo grávida, atravessa montanhas. Leva consigo Cristo oculto no seu ventre: é a primeira procissão eucarística da história.</p>
+
+<p>Santa Isabel, cheia do Espírito Santo, exclama: “Donde me vem esta honra de vir a mim a mãe do meu Senhor?” (Lc 1, 43). O próprio João Batista, ainda no seio, estremece de alegria.</p>
+
+<p style="color: red;">"Onde Maria chega, o Espírito Santo também chega." – São Luís Maria Grignion de Montfort</p>
+
+<p>Maria canta então o Magnificat — hino eterno da humildade triunfante: “A minha alma engrandece o Senhor...” (Lc 1, 46-55). O mundo é transformado não pelo poder, mas pela fé de uma Mulher escondida e obediente.</p>
+
+<p><strong>Meditação: Aprende de Maria a verdadeira caridade: aquela que se doa por amor, mesmo sem ser solicitada. Teus atos de serviço são fecundados pelo Espírito Santo?</strong></p>
+
+<h3><strong>3º Mistério Gozoso: O Nascimento de Nosso Senhor Jesus Cristo em Belém</strong></h3>
+
+<h5>No terceiro mistério gozoso, contemplamos o nascimento do Menino Jesus em Belém, pobre e envolto em panos, reclinado numa manjedoura.</h5>
+
+    <p style="color: red;">“E Maria deu à luz o seu Filho primogênito, e, envolvendo-o em faixas, reclinou-o numa manjedoura, porque não havia lugar para eles na hospedaria.” (Lc 2, 7)</p>
+
+    <img src="nascimento.jpeg" class="img-fluid mb-4" style="max-height: 300px; display: block; margin: 0 auto;" alt="Anunciação">
+
+
+<p>Na noite de Belém, os céus se abriram e os anjos entoaram: “Glória a Deus nas alturas” (Lc 2, 14). Mas o mundo dormia. O Rei dos reis nasce no despojamento absoluto. É num estábulo que resplandece o fulgor da Glória divina. O Verbo se fez Carne, mas os seus não O receberam.</p>
+
+<p style="color: red;">"Ó admirável troca! O Criador do gênero humano, tomando corpo e alma, nasceu de uma Virgem e, vindo como homem, nada perdeu da sua divindade." – Antífona do Natal</p>    
+
+<p>Maria contempla o Filho, reconhecendo Nele o Messias prometido. São José adora em silêncio. Os pastores, puros e vigilantes, são os primeiros a acolher o Redentor.</p>
+
+<p><strong>Meditação: Contempla a pobreza radical do Deus feito Homem. Tens dado lugar a Cristo em teu coração ou também tua hospedaria está cheia de ti mesmo?</strong></p>
+4º Mistério Gozoso: A Apresentação do Menino Jesus no Templo
+
+"No quarto mistério gozoso, contemplamos a apresentação do Menino Jesus no Templo e a purificação de Nossa Senhora, conforme a Lei de Moisés."
+
+    “E, passados os dias da purificação de Maria, conforme a Lei de Moisés, levaram-no a Jerusalém para o apresentarem ao Senhor.” (Lc 2, 22)
+
+A Virgem Imaculada — que não necessitava purificação — submete-se humildemente à Lei, ensinando-nos a santa obediência e reverência às prescrições sagradas. O Menino Deus, Primogênito, é consagrado ao Senhor.
+
+Simeão, movido pelo Espírito Santo, reconhece o Salvador e proclama: “Meus olhos viram a salvação que preparaste diante de todos os povos” (Lc 2, 30-31). E profetiza: “Uma espada transpassará tua alma” (Lc 2, 35) — é o anúncio do sacrifício futuro.
+
+    "Cristo foi oferecido ao Pai, não porque tivesse necessidade disso, mas para nos ensinar a consagração total a Deus." – Santo Tomás de Aquino
+
+Meditação: Ofereces a Deus o que há de mais precioso em ti? Vives com o olhar voltado à eternidade, como Simeão, que esperava ansiosamente o Messias?
+5º Mistério Gozoso: O Encontro do Menino Jesus no Templo entre os Doutores
+
+"No quinto mistério gozoso, contemplamos o encontro do Menino Jesus no Templo, após três dias de procura angustiada por Maria e José."
+
+    “Não sabíeis que devo ocupar-me das coisas de meu Pai?” (Lc 2, 49)
+
+Jesus, aos doze anos, revela o mistério de Sua missão: fazer a vontade do Pai Celeste. Os doutores se maravilham diante de Sua sabedoria. Maria e José, aflitos, O encontram e guardam em seus corações esse episódio misterioso.
+
+É a primeira manifestação pública de que o Filho não pertence ao mundo, mas ao Pai. Ainda assim, submete-se e volta com Seus pais, crescendo em graça diante de Deus e dos homens.
+
+    "Maria O procurava como Mãe, mas Ele Se manifestava como Senhor." – Santo Ambrósio
+
+Meditação: Tens buscado Jesus com o fervor de Maria e José? E quando O “perdes”, tua alma sente angústia ou indiferença? Estás disposto a tudo para reencontrá-Lo?
+
+       
+
+        <p> teste </p>
+      </div>
+    </div>
+  </div>
+</div>
+
               </div>
             </div>
             <div class="col-md-6 mb-3">
@@ -1581,6 +1948,7 @@
                           PocontemplacaoDoismim, malditos, para o fogo eterno" (Mateus 25,41).
                           Escolhe agora. Pois a eternidade depende desta escolha.
                         </p>
+                        
                       </div>
                     </div>
                   </div>
