@@ -3149,7 +3149,7 @@ pleno consentimento.</p>`,
     <li>Desejar cometer injustiça para prejudicar alguém e obter seus bens temporais</li>
     <li>Alegrar-se ou consentir nos pecados contra o sétimo mandamento</li>
   </ul>
-
+`
     };
     
     const temaExame = document.getElementById("temaExame");
