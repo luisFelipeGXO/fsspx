@@ -3135,7 +3135,21 @@ lo de fato, isto é, trata-se de pecado
 mortal ou venial, segundo o pecado e
 conforme haja plena advertência e
 pleno consentimento.</p>`,
-      xmandamento: `décimo mandamento`
+      xmandamento: `
+  <h5><strong>X MANDAMENTO:</strong> Não cobiçarás os bens de teu próximo</h5>
+
+  <p><strong>Pecados contra o décimo mandamento:</strong></p>
+  <ul>
+    <li>Inveja (desejar os bens de outrem)</li>
+    <li>Ciúmes (zelo excessivo para manter um bem querido longe dos outros)</li>
+    <li>Ganância e desejo sem limites de acumular bens materiais (avareza)</li>
+    <li>Desejo de enriquecer a qualquer preço</li>
+    <li>Negócios ou profissões que lucram com as desgraças ou dificuldades dos outros</li>
+    <li>Inveja dos sucessos, talentos, bens espirituais ou materiais alheios</li>
+    <li>Desejar cometer injustiça para prejudicar alguém e obter seus bens temporais</li>
+    <li>Alegrar-se ou consentir nos pecados contra o sétimo mandamento</li>
+  </ul>
+
     };
     
     const temaExame = document.getElementById("temaExame");
